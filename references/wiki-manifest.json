@@ -1508,9 +1508,9 @@
     }
   },
   "coverage": {
-    "captured": 2724,
+    "captured": 2791,
     "complete": true,
-    "discovered": 2724,
+    "discovered": 2791,
     "excluded": [
       {
         "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=照明和着色",
@@ -1544,11 +1544,6 @@
       },
       {
         "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
-        "title": "CgFX 着色器疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-95E982CC-F95F-47F9-9CAA-DCBFD9907A31.htm"
-      },
-      {
-        "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
         "title": "CgFX 着色器限制",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-BD4A13F2-C4C3-40D7-9C01-45BABEBE929B.htm"
       },
@@ -1556,11 +1551,6 @@
         "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
         "title": "DirectX 11 Shader",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-21D2A020-EC76-4679-B38A-D5270CE52566.htm"
-      },
-      {
-        "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
-        "title": "DirectX 11 着色器不显示顶点颜色的疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-F3CD9685-7310-4A4A-BFCC-5AED5FC3C507.htm"
       },
       {
         "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
@@ -1581,11 +1571,6 @@
         "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
         "title": "HLSL 着色器",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-A842D2FC-C191-452B-9229-3AC15DC00179.htm"
-      },
-      {
-        "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
-        "title": "HLSL 着色器疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-06252A3F-603B-49C0-950D-AEF2FCC50CAD.htm"
       },
       {
         "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
@@ -1861,11 +1846,6 @@
         "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
         "title": "“条件”(Condition)节点",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-57CE3E34-3C8D-4F15-971B-219DA6176836.htm"
-      },
-      {
-        "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
-        "title": "“环境雾”(Environment Fog)问题的疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-D6A633D4-57F3-48A9-9214-9A76DD9A598E.htm"
       },
       {
         "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
@@ -2289,11 +2269,6 @@
       },
       {
         "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
-        "title": "凹凸贴图疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-0471FC59-0E77-4EE0-8BD4-F60E2B4FD5AD.htm"
-      },
-      {
-        "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
         "title": "凹陷(Crater)",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-0EBDAA97-8E2E-4268-9B33-6DD177693B30.htm"
       },
@@ -2514,11 +2489,6 @@
       },
       {
         "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
-        "title": "在 Hypershade 中不显示节点的疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-30D908F0-618F-4893-8354-18FD31C9BA05.htm"
-      },
-      {
-        "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
         "title": "在 Hypershade 中创建和连接节点",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-F90898A6-55E7-47EA-8542-8A9FD9CBC561.htm"
       },
@@ -2694,11 +2664,6 @@
       },
       {
         "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
-        "title": "导出 ShaderFX 材质疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-85FB1646-700E-46A5-A77D-2F26A1AAEE5D.htm"
-      },
-      {
-        "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
         "title": "导出 Stingray 基于物理的着色器",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-CD59A6C7-CC54-4037-8800-6569711FBD78.htm"
       },
@@ -2809,11 +2774,6 @@
       },
       {
         "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
-        "title": "影片文件加载速度慢的疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-54F46A81-A5D7-4EE4-BDCD-E09B070D1FD6.htm"
-      },
-      {
-        "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
         "title": "投影(Projection)",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-B7E73748-5F8E-4E66-BE88-DF3C2A3DF438.htm"
       },
@@ -2831,16 +2791,6 @@
         "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
         "title": "整体应用曲面",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-0E4D94A5-E453-4FA9-9B10-ADC63A20DB0C.htm"
-      },
-      {
-        "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
-        "title": "无法在图像平面上播放影片疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-549250FD-CEAD-400B-B72D-3755B1D4F773.htm"
-      },
-      {
-        "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
-        "title": "无法看到 place2DTexture 样例疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-850B68C1-8838-4893-B5E6-5BBAAE1E9237.htm"
       },
       {
         "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
@@ -2874,11 +2824,6 @@
       },
       {
         "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
-        "title": "更改多边形拓扑可能会影响着色器指定的疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-E9842403-1EBE-4C46-9657-E0A09F69BF29.htm"
-      },
-      {
-        "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
         "title": "更改边界框比例",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-E9789227-4D12-400B-AF2E-52DD7E08C4A8.htm"
       },
@@ -2901,11 +2846,6 @@
         "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
         "title": "有关使用 ShaderFX 的提示和技巧",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-05D66C65-0B08-4EED-AD13-E40A6A3C74B4.htm"
-      },
-      {
-        "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
-        "title": "有关立方体贴图交换前后图像的疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-C1548355-4FBC-40C7-85E6-AE0463C604AD.htm"
       },
       {
         "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
@@ -2966,11 +2906,6 @@
         "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
         "title": "水(Water)",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-A61FA5B0-C62F-4802-9D06-D550A6F5BF46.htm"
-      },
-      {
-        "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
-        "title": "法线贴图疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-CEFA09DB-8D7A-4059-8434-551387A88E8C.htm"
       },
       {
         "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
@@ -3036,11 +2971,6 @@
         "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
         "title": "烘焙照明和颜色",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-F68686B3-965D-412A-87BA-CFAC81905ED9.htm"
-      },
-      {
-        "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
-        "title": "环境反射贴图疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-B0308D54-58DE-40B3-A7B6-A1914FB527C8.htm"
       },
       {
         "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
@@ -3136,11 +3066,6 @@
         "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
         "title": "粒子采样器(Particle Sampler)",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-002CEE92-8182-4804-8E4E-6ACA0FE98902.htm"
-      },
-      {
-        "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
-        "title": "粒状或锯齿状背景图像平面疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-0B75B850-4894-4FC4-A157-1C49AED71A40.htm"
       },
       {
         "reason": "Maya-LightingShading 仅取照明章或标题含纹理/颜色空间；本章=着色",
@@ -3834,11 +3759,6 @@
       },
       {
         "reason": "书 Autodesk-Installation-Admin-ODIS 不在整本纳入清单（9 本）内",
-        "title": "为网络规划和安装软件许可",
-        "url": "https://help.autodesk.com/cloudhelp/CHS/Autodesk-Installation-Admin-ODIS/files/GUID-AD817657-43BD-4571-B887-5326B358C54C.htm"
-      },
-      {
-        "reason": "书 Autodesk-Installation-Admin-ODIS 不在整本纳入清单（9 本）内",
         "title": "为软件展开作准备",
         "url": "https://help.autodesk.com/cloudhelp/CHS/Autodesk-Installation-Admin-ODIS/files/deployment_workflow_prepare_deployment.htm"
       },
@@ -3976,11 +3896,6 @@
         "reason": "书 Bifrost-Common_id 不在整本纳入清单（9 本）内",
         "title": "Arnold_ray_bitmask",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Bifrost-Common/files/reference/geometries/Bifrost_Common_reference_geometries_Arnold_ray_bitmask_html.html"
-      },
-      {
-        "reason": "书 Bifrost-Common_id 不在整本纳入清单（9 本）内",
-        "title": "Bifrost 图表疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Bifrost-Common/files/Bifrost_Common_troubleshooting_html.html"
       },
       {
         "reason": "书 Bifrost-Common_id 不在整本纳入清单（9 本）内",
@@ -4761,11 +4676,6 @@
         "reason": "书 Bifrost-Common_id 不在整本纳入清单（9 本）内",
         "title": "drag_influence",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Bifrost-Common/files/reference/geometries/Bifrost_Common_reference_geometries_drag_influence_html.html"
-      },
-      {
-        "reason": "书 Bifrost-Common_id 不在整本纳入清单（9 本）内",
-        "title": "dump_object 节点",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Bifrost-Common/files/reference/bif/Bifrost_Common_reference_bif_dump_object_html.html"
       },
       {
         "reason": "书 Bifrost-Common_id 不在整本纳入清单（9 本）内",
@@ -7089,11 +6999,6 @@
       },
       {
         "reason": "书 Bifrost-Common_id 不在整本纳入清单（9 本）内",
-        "title": "从缓存文件恢复模拟",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Bifrost-Common/files/simulate-dynamic-effects/Bifrost_Common_simulate_dynamic_effects_resume_from_cache_html.html"
-      },
-      {
-        "reason": "书 Bifrost-Common_id 不在整本纳入清单（9 本）内",
         "title": "代理场",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Bifrost-Common/files/build-a-graph/fields/Bifrost_Common_build_a_graph_fields_proxy_fields_html.html"
       },
@@ -7369,16 +7274,6 @@
       },
       {
         "reason": "书 Bifrost-Common_id 不在整本纳入清单（9 本）内",
-        "title": "模拟结果不显示",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Bifrost-Common/files/troubleshooting/Bifrost_Common_troubleshooting_simulation_does_not_display_html.html"
-      },
-      {
-        "reason": "书 Bifrost-Common_id 不在整本纳入清单（9 本）内",
-        "title": "消息：“检测到 TDR。”",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Bifrost-Common/files/troubleshooting/Bifrost_Common_troubleshooting_TDR_detected_html.html"
-      },
-      {
-        "reason": "书 Bifrost-Common_id 不在整本纳入清单（9 本）内",
         "title": "添加 value 节点",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Bifrost-Common/files/build-a-graph/add-a-node/Bifrost_Common_build_a_graph_add_a_node_add_a_value_node_html.html"
       },
@@ -7466,11 +7361,6 @@
         "reason": "书 Bifrost-Common_id 不在整本纳入清单（9 本）内",
         "title": "设置颗粒模拟",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Bifrost-Common/files/simulate-dynamic-effects/create-mpm-simulations/Bifrost_Common_simulate_dynamic_effects_create_mpm_simulations_set_up_a_granular_simulation_html.html"
-      },
-      {
-        "reason": "书 Bifrost-Common_id 不在整本纳入清单（9 本）内",
-        "title": "诊断和调试图表",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Bifrost-Common/files/build-a-graph/Bifrost_Common_build_a_graph_diagnose_and_debug_graphs_html.html"
       },
       {
         "reason": "书 Bifrost-Common_id 不在整本纳入清单（9 本）内",
@@ -7599,11 +7489,6 @@
       },
       {
         "reason": "书 Installation-Maya 不在整本纳入清单（9 本）内",
-        "title": "Maya 安装和许可",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Installation-Maya/files/GUID-F342CAB1-6319-4D0C-85B8-C0AF9B05B705.htm"
-      },
-      {
-        "reason": "书 Installation-Maya 不在整本纳入清单（9 本）内",
         "title": "Maya 所需的其他 Linux 库",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Installation-Maya/files/GUID-D2B5433C-E0D2-421B-9BD8-24FED217FD7F.htm"
       },
@@ -7611,11 +7496,6 @@
         "reason": "书 Installation-Maya 不在整本纳入清单（9 本）内",
         "title": "使用 rpm 软件包在 Linux 上安装 Maya",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Installation-Maya/files/GUID-E7E054E1-0E32-4B3C-88F9-BF820EB45BE5.htm"
-      },
-      {
-        "reason": "书 Installation-Maya 不在整本纳入清单（9 本）内",
-        "title": "借用许可",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Installation-Maya/files/GUID-F16A8C2A-5A9D-49FC-9DF5-D25F06DCC6C4.htm"
       },
       {
         "reason": "书 Installation-Maya 不在整本纳入清单（9 本）内",
@@ -7631,11 +7511,6 @@
         "reason": "书 Installation-Maya 不在整本纳入清单（9 本）内",
         "title": "基本 Maya 网络部署",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Installation-Maya/files/GUID-FBFA0C09-8E21-4EA1-95CD-E47A40D7C9F0.htm"
-      },
-      {
-        "reason": "书 Installation-Maya 不在整本纳入清单（9 本）内",
-        "title": "失去与许可服务器的连接",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Installation-Maya/files/GUID-730962C7-3BED-49AE-8E03-07F9E2C54FB7.htm"
       },
       {
         "reason": "书 Installation-Maya 不在整本纳入清单（9 本）内",
@@ -8064,16 +7939,6 @@
       },
       {
         "reason": "书 Maya-Bifrost 不在整本纳入清单（9 本）内",
-        "title": "显示 Bifröst 液体中的诊断颜色：工作流示例",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Bifrost/files/GUID-742ABDDE-574E-4E11-AC36-221BDA9C8653.htm"
-      },
-      {
-        "reason": "书 Maya-Bifrost 不在整本纳入清单（9 本）内",
-        "title": "显示 Bifröst 诊断信息",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Bifrost/files/GUID-57A350CE-8A49-42A7-B72D-386B17A5A67C.htm"
-      },
-      {
-        "reason": "书 Maya-Bifrost 不在整本纳入清单（9 本）内",
         "title": "暂时禁用 Bifröst 模拟",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Bifrost/files/GUID-82E3A152-6EFC-42A6-A68E-C30CA314C1F6.htm"
       },
@@ -8121,11 +7986,6 @@
         "reason": "书 Maya-Bifrost 不在整本纳入清单（9 本）内",
         "title": "缓存 BOSS 解算器和影响",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Bifrost/files/GUID-9A660A00-80DC-4792-A33A-3F0CC3B0EB90.htm"
-      },
-      {
-        "reason": "书 Maya-Bifrost 不在整本纳入清单（9 本）内",
-        "title": "自动从最后缓存帧重新启动缓存（仅限 Bifröst 液体）",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Bifrost/files/GUID-8163083A-232B-4F37-874C-125B6917DA86.htm"
       },
       {
         "reason": "书 Maya-Bifrost 不在整本纳入清单（9 本）内",
@@ -8421,16 +8281,6 @@
         "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
         "title": "XGen 生成器属性",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-DF8E4397-ABC6-43AD-946B-27BD270425B1.htm"
-      },
-      {
-        "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
-        "title": "XGen 用户提示",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-6E167483-334A-4C9F-AFC4-11F9FAAC1663.htm"
-      },
-      {
-        "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
-        "title": "XGen 疑难解答和常见问题解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-463D1930-F3FC-4C65-8C16-5A2927EDE8A7.htm"
       },
       {
         "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
@@ -8749,11 +8599,6 @@
       },
       {
         "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
-        "title": "nCloth 提示和疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-5FD537E0-CEB4-4933-A6E2-0CF100F5CF74.htm"
-      },
-      {
-        "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
         "title": "nCloth 树",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-43FC6CF0-5EC6-4969-BD62-7CE9DE9E733C.htm"
       },
@@ -8869,11 +8714,6 @@
       },
       {
         "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
-        "title": "nHair 疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-2ACCE1A4-AC13-4153-B74D-CB2A03C9ABC1.htm"
-      },
-      {
-        "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
         "title": "nHair 的基本工作流",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-6C60BBC7-0ACF-49C2-89E4-7DF9E278EA34.htm"
       },
@@ -8946,11 +8786,6 @@
         "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
         "title": "“Paint Effects 工具”(Paint Effects Tool)的工作方式",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-78B3000D-93A0-4C21-9D5D-F3893418A628.htm"
-      },
-      {
-        "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
-        "title": "“Paint Effects”疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-A26EDCB8-9F6E-4752-B292-CED92A43B3D2.htm"
       },
       {
         "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
@@ -9261,11 +9096,6 @@
         "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
         "title": "优化 nCloth 转化的几何体",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-9AB21360-F979-48BD-8A13-A5C94CDA6750.htm"
-      },
-      {
-        "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
-        "title": "优化 nCloth",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-AFB680AE-60E3-4F22-A646-C32E1FAF1E26.htm"
       },
       {
         "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
@@ -9641,11 +9471,6 @@
         "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
         "title": "修饰笔刷(Brushes)",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-09E7B162-3676-4B98-9E7A-B60BE0870619.htm"
-      },
-      {
-        "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
-        "title": "关于 XGen 的常见问题解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-4E71E00B-ACCC-470D-A615-A65DEF98BF36.htm"
       },
       {
         "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
@@ -10334,11 +10159,6 @@
       },
       {
         "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
-        "title": "提示",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-B25CF37F-9A91-4380-833C-10EC53E54BCE.htm"
-      },
-      {
-        "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
         "title": "提高 nCloth 碰撞质量",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-6BF99673-E935-48ED-B371-C62EFD380F1B.htm"
       },
@@ -10491,11 +10311,6 @@
         "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
         "title": "画布上的涂抹和模糊绘制",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-28295A87-A2F1-4B2E-8DDD-3FE8B8FFBCD6.htm"
-      },
-      {
-        "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
-        "title": "疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-B80D5B14-B296-43DD-9E15-971BC68E06C1.htm"
       },
       {
         "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
@@ -10751,11 +10566,6 @@
         "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
         "title": "角色效果和环境构建",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-BA239D61-402F-4EF0-AAE6-AE19EAD8DA50.htm"
-      },
-      {
-        "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
-        "title": "解决 XGen 错误",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-305B2A61-50FA-4B5E-B7B4-BB1CCC743E94.htm"
       },
       {
         "reason": "书 Maya-CharEffEnvBuild 不在整本纳入清单（9 本）内",
@@ -11041,11 +10851,6 @@
         "reason": "书 Maya-CharacterAnimation 不在整本纳入清单（9 本）内",
         "title": "HumanIK 角色结构",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharacterAnimation/files/GUID-5DEFC6E5-033C-45D5-9A0E-224E7A35131B.htm"
-      },
-      {
-        "reason": "书 Maya-CharacterAnimation 不在整本纳入清单（9 本）内",
-        "title": "HumanIK 角色设置疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharacterAnimation/files/GUID-463A24CF-7CFE-490D-A6F4-E773426BFE04.htm"
       },
       {
         "reason": "书 Maya-CharacterAnimation 不在整本纳入清单（9 本）内",
@@ -11786,11 +11591,6 @@
         "reason": "书 Maya-CharacterAnimation 不在整本纳入清单（9 本）内",
         "title": "使用 IK 控制柄为关节设定姿势",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharacterAnimation/files/GUID-F0FCD6E5-A019-4184-B95D-998576B74E63.htm"
-      },
-      {
-        "reason": "书 Maya-CharacterAnimation 不在整本纳入清单（9 本）内",
-        "title": "使用 IK 解算器异常关节翻转的疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharacterAnimation/files/GUID-AD60045C-67FE-4367-8AB7-C5F26485740B.htm"
       },
       {
         "reason": "书 Maya-CharacterAnimation 不在整本纳入清单（9 本）内",
@@ -13069,11 +12869,6 @@
       },
       {
         "reason": "书 Maya-CharacterAnimation 不在整本纳入清单（9 本）内",
-        "title": "方向约束错误消息疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharacterAnimation/files/GUID-4CFEA7FF-AF63-489F-9DE1-72206F3594E4.htm"
-      },
-      {
-        "reason": "书 Maya-CharacterAnimation 不在整本纳入清单（9 本）内",
         "title": "旋转平面 IK 解算器",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharacterAnimation/files/GUID-9942FFB5-65C2-46E2-B5A3-297667A9FB5D.htm"
       },
@@ -14286,11 +14081,6 @@
         "reason": "书 Maya-CharacterAnimation 不在整本纳入清单（9 本）内",
         "title": "软修改变形器",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharacterAnimation/files/GUID-B93EE24C-9E77-41C6-AC26-341A41FADAD0.htm"
-      },
-      {
-        "reason": "书 Maya-CharacterAnimation 不在整本纳入清单（9 本）内",
-        "title": "达到绑定姿势疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharacterAnimation/files/GUID-D47C31C7-428F-4A54-B104-49C51F3856E5.htm"
       },
       {
         "reason": "书 Maya-CharacterAnimation 不在整本纳入清单（9 本）内",
@@ -16344,11 +16134,6 @@
       },
       {
         "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
-        "title": "MEL 调试功能",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-415B2E8F-0D70-45F9-B34A-B69DC6589681.htm"
-      },
-      {
-        "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
         "title": "Maya Python 库",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-49701DA7-9224-424D-93F7-EC1DA779C99C.htm"
       },
@@ -16754,21 +16539,6 @@
       },
       {
         "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
-        "title": "优化脚本",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-44D46962-ED89-4C6D-A446-4CF3F0D0DE85.htm"
-      },
-      {
-        "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
-        "title": "优化脚本和表达式速度",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-64B0ADDF-7939-456B-9F64-D90C8402803E.htm"
-      },
-      {
-        "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
-        "title": "优化表达式",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-B23EE5CE-B8D8-46DF-8BE4-0C24EAB0E3A2.htm"
-      },
-      {
-        "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
         "title": "使用 MEL 更改用户脚本位置",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-DB30AAB7-4639-4C3B-A479-7F26D953E0F2.htm"
       },
@@ -16776,11 +16546,6 @@
         "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
         "title": "使用 Python",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-55B63946-CDC9-42E5-9B6E-45EE45CFC7FC.htm"
-      },
-      {
-        "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
-        "title": "使用 catch 和 catchQuiet 处理错误",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-6B9DED33-05CD-4300-8845-B91F4F0B753F.htm"
       },
       {
         "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
@@ -16874,11 +16639,6 @@
       },
       {
         "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
-        "title": "减少冗余表达式执行",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-78D1A475-5B34-4F4C-9CFD-3BF3C769DB39.htm"
-      },
-      {
-        "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
         "title": "分隔符和空白",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-20F702F9-8A4A-4961-83FC-F231841EF92B.htm"
       },
@@ -16909,11 +16669,6 @@
       },
       {
         "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
-        "title": "初始化不同于指定",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-761FFD7D-895D-420B-B17D-0541FC3C4ECD.htm"
-      },
-      {
-        "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
         "title": "删除 UI 元素",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-C97BBDE6-A2E4-4C13-B1D9-79ACF55B0758.htm"
       },
@@ -16921,11 +16676,6 @@
         "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
         "title": "删除动画表达式",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-41D63734-AF72-4F10-A846-6C9554258680.htm"
-      },
-      {
-        "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
-        "title": "删除窗口后模型面板继续存在的疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-4D3EEFBA-B875-40D1-B09D-23A50C67D3F9.htm"
       },
       {
         "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
@@ -16959,11 +16709,6 @@
       },
       {
         "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
-        "title": "启动 MEL 分析器",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-91FC49A9-C2E4-4C89-9BDD-13A7C8704464.htm"
-      },
-      {
-        "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
         "title": "命名",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-A5138A1B-1455-4AA7-B7E9-9EB3977D149A.htm"
       },
@@ -16979,11 +16724,6 @@
       },
       {
         "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
-        "title": "在出错时显示调用堆栈",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-A54886EF-E285-431C-A6FA-53480C77B042.htm"
-      },
-      {
-        "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
         "title": "在表达式中使用自定义属性",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-85EA27B2-A551-4E48-BAE6-D7BF90CE4A8C.htm"
       },
@@ -16991,11 +16731,6 @@
         "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
         "title": "在表达式中执行 MEL 命令",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-BEA158CE-8115-4F1A-8BA8-7A324D679B04.htm"
-      },
-      {
-        "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
-        "title": "在表达式中执行 MEL 命令可能会有意外副作用",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-14730E8F-07ED-484E-8675-6745F05A98C8.htm"
       },
       {
         "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
@@ -17189,16 +16924,6 @@
       },
       {
         "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
-        "title": "常见表达式错误",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-81329293-78BD-4BFA-B655-5E69FE4937D2.htm"
-      },
-      {
-        "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
-        "title": "常见错误消息",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-8133FB66-9A39-4D4B-A3CA-7B3FB18A1F79.htm"
-      },
-      {
-        "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
         "title": "常见问题",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-C172ECB0-91BF-494D-81E6-6D5014A9C359.htm"
       },
@@ -17349,11 +17074,6 @@
       },
       {
         "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
-        "title": "显示错误行号",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-1D52B6D8-4258-472D-838E-77FB66DB29B1.htm"
-      },
-      {
-        "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
         "title": "曲线函数",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-768BD5F3-DDB3-4F47-9A84-FB5BA6346E1E.htm"
       },
@@ -17496,11 +17216,6 @@
         "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
         "title": "用于提升到幂的运算符是什么？",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-DBD303DC-34AD-4997-B85F-7E79FCC3D75C.htm"
-      },
-      {
-        "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
-        "title": "疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-741CB4B0-9F19-4A84-9B7A-FB0D28FD80AC.htm"
       },
       {
         "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
@@ -17654,11 +17369,6 @@
       },
       {
         "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
-        "title": "访问全局变量",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-29FD140E-70B7-4089-85C0-5A8F57A3AE2E.htm"
-      },
-      {
-        "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
         "title": "读取和写入文件",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-7D50AA7D-DA27-4D7F-BE15-F0F428E40755.htm"
       },
@@ -17666,11 +17376,6 @@
         "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
         "title": "调用程序",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-F04ED5B7-2DD0-48FF-959F-73D4487AF381.htm"
-      },
-      {
-        "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
-        "title": "调试、优化和疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-437ED0F8-DD27-4456-8107-EC82CED5230F.htm"
       },
       {
         "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
@@ -17719,11 +17424,6 @@
       },
       {
         "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
-        "title": "通过错误、警告和跟踪发出信号",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-7373CB68-7BF0-41BC-ACF4-5E751AAD39D8.htm"
-      },
-      {
-        "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
         "title": "重命名对象",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-0F481C57-E9E4-40DD-8979-33CEC34D4304.htm"
       },
@@ -17736,11 +17436,6 @@
         "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
         "title": "错误处理和消息",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-EB78EBE5-F572-4E0B-B283-A30AEA59D720.htm"
-      },
-      {
-        "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
-        "title": "错误消息格式",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-C2392D80-C25A-4E37-8F9C-2CBD47AAFB98.htm"
       },
       {
         "reason": "书 Maya-Scripting 不在整本纳入清单（9 本）内",
@@ -18124,11 +17819,6 @@
       },
       {
         "reason": "书 Maya-SimulationEffects 不在整本纳入清单（9 本）内",
-        "title": "nParticle 弹簧疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-DF7AA107-674D-4A24-80A6-B2392B7B9426.htm"
-      },
-      {
-        "reason": "书 Maya-SimulationEffects 不在整本纳入清单（9 本）内",
         "title": "nParticle 概念",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-605198E6-CC3F-427D-B510-DE21870A1DE4.htm"
       },
@@ -18136,11 +17826,6 @@
         "reason": "书 Maya-SimulationEffects 不在整本纳入清单（9 本）内",
         "title": "nParticle 每粒子属性",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-221C8309-4CFC-40B8-B8D0-CAA288122C69.htm"
-      },
-      {
-        "reason": "书 Maya-SimulationEffects 不在整本纳入清单（9 本）内",
-        "title": "nParticle 疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-F61DA729-37C1-4C19-97D5-0BC82DE3DAF6.htm"
       },
       {
         "reason": "书 Maya-SimulationEffects 不在整本纳入清单（9 本）内",
@@ -19509,11 +19194,6 @@
       },
       {
         "reason": "书 Maya-SimulationEffects 不在整本纳入清单（9 本）内",
-        "title": "开阔水面效果疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-510541E6-25DE-4DA7-8DBC-8F2B6DA045F1.htm"
-      },
-      {
-        "reason": "书 Maya-SimulationEffects 不在整本纳入清单（9 本）内",
         "title": "弹簧选项",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-88646881-1171-46A9-BECD-3975ADCB117D.htm"
       },
@@ -19546,11 +19226,6 @@
         "reason": "书 Maya-SimulationEffects 不在整本纳入清单（9 本）内",
         "title": "播放流体",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-F9E3A961-2C56-4644-81ED-C0984146BD0F.htm"
-      },
-      {
-        "reason": "书 Maya-SimulationEffects 不在整本纳入清单（9 本）内",
-        "title": "效果疑难解答",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-0747BDFA-3939-4C48-8115-66283E5F0F4C.htm"
       },
       {
         "reason": "书 Maya-SimulationEffects 不在整本纳入清单（9 本）内",
@@ -19806,11 +19481,6 @@
         "reason": "书 Maya-SimulationEffects 不在整本纳入清单（9 本）内",
         "title": "海洋(Oceans)",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-74194EAF-EBF5-41C7-AA3C-3E34012F5CC0.htm"
-      },
-      {
-        "reason": "书 Maya-SimulationEffects 不在整本纳入清单（9 本）内",
-        "title": "海洋沿地平线抖动",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-22744897-EBD6-4924-9584-C688FC7D36F9.htm"
       },
       {
         "reason": "书 Maya-SimulationEffects 不在整本纳入清单（9 本）内",
@@ -20464,11 +20134,6 @@
       },
       {
         "reason": "书 Maya-WhatsNewPR 不在整本纳入清单（9 本）内",
-        "title": "启动体验改进",
-        "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-WhatsNewPR/files/GUID-57F72C64-401A-4273-9B16-23FF57C46605.htm"
-      },
-      {
-        "reason": "书 Maya-WhatsNewPR 不在整本纳入清单（9 本）内",
         "title": "在 Maya 上显示二维叠加",
         "url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-WhatsNewPR/files/GUID-4F34D0CC-463C-4F17-9AD7-04740FEBDA11.htm"
       },
@@ -20557,6 +20222,57 @@
   },
   "created_at": "2026-10-09T09:53:56Z",
   "documents": {
+    "Maya 2022 新特性/Maya 2022 新特性/Maya 2022 新特性/启动体验改进.md": {
+      "content_hash": "sha256:c46a7e6fa432325e8766c0ae9d6d50c024184dc0ff5e26a6ce8acffeadc52e73",
+      "keywords": [
+        "Maya 2022 新特性",
+        "启动体验改进"
+      ],
+      "local_path": "Maya 2022 新特性/Maya 2022 新特性/Maya 2022 新特性/启动体验改进.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-WhatsNewPR/files/GUID-57F72C64-401A-4273-9B16-23FF57C46605.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-WhatsNewPR/files/GUID-57F72C64-401A-4273-9B16-23FF57C46605.htm",
+      "summary": "Maya 的启动体验已进行了多项改进，包括： - 更快的启动和退出速度 - 启动时不再强行获得焦点 - 记住“输出窗口”(Output Window)的状态 - 能够从以前的安装复制特定首选项 - 信息更丰富的新初始屏幕…",
+      "title": "启动体验改进",
+      "updated_at": "2026-10-10T11:15:04Z"
+    },
+    "Maya 安装补充/Maya 安装和许可/Maya 安装和许可.md": {
+      "content_hash": "sha256:5d73b25c0aefbf2ce132ea418f77750ffb336cf226c289aa14dc7a148d55571e",
+      "keywords": [
+        "Maya",
+        "Maya 安装和许可",
+        "安装和许可"
+      ],
+      "local_path": "Maya 安装补充/Maya 安装和许可/Maya 安装和许可.md",
+      "source_path": "/cloudhelp/2022/CHS/Installation-Maya/files/GUID-F342CAB1-6319-4D0C-85B8-C0AF9B05B705.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Installation-Maya/files/GUID-F342CAB1-6319-4D0C-85B8-C0AF9B05B705.htm",
+      "summary": "可以在单个主机或网络服务器上安装 Maya。无需先卸载先前版本即可安装新版本。可以同时安装多个版本的 Maya。 如果在安装新版本之前卸载先前版本的 Maya，这两个版本的许可类型和产品激活方法可能有所不同，并且可能需要…",
+      "title": "Maya 安装和许可",
+      "updated_at": "2026-10-10T11:12:12Z"
+    },
+    "Maya 安装补充/借用许可/借用许可.md": {
+      "content_hash": "sha256:a1d9536b16ecdeedb86526ebcde74f7309be115ea3a5a5b9350987feefe444e3",
+      "keywords": [
+        "借用许可"
+      ],
+      "local_path": "Maya 安装补充/借用许可/借用许可.md",
+      "source_path": "/cloudhelp/2022/CHS/Installation-Maya/files/GUID-F16A8C2A-5A9D-49FC-9DF5-D25F06DCC6C4.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Installation-Maya/files/GUID-F16A8C2A-5A9D-49FC-9DF5-D25F06DCC6C4.htm",
+      "summary": "借用许可会从许可服务器中移除许可，以便在脱机计算机上使用。 借用许可后，将在启动时自动使用借用的许可。您可以随时暂停此过程，而无需将许可返还给服务器。许可将按您最初借用许可时指定的日期自动返还给服务器。您也可以选择提前手…",
+      "title": "借用许可",
+      "updated_at": "2026-10-10T11:12:15Z"
+    },
+    "Maya 安装补充/失去与许可服务器的连接/失去与许可服务器的连接.md": {
+      "content_hash": "sha256:49513bd3f6431829a2df68975ca36e41a9e231fdf57a23f256d53e1b41d5d0e7",
+      "keywords": [
+        "失去与许可服务器的连接"
+      ],
+      "local_path": "Maya 安装补充/失去与许可服务器的连接/失去与许可服务器的连接.md",
+      "source_path": "/cloudhelp/2022/CHS/Installation-Maya/files/GUID-730962C7-3BED-49AE-8E03-07F9E2C54FB7.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Installation-Maya/files/GUID-730962C7-3BED-49AE-8E03-07F9E2C54FB7.htm",
+      "summary": "如果失去与网络服务器的连接，Maya 将在 120 分钟内尝试重新连接到服务器。 如果 120 分钟后尚未重新建立连接，您将有十分钟的宽限期来保存工作。 宽限期结束后，系统将提示您保存工作，而后 Maya 将退出。",
+      "title": "失去与许可服务器的连接",
+      "updated_at": "2026-10-10T11:12:17Z"
+    },
     "动画/Maya 中的非线性动画/Maya 中的非线性动画.md": {
       "content_hash": "sha256:c3e98828d7f1ccab6d54c5be37e6e26425d2eb43fea3c9a6c57124531c54eb00",
       "keywords": [
@@ -29074,6 +28790,89 @@
       "title": "过滤器和重采样器",
       "updated_at": "2026-10-09T12:26:32Z"
     },
+    "在 Bifrost Extension 中工作/Bifrost 图表疑难解答/Bifrost 图表疑难解答.md": {
+      "content_hash": "sha256:b8acdcfb68905486c5f582fdb391abdf83eee74951a5efdd47292ab29391c7a4",
+      "keywords": [
+        "Bifrost",
+        "Bifrost 图表疑难解答",
+        "图表疑难解答"
+      ],
+      "local_path": "在 Bifrost Extension 中工作/Bifrost 图表疑难解答/Bifrost 图表疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Bifrost-Common/files/Bifrost_Common_troubleshooting_html.html",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Bifrost-Common/files/Bifrost_Common_troubleshooting_html.html",
+      "summary": "以下是编辑和运行 Bifrost 图表时可能会遇到的一些问题的解决方案。 此部分中的页面 - 模拟结果不显示 - 消息：“检测到 TDR。”",
+      "title": "Bifrost 图表疑难解答",
+      "updated_at": "2026-10-10T11:12:19Z"
+    },
+    "在 Bifrost Extension 中工作/Bifrost 图表疑难解答/Bifrost 图表疑难解答/模拟结果不显示.md": {
+      "content_hash": "sha256:9856e84f303ebb642eacffe339a3eae5a7c1f658e5af79e885ff21eef5645f8c",
+      "keywords": [
+        "Bifrost 图表疑难解答",
+        "模拟结果不显示"
+      ],
+      "local_path": "在 Bifrost Extension 中工作/Bifrost 图表疑难解答/Bifrost 图表疑难解答/模拟结果不显示.md",
+      "source_path": "/cloudhelp/2022/CHS/Bifrost-Common/files/troubleshooting/Bifrost_Common_troubleshooting_simulation_does_not_display_html.html",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Bifrost-Common/files/troubleshooting/Bifrost_Common_troubleshooting_simulation_does_not_display_html.html",
+      "summary": "如果视口中不显示模拟结果，请检查一些事项。 - 确保图表未暂停。选择“编辑 > 恢复图表执行”(Edit > Resume Graph Execution)，转到模拟的第一帧，然后播放。 - 确保将主场景设置为在播放时播…",
+      "title": "模拟结果不显示",
+      "updated_at": "2026-10-10T11:12:21Z"
+    },
+    "在 Bifrost Extension 中工作/Bifrost 图表疑难解答/Bifrost 图表疑难解答/消息：“检测到 TDR。”.md": {
+      "content_hash": "sha256:20f52e9f4c0c25bb5e8905e38aef4741fd37b50f096f52084ee335dfcf2fdba2",
+      "keywords": [
+        "Bifrost 图表疑难解答",
+        "TDR",
+        "“检测到",
+        "消息"
+      ],
+      "local_path": "在 Bifrost Extension 中工作/Bifrost 图表疑难解答/Bifrost 图表疑难解答/消息：“检测到 TDR。”.md",
+      "source_path": "/cloudhelp/2022/CHS/Bifrost-Common/files/troubleshooting/Bifrost_Common_troubleshooting_TDR_detected_html.html",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Bifrost-Common/files/troubleshooting/Bifrost_Common_troubleshooting_TDR_detected_html.html",
+      "summary": "在 Windows 中，您可能会收到以下消息： “检测到 TDR。应用程序必须关闭。” 当 Bifrost 图表的结果需要占用较长时间进行计算和绘制（例如，极高分辨率体积或大量复杂实例）时，会出现此情况。如果 Windo…",
+      "title": "消息：“检测到 TDR。”",
+      "updated_at": "2026-10-10T11:12:23Z"
+    },
+    "在 Bifrost Extension 中工作/Bifrost 节点参考/Bifrost 节点参考/bif/dump_object 节点.md": {
+      "content_hash": "sha256:c01eaa7e0bdb8a760ef495259dba5b6097ff495cbabb422c621447b7df8fdd3c",
+      "keywords": [
+        "Bifrost 节点参考",
+        "bif",
+        "dump_object",
+        "节点"
+      ],
+      "local_path": "在 Bifrost Extension 中工作/Bifrost 节点参考/Bifrost 节点参考/bif/dump_object 节点.md",
+      "source_path": "/cloudhelp/2022/CHS/Bifrost-Common/files/reference/bif/Bifrost_Common_reference_bif_dump_object_html.html",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Bifrost-Common/files/reference/bif/Bifrost_Common_reference_bif_dump_object_html.html",
+      "summary": "将 Amino::Object 的内容转储到文件中。 要转储的 Amino::Object。它按原样穿过。 转储文件的名称。 用于保存日志文件的可选文件夹。如果未指定，则文件将写入临时目录。 如果大于 0，则为每个组件转…",
+      "title": "dump_object 节点",
+      "updated_at": "2026-10-10T11:12:26Z"
+    },
+    "在 Bifrost Extension 中工作/构建和修改图表/构建和修改图表/诊断和调试图表.md": {
+      "content_hash": "sha256:bf41b4a522b2e9f300ea00e4546d2a4e2b9e7051b090f41957286c7c97426224",
+      "keywords": [
+        "构建和修改图表",
+        "诊断和调试图表"
+      ],
+      "local_path": "在 Bifrost Extension 中工作/构建和修改图表/构建和修改图表/诊断和调试图表.md",
+      "source_path": "/cloudhelp/2022/CHS/Bifrost-Common/files/build-a-graph/Bifrost_Common_build_a_graph_diagnose_and_debug_graphs_html.html",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Bifrost-Common/files/build-a-graph/Bifrost_Common_build_a_graph_diagnose_and_debug_graphs_html.html",
+      "summary": "使用复杂图表时，您可能会遇到需要诊断和调试的问题。有一些基本工具可以帮助您完成此任务。 有问题的节点以不同颜色亮显。如果亮显的节点为复合，请进入以查看哪些内部节点有问题。 - 具有错误的节点以红色亮显。错误意味着无法编译…",
+      "title": "诊断和调试图表",
+      "updated_at": "2026-10-10T11:12:28Z"
+    },
+    "在 Bifrost Extension 中工作/模拟动力学效果/模拟动力学效果/从缓存文件恢复模拟.md": {
+      "content_hash": "sha256:593db4df6f122302661c40aec6f564193403731a34f30d78a55338ad4e9ce4ec",
+      "keywords": [
+        "从缓存文件恢复模拟",
+        "模拟动力学效果"
+      ],
+      "local_path": "在 Bifrost Extension 中工作/模拟动力学效果/模拟动力学效果/从缓存文件恢复模拟.md",
+      "source_path": "/cloudhelp/2022/CHS/Bifrost-Common/files/simulate-dynamic-effects/Bifrost_Common_simulate_dynamic_effects_resume_from_cache_html.html",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Bifrost-Common/files/simulate-dynamic-effects/Bifrost_Common_simulate_dynamic_effects_resume_from_cache_html.html",
+      "summary": "通过从缓存文件恢复模拟，可以对多个帧运行一次模拟，然后使用缓存结果作为模拟的新起点。 注意： 这不适用于 MPM 布料。 将模拟的初始部分缓存到文件，例如，使用 file_cache 节点。 - 缓存必须包含模拟所需的所…",
+      "title": "从缓存文件恢复模拟",
+      "updated_at": "2026-10-10T11:12:30Z"
+    },
     "基础功能/三维坐标/三维坐标.md": {
       "content_hash": "sha256:dbfeec3401098c0ac6b99765017a37de1cdfc08ce6f237f0ad4593d9a0cc1c60",
       "keywords": [
@@ -36154,6 +35953,18 @@
       "summary": "可通过使用图形触笔在所需组件上绘制来选择组件，例如顶点或面。 1. 选择要选择其上的组件的对象。 2. 双击工具箱 <!-- baize:img-hook downloaded=true reason=\"正文 244 字…",
       "title": "通过绘制选择组件",
       "updated_at": "2026-10-09T09:53:57Z"
+    },
+    "安装管理员手册/为网络规划和安装软件许可/为网络规划和安装软件许可.md": {
+      "content_hash": "sha256:16f83b7b0c97afe8dfcf2c390ef2d8671bb675603bd4bed9ec467236741f1c8c",
+      "keywords": [
+        "为网络规划和安装软件许可"
+      ],
+      "local_path": "安装管理员手册/为网络规划和安装软件许可/为网络规划和安装软件许可.md",
+      "source_path": "/cloudhelp/CHS/Autodesk-Installation-Admin-ODIS/files/GUID-AD817657-43BD-4571-B887-5326B358C54C.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/CHS/Autodesk-Installation-Admin-ODIS/files/GUID-AD817657-43BD-4571-B887-5326B358C54C.htm",
+      "summary": "此工作流将引导网络管理员完成为 Autodesk 产品规划、安装和配置许可的步骤。",
+      "title": "为网络规划和安装软件许可",
+      "updated_at": "2026-10-10T11:15:06Z"
     },
     "建模/UV/UV.md": {
       "content_hash": "sha256:d3eabe30f39b32fa2f36d2d11bf621c8786e3de1e06464e049f8c034fdf73d95",
@@ -46068,6 +45879,78 @@
       "title": "数据交换",
       "updated_at": "2026-10-09T10:17:01Z"
     },
+    "模拟和效果/nParticle/nParticle/nParticle 工作流/nParticle 疑难解答.md": {
+      "content_hash": "sha256:e664cbc37bb7871e75919b3c3dcb290f9687c45c35026bcb627b8d9f7b47c50f",
+      "keywords": [
+        "nParticle",
+        "nParticle 工作流",
+        "疑难解答"
+      ],
+      "local_path": "模拟和效果/nParticle/nParticle/nParticle 工作流/nParticle 疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-F61DA729-37C1-4C19-97D5-0BC82DE3DAF6.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-F61DA729-37C1-4C19-97D5-0BC82DE3DAF6.htm",
+      "summary": "当渲染类型设定为“点”(Points)或“多点”(Multipoint)并且启用“线平滑”(Line Smoothing)时，点大小受系统上图形卡的限制。请参见图形卡的硬件规格。 不能使用 worldVelocity 属…",
+      "title": "nParticle 疑难解答",
+      "updated_at": "2026-10-10T11:15:09Z"
+    },
+    "模拟和效果/nParticle/nParticle/nParticle 工作流/使用弹簧控制 nParticle/nParticle 弹簧疑难解答.md": {
+      "content_hash": "sha256:d822e23b3bc5545d7406059cd4f2d643a7cc6440e87ceb430c0d80968d081119",
+      "keywords": [
+        "nParticle",
+        "nParticle 工作流",
+        "使用弹簧控制 nParticle",
+        "弹簧疑难解答"
+      ],
+      "local_path": "模拟和效果/nParticle/nParticle/nParticle 工作流/使用弹簧控制 nParticle/nParticle 弹簧疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-DF7AA107-674D-4A24-80A6-B2392B7B9426.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-DF7AA107-674D-4A24-80A6-B2392B7B9426.htm",
+      "summary": "本节说明了使用弹簧时可能遇到的一些问题的解决方法。 通常可以通过增加动力学计算的过采样来解决弹簧展开或收缩过度的问题。增加过采样会减慢播放速度，但会提高弹簧的稳定性。 执行以下步骤以增加过采样： 1. 在“Fx”菜单集中…",
+      "title": "nParticle 弹簧疑难解答",
+      "updated_at": "2026-10-10T11:15:11Z"
+    },
+    "模拟和效果/“效果”(Effects)和“效果资产”(Effects Assets)/“效果”(Effects)和“效果资产”(Effects Assets)/Maya“效果”(Effects)/效果疑难解答.md": {
+      "content_hash": "sha256:dc56f01fb84493beb2366cb4a97d2c140e9e98bff89d9d13c35d54bd418221a8",
+      "keywords": [
+        "Maya“效果”(Effects)",
+        "“效果”(Effects)和“效果资产”(Effects Assets)",
+        "效果疑难解答"
+      ],
+      "local_path": "模拟和效果/“效果”(Effects)和“效果资产”(Effects Assets)/“效果”(Effects)和“效果资产”(Effects Assets)/Maya“效果”(Effects)/效果疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-0747BDFA-3939-4C48-8115-66283E5F0F4C.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-0747BDFA-3939-4C48-8115-66283E5F0F4C.htm",
+      "summary": "启用“透明水滴”(Transparent Blob)的着色器的“RtRefractColor”且禁用光线跟踪器时，“透明水滴”(Transparent Blob)不是透明的。 如果流动向上或向下移动周期性曲面，该曲面包裹…",
+      "title": "效果疑难解答",
+      "updated_at": "2026-10-10T11:15:13Z"
+    },
+    "模拟和效果/流体效果/流体效果/开阔水面效果/开阔水面效果疑难解答.md": {
+      "content_hash": "sha256:5e7887e97edaaa348addfd68c4c2b04bf1a8a2a520196552bd72ccf977db8594",
+      "keywords": [
+        "开阔水面效果",
+        "开阔水面效果疑难解答",
+        "流体效果"
+      ],
+      "local_path": "模拟和效果/流体效果/流体效果/开阔水面效果/开阔水面效果疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-510541E6-25DE-4DA7-8DBC-8F2B6DA045F1.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-510541E6-25DE-4DA7-8DBC-8F2B6DA045F1.htm",
+      "summary": "本节内容 - 海洋沿地平线抖动 父主题： 开阔水面效果",
+      "title": "开阔水面效果疑难解答",
+      "updated_at": "2026-10-10T11:15:15Z"
+    },
+    "模拟和效果/流体效果/流体效果/开阔水面效果/开阔水面效果疑难解答/海洋沿地平线抖动.md": {
+      "content_hash": "sha256:2f58ae71960b7e098df923abefc7e977c17b5e4b0463ac82414387eee6eb1579",
+      "keywords": [
+        "开阔水面效果",
+        "开阔水面效果疑难解答",
+        "流体效果",
+        "海洋沿地平线抖动"
+      ],
+      "local_path": "模拟和效果/流体效果/流体效果/开阔水面效果/开阔水面效果疑难解答/海洋沿地平线抖动.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-22744897-EBD6-4924-9584-C688FC7D36F9.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-22744897-EBD6-4924-9584-C688FC7D36F9.htm",
+      "summary": "海洋似乎沿其地平线发生抖动或振动。如果发生这种情况，可以沿海洋地平线平滑或过滤闪烁像素。 沿其地平线过滤海洋 1. 在场景视图中，选择似乎沿其地平线发生抖动的海洋。 2. 在“属性编辑器”(Attribute Edito…",
+      "title": "海洋沿地平线抖动",
+      "updated_at": "2026-10-10T11:15:17Z"
+    },
     "渲染/Maya 渲染设置/Maya 渲染设置.md": {
       "content_hash": "sha256:955ff30c6bfec5b5caf6617dfecd1579c63406e81df4d56241fb6df8af399077",
       "keywords": [
@@ -53852,6 +53735,23 @@
       "title": "ShaderFX 纹理和 Gamma 校正",
       "updated_at": "2026-10-09T12:54:17Z"
     },
+    "照明和着色/着色/着色/关于 ShaderFX/创建 ShaderFX 着色器/导出 ShaderFX 材质疑难解答.md": {
+      "content_hash": "sha256:ac9f184f166a2381771add43ff56f1f2719cb3d3e5d339340ddc5e21cc398b9b",
+      "keywords": [
+        "ShaderFX",
+        "关于 ShaderFX",
+        "创建 ShaderFX 着色器",
+        "导出",
+        "材质疑难解答",
+        "着色"
+      ],
+      "local_path": "照明和着色/着色/着色/关于 ShaderFX/创建 ShaderFX 着色器/导出 ShaderFX 材质疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-85FB1646-700E-46A5-A77D-2F26A1AAEE5D.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-85FB1646-700E-46A5-A77D-2F26A1AAEE5D.htm",
+      "summary": "当您按照将 ShaderFX 材质导出到 HLSL、CgFX 和 GLSL 中列出的步骤导出 ShaderFX 材质时，如果遇到问题，请尝试通过指定“硬件着色器/文件名”(HwShader/Filename)属性中的文件…",
+      "title": "导出 ShaderFX 材质疑难解答",
+      "updated_at": "2026-10-10T11:13:47Z"
+    },
     "照明和着色/着色/着色/关于 ShaderFX/创建基于物理的 Stingray 着色器/示例工作流程：使用基于物理的 Stingray 着色器融合两个纹理.md": {
       "content_hash": "sha256:a3f20603f51653876b9585b27398e98fcaa37fd7a3512ef407e3ed4116fec1b3",
       "keywords": [
@@ -53898,6 +53798,23 @@
       "title": "与 Maya 材质和纹理有关的疑难解答",
       "updated_at": "2026-10-09T12:54:17Z"
     },
+    "照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/DirectX 11 着色器不显示顶点颜色的疑难解答.md": {
+      "content_hash": "sha256:509886c5e6fd99654e5d5ad45150e0e6635efa44a2033838be1639e5fd7d1929",
+      "keywords": [
+        "11",
+        "DirectX",
+        "与 Maya 材质和纹理有关的疑难解答",
+        "关于着色和纹理曲面",
+        "着色",
+        "着色器不显示顶点颜色的疑难解答"
+      ],
+      "local_path": "照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/DirectX 11 着色器不显示顶点颜色的疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-F3CD9685-7310-4A4A-BFCC-5AED5FC3C507.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-F3CD9685-7310-4A4A-BFCC-5AED5FC3C507.htm",
+      "summary": "如果使用“绘制顶点颜色工具”(Paint Vertex Color Tool)在已应用 DirectX 11 着色器的对象上绘制顶点，且顶点颜色未按预期显示，则可能是因为 DirectX 11 着色器的“曲面数据”(Su…",
+      "title": "DirectX 11 着色器不显示顶点颜色的疑难解答",
+      "updated_at": "2026-10-10T11:13:49Z"
+    },
     "照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/Hypershade 中不显示材质和纹理样例的疑难解答.md": {
       "content_hash": "sha256:6d41684518007dbacef29526205775a955e855e5ea0f8c371cf2ea6288c8fabf",
       "keywords": [
@@ -53927,6 +53844,22 @@
       "title": "变形曲面上的游移纹理疑难解答",
       "updated_at": "2026-10-09T12:54:17Z"
     },
+    "照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/在 Hypershade 中不显示节点的疑难解答.md": {
+      "content_hash": "sha256:dfb825004305d7e423342cca1e08b4f568d206d0d98569567f141301e35447cb",
+      "keywords": [
+        "Hypershade",
+        "与 Maya 材质和纹理有关的疑难解答",
+        "中不显示节点的疑难解答",
+        "关于着色和纹理曲面",
+        "着色"
+      ],
+      "local_path": "照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/在 Hypershade 中不显示节点的疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-30D908F0-618F-4893-8354-18FD31C9BA05.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-30D908F0-618F-4893-8354-18FD31C9BA05.htm",
+      "summary": "您可以从 Hypershade 工作区中的图表以及从 Hypershade 浏览器过滤出节点类型。未显示的节点可能已被过滤掉。 若要在工作区中检查过滤器设置，请单击鼠标右键，然后从标记菜单中选择“显示 > 对象”(Sho…",
+      "title": "在 Hypershade 中不显示节点的疑难解答",
+      "updated_at": "2026-10-10T11:13:52Z"
+    },
     "照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/当我移动参照对象时纹理游移的疑难解答.md": {
       "content_hash": "sha256:3c0c84a95773e8dd10a3d1055c962982655850d0157ef0ef7173393a6d8fe9dd",
       "keywords": [
@@ -53941,6 +53874,21 @@
       "title": "当我移动参照对象时纹理游移的疑难解答",
       "updated_at": "2026-10-09T12:54:17Z"
     },
+    "照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/影片文件加载速度慢的疑难解答.md": {
+      "content_hash": "sha256:9b75e71dcb61d5c9c66ae22605a7b4d7dbba3b232f58e865f3c90bbee0496184",
+      "keywords": [
+        "与 Maya 材质和纹理有关的疑难解答",
+        "关于着色和纹理曲面",
+        "影片文件加载速度慢的疑难解答",
+        "着色"
+      ],
+      "local_path": "照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/影片文件加载速度慢的疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-54F46A81-A5D7-4EE4-BDCD-E09B070D1FD6.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-54F46A81-A5D7-4EE4-BDCD-E09B070D1FD6.htm",
+      "summary": "首次访问 MPEG 文件中的帧时，它的加载速度可能很慢。影片库必须扫描至 MPEG 文件的末尾以查看其中有多少帧，因为影片标头中不提供该信息。",
+      "title": "影片文件加载速度慢的疑难解答",
+      "updated_at": "2026-10-10T11:13:54Z"
+    },
     "照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/扭曲纹理疑难解答.md": {
       "content_hash": "sha256:731051a14e3de85385cab83ee2399bdcc288fb35fc52d62c5c11ffbd47e77fe0",
       "keywords": [
@@ -53954,6 +53902,67 @@
       "summary": "2D 纹理直接定位在 NURBS 曲面的 UV 空间中。如果第一次应用纹理时其显示为扭曲的，则可能需要编辑曲面方向、修复不均匀的 UV 值（修复纹理扭曲），甚至重建曲面。请参见纹理贴图。 注 如果曲面使用“修复纹理扭曲”…",
       "title": "扭曲纹理疑难解答",
       "updated_at": "2026-10-09T12:54:17Z"
+    },
+    "照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/无法在图像平面上播放影片疑难解答.md": {
+      "content_hash": "sha256:bae3ca089252eb49920293bea73cb2e039b98b61a063995a0f0108c7a8db3712",
+      "keywords": [
+        "与 Maya 材质和纹理有关的疑难解答",
+        "关于着色和纹理曲面",
+        "无法在图像平面上播放影片疑难解答",
+        "着色"
+      ],
+      "local_path": "照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/无法在图像平面上播放影片疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-549250FD-CEAD-400B-B72D-3755B1D4F773.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-549250FD-CEAD-400B-B72D-3755B1D4F773.htm",
+      "summary": "在 Maya 的图像平面中，并非所有影片文件格式都是可读的。例如，在 Windows 上，仅接受 .avi 文件。 请改用图像序列来创建已设置动画的图像背景。请参见创建已设置动画的图像平面。",
+      "title": "无法在图像平面上播放影片疑难解答",
+      "updated_at": "2026-10-10T11:13:56Z"
+    },
+    "照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/无法看到 place2DTexture 样例疑难解答.md": {
+      "content_hash": "sha256:904afb8fdf4480f61573fc2b5eb41d4fc318a46d549394fa506f319811594083",
+      "keywords": [
+        "place2DTexture",
+        "与 Maya 材质和纹理有关的疑难解答",
+        "关于着色和纹理曲面",
+        "无法看到",
+        "样例疑难解答",
+        "着色"
+      ],
+      "local_path": "照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/无法看到 place2DTexture 样例疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-850B68C1-8838-4893-B5E6-5BBAAE1E9237.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-850B68C1-8838-4893-B5E6-5BBAAE1E9237.htm",
+      "summary": "如果无法看到 place2dTexture 样例，请执行以下操作之一： - 选择纹理样例，然后单击“Hypershade”工具栏上的“输入连接”(Input Connections)按钮。 - 如果不存在 place2D…",
+      "title": "无法看到 place2DTexture 样例疑难解答",
+      "updated_at": "2026-10-10T11:13:58Z"
+    },
+    "照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/更改多边形拓扑可能会影响着色器指定的疑难解答.md": {
+      "content_hash": "sha256:27cbcb0632f20db31079117c77ed09b070b285d105181c37407ad39b44bef587",
+      "keywords": [
+        "与 Maya 材质和纹理有关的疑难解答",
+        "关于着色和纹理曲面",
+        "着色"
+      ],
+      "local_path": "照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/更改多边形拓扑可能会影响着色器指定的疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-E9842403-1EBE-4C46-9657-E0A09F69BF29.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-E9842403-1EBE-4C46-9657-E0A09F69BF29.htm",
+      "summary": "通过修改连接到对象的历史节点上的属性值更改多边形对象上的拓扑（面数）会对着色器指定产生负面影响。如果在该修改拓扑操作之前指定着色器，或在组件（面）级指定着色器（例如，将着色器指定给对象的部分而不是整个对象），将会发生这种…",
+      "title": "更改多边形拓扑可能会影响着色器指定的疑难解答",
+      "updated_at": "2026-10-10T11:14:00Z"
+    },
+    "照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/法线贴图疑难解答.md": {
+      "content_hash": "sha256:7854d0e7c7187bee09064cb1430c7680c8d6ec4304629bd3b68be7de1c835dd2",
+      "keywords": [
+        "与 Maya 材质和纹理有关的疑难解答",
+        "关于着色和纹理曲面",
+        "法线贴图疑难解答",
+        "着色"
+      ],
+      "local_path": "照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/法线贴图疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-CEFA09DB-8D7A-4059-8434-551387A88E8C.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-CEFA09DB-8D7A-4059-8434-551387A88E8C.htm",
+      "summary": "将法线贴图添加到已管理颜色的场景时，必须手动将贴图的颜色空间设置为“Raw”。这是因为法线贴图包含标量数据而非颜色数据，因此应当未经过颜色管理。启用颜色管理后，图像文件最初使用由“颜色管理”(Color Manageme…",
+      "title": "法线贴图疑难解答",
+      "updated_at": "2026-10-10T11:14:03Z"
     },
     "照明和着色/着色/着色/关于着色和纹理曲面/使用 Hypershade 的外观开发/暂停材质和纹理的样例生成以提高 Hypershade 性能.md": {
       "content_hash": "sha256:b94100ed44650f2fbc66b3807818c4338320aafc615b4619650abed1f0f68746",
@@ -53970,6 +53979,39 @@
       "summary": "如果场景中有许多材质和纹理，则通过启用和禁用样例生成，可以避免等待样例进行渲染。 可以在以下区域中启用 ( <!-- baize:img-hook downloaded=false reason=\"正文 888 字 ≥3…",
       "title": "暂停材质和纹理的样例生成以提高 Hypershade 性能",
       "updated_at": "2026-10-09T12:54:17Z"
+    },
+    "照明和着色/着色/着色/关于着色和纹理曲面/创建和渲染硬件着色器/HLSL 着色器疑难解答.md": {
+      "content_hash": "sha256:09ccd736f54d3fe8e1e3ad7e3ac4953b63cf23779f06b6c8c35311d18fdba2b2",
+      "keywords": [
+        "HLSL",
+        "关于着色和纹理曲面",
+        "创建和渲染硬件着色器",
+        "着色",
+        "着色器疑难解答"
+      ],
+      "local_path": "照明和着色/着色/着色/关于着色和纹理曲面/创建和渲染硬件着色器/HLSL 着色器疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-06252A3F-603B-49C0-950D-AEF2FCC50CAD.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-06252A3F-603B-49C0-950D-AEF2FCC50CAD.htm",
+      "summary": "如果 HLSL 效果未在 Maya 中正确显示，请执行下列步骤： 1. 选择着色节点，然后在“属性编辑器”(Attribute Editor)中打开“诊断”(Diagnostics)区域。该文本框包含尝试将着色器加载到 …",
+      "title": "HLSL 着色器疑难解答",
+      "updated_at": "2026-10-10T11:14:05Z"
+    },
+    "照明和着色/着色/着色/关于着色和纹理曲面/创建和渲染硬件着色器/创建 CgFX 着色器/CgFX 着色器疑难解答.md": {
+      "content_hash": "sha256:5db054556158a1211b8a6be0d3e94953fc0526f063ba910d0afc15c86b51a5be",
+      "keywords": [
+        "CgFX",
+        "关于着色和纹理曲面",
+        "创建 CgFX 着色器",
+        "创建和渲染硬件着色器",
+        "着色",
+        "着色器疑难解答"
+      ],
+      "local_path": "照明和着色/着色/着色/关于着色和纹理曲面/创建和渲染硬件着色器/创建 CgFX 着色器/CgFX 着色器疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-95E982CC-F95F-47F9-9CAA-DCBFD9907A31.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-95E982CC-F95F-47F9-9CAA-DCBFD9907A31.htm",
+      "summary": "默认渲染器、硬件渲染器和 Viewport 2.0 渲染器在 CgFX 状态指定行为方面存在差异。DepthMask 状态的默认值不同。该默认值是 CGFX 着色器未指定值时使用的值。对于不同的渲染器，默认值如下所示： …",
+      "title": "CgFX 着色器疑难解答",
+      "updated_at": "2026-10-10T11:14:07Z"
     },
     "照明和着色/着色/着色/关于着色和纹理曲面/创建和渲染硬件着色器/创建 CgFX 着色器/CgFX 着色器的纹理坐标系的方向.md": {
       "content_hash": "sha256:83631d43501ec7d840801d0653bfad1d4a0d5005a998d2eea242bbd3274c1057",
@@ -54558,6 +54600,51 @@
       "title": "预览 Ptex 纹理",
       "updated_at": "2026-10-09T12:54:17Z"
     },
+    "照明和着色/着色/着色/反射和环境/有关立方体贴图交换前后图像的疑难解答.md": {
+      "content_hash": "sha256:182a8bb35048d06b02f3669f39b24c79bd8ff1916b94757d5169baca855921ab",
+      "keywords": [
+        "反射和环境",
+        "有关立方体贴图交换前后图像的疑难解答",
+        "着色"
+      ],
+      "local_path": "照明和着色/着色/着色/反射和环境/有关立方体贴图交换前后图像的疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-C1548355-4FBC-40C7-85E6-AE0463C604AD.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-C1548355-4FBC-40C7-85E6-AE0463C604AD.htm",
+      "summary": "硬件渲染的环境立方体贴图与带纹理的 3D 视图匹配，但与软件渲染的结果相比，前后图像将交换。 如果希望硬件渲染的结果匹配软件渲染的结果（但不会匹配硬件纹理场景视图），请打开立方体贴图的“属性编辑器”(Attribute …",
+      "title": "有关立方体贴图交换前后图像的疑难解答",
+      "updated_at": "2026-10-10T11:14:09Z"
+    },
+    "照明和着色/着色/着色/反射和环境/环境反射贴图疑难解答.md": {
+      "content_hash": "sha256:e1bb2a30cc647990ce5427afc67f4ac3f8d6b9d11d83ab705c87f4d2c705ba59",
+      "keywords": [
+        "反射和环境",
+        "环境反射贴图疑难解答",
+        "着色"
+      ],
+      "local_path": "照明和着色/着色/着色/反射和环境/环境反射贴图疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-B0308D54-58DE-40B3-A7B6-A1914FB527C8.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-B0308D54-58DE-40B3-A7B6-A1914FB527C8.htm",
+      "summary": "环境反射贴图必须映射到反射的颜色通道 球体和立方体环境贴图仅支持反射颜色通道。将一个通道指定到另一个通道后，将产生未定义的结果。",
+      "title": "环境反射贴图疑难解答",
+      "updated_at": "2026-10-10T11:14:11Z"
+    },
+    "照明和着色/着色/着色/大气/“环境雾”(Environment Fog)问题的疑难解答.md": {
+      "content_hash": "sha256:47d0efce9bded0a3e732525e2e09338799ca417f9f58adf31ec4114d95de6d51",
+      "keywords": [
+        "Environment",
+        "Fog",
+        "“环境雾”",
+        "大气",
+        "着色",
+        "问题的疑难解答"
+      ],
+      "local_path": "照明和着色/着色/着色/大气/“环境雾”(Environment Fog)问题的疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-D6A633D4-57F3-48A9-9214-9A76DD9A598E.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-D6A633D4-57F3-48A9-9214-9A76DD9A598E.htm",
+      "summary": "您可能会注意到，渲染图像的环境雾中存在以下问题： 请将环境雾灯光的“环境光明暗处理”(Ambient Shade)设定为 0。 执行下列操作之一： - 为环境雾形状启用“着色采样数覆盖”(Shading Samples …",
+      "title": "“环境雾”(Environment Fog)问题的疑难解答",
+      "updated_at": "2026-10-10T11:14:14Z"
+    },
     "照明和着色/着色/着色/烘焙纹理和预照明.md": {
       "content_hash": "sha256:2d13280c24990f8d1a731482cd9440d9b301df0213940b0e428d6a227a71c511",
       "keywords": [
@@ -54774,6 +54861,35 @@
       "summary": "“颜色重映射”(Color Remap)将颜色贴图应用于纹理。它是唯一的公用“效果环境”(Effects Environment)纹理属性。“颜色重映射”(Color Remap)纹理的 U 值将映射到原始纹理的色调，且…",
       "title": "公用环境纹理属性",
       "updated_at": "2026-10-09T12:54:17Z"
+    },
+    "照明和着色/着色/着色/背景和图像平面/图像平面/粒状或锯齿状背景图像平面疑难解答.md": {
+      "content_hash": "sha256:e9c855aa7f70b981702b520cab8722eadc34fbacee04c212db9bb7f9ee26e687",
+      "keywords": [
+        "图像平面",
+        "着色",
+        "粒状或锯齿状背景图像平面疑难解答",
+        "背景和图像平面"
+      ],
+      "local_path": "照明和着色/着色/着色/背景和图像平面/图像平面/粒状或锯齿状背景图像平面疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-0B75B850-4894-4FC4-A157-1C49AED71A40.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-0B75B850-4894-4FC4-A157-1C49AED71A40.htm",
+      "summary": "请执行下列任一操作： - 为图像平面增大“着色采样数”(Shading Samples)和“最大着色采样数”(Max Shading Samples)（至产生可接受结果的最小值）。 - 解决方法：渲染不包含背景图像的场景…",
+      "title": "粒状或锯齿状背景图像平面疑难解答",
+      "updated_at": "2026-10-10T11:14:16Z"
+    },
+    "照明和着色/着色/着色/表面起伏/凹凸贴图疑难解答.md": {
+      "content_hash": "sha256:dba2fce7a2af8b80bb837f5e3d29d937a926b330661a8d8d46abc20fdefd0312",
+      "keywords": [
+        "凹凸贴图疑难解答",
+        "着色",
+        "表面起伏"
+      ],
+      "local_path": "照明和着色/着色/着色/表面起伏/凹凸贴图疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-0471FC59-0E77-4EE0-8BD4-F60E2B4FD5AD.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-0471FC59-0E77-4EE0-8BD4-F60E2B4FD5AD.htm",
+      "summary": "凹凸贴图的外观取决于贴图文件纹理的尺寸，或取决于“渲染设置”(Render Settings)中的凹凸分辨率和预设质量。如果更改分辨率，则也将更改凹凸外观。 调整凹凸深度，以还原为所需外观。",
+      "title": "凹凸贴图疑难解答",
+      "updated_at": "2026-10-10T11:14:18Z"
     },
     "照明和着色/着色/着色/表面起伏/模糊的文件纹理看起来清楚而不模糊的疑难解答.md": {
       "content_hash": "sha256:9510c11cd39cddc0cfe7db6c34449c3f06ee404ad3cd8bbdd0dcead26075f724",
@@ -58300,6 +58416,296 @@
       "title": "检查 Maya 版本",
       "updated_at": "2026-10-09T10:17:01Z"
     },
+    "脚本/MEL 和表达式/MEL 和表达式/MEL 窗口和编辑器/MEL 分析器/启动 MEL 分析器.md": {
+      "content_hash": "sha256:e31392d2dd21137823ea0d9ec02c13395f0ccd2b08497026c74918d420742697",
+      "keywords": [
+        "MEL",
+        "MEL 分析器",
+        "MEL 和表达式",
+        "MEL 窗口和编辑器",
+        "分析器",
+        "启动"
+      ],
+      "local_path": "脚本/MEL 和表达式/MEL 和表达式/MEL 窗口和编辑器/MEL 分析器/启动 MEL 分析器.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-91FC49A9-C2E4-4C89-9BDD-13A7C8704464.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-91FC49A9-C2E4-4C89-9BDD-13A7C8704464.htm",
+      "summary": "启动 MEL 分析器 1. 在 Maya 中，打开“插件管理器”(Plug-in Manager)（“窗口 > 设置/首选项 > 插件管理器”(Windows > Settings/Preferences > Plug-…",
+      "title": "启动 MEL 分析器",
+      "updated_at": "2026-10-10T11:15:19Z"
+    },
+    "脚本/MEL 和表达式/MEL 和表达式/有关 MEL 的常见问题解答/任务/删除窗口后模型面板继续存在的疑难解答.md": {
+      "content_hash": "sha256:370fc4f8de0c5a87ae66f7cb9e50d692aaf6baf97c1660d5a37be1342b33d06a",
+      "keywords": [
+        "MEL 和表达式",
+        "任务",
+        "删除窗口后模型面板继续存在的疑难解答",
+        "有关 MEL 的常见问题解答"
+      ],
+      "local_path": "脚本/MEL 和表达式/MEL 和表达式/有关 MEL 的常见问题解答/任务/删除窗口后模型面板继续存在的疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-4D3EEFBA-B875-40D1-B09D-23A50C67D3F9.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-4D3EEFBA-B875-40D1-B09D-23A50C67D3F9.htm",
+      "summary": "删除窗口后，还必须使用 deleteUI 命令手动删除其关联的 modelPanel。删除窗口时，不会自动删除模型面板。 例如： // Create a window called myWindow window -wh…",
+      "title": "删除窗口后模型面板继续存在的疑难解答",
+      "updated_at": "2026-10-10T11:15:21Z"
+    },
+    "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答.md": {
+      "content_hash": "sha256:b912df5660f18c22534d3e16b39b88f9c8909007558b290a2692cde7a88ed26f",
+      "keywords": [
+        "MEL 和表达式",
+        "优化和疑难解答",
+        "调试"
+      ],
+      "local_path": "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-437ED0F8-DD27-4456-8107-EC82CED5230F.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-437ED0F8-DD27-4456-8107-EC82CED5230F.htm",
+      "summary": "本节内容 - MEL 调试功能 - 优化脚本和表达式速度 - 疑难解答 父主题： MEL 和表达式",
+      "title": "调试、优化和疑难解答",
+      "updated_at": "2026-10-10T11:15:23Z"
+    },
+    "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/MEL 调试功能.md": {
+      "content_hash": "sha256:18febc6a236796974550a43b593a3c5e2da39dbffd14203437c097cd8c41307d",
+      "keywords": [
+        "MEL",
+        "MEL 和表达式",
+        "调试、优化和疑难解答",
+        "调试功能"
+      ],
+      "local_path": "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/MEL 调试功能.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-415B2E8F-0D70-45F9-B34A-B69DC6589681.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-415B2E8F-0D70-45F9-B34A-B69DC6589681.htm",
+      "summary": "本节内容 - 通过错误、警告和跟踪发出信号 - 使用 catch 和 catchQuiet 处理错误 - 显示错误行号 - 在出错时显示调用堆栈 父主题： 调试、优化和疑难解答",
+      "title": "MEL 调试功能",
+      "updated_at": "2026-10-10T11:14:20Z"
+    },
+    "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/MEL 调试功能/使用 catch 和 catchQuiet 处理错误.md": {
+      "content_hash": "sha256:210d0d6d9d9b5cd40ec131d6ea74c37b4866f9254d0dc5f89cc86271eb3e77bf",
+      "keywords": [
+        "MEL 和表达式",
+        "MEL 调试功能",
+        "catch",
+        "catchQuiet",
+        "使用",
+        "处理错误",
+        "调试、优化和疑难解答"
+      ],
+      "local_path": "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/MEL 调试功能/使用 catch 和 catchQuiet 处理错误.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-6B9DED33-05CD-4300-8845-B91F4F0B753F.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-6B9DED33-05CD-4300-8845-B91F4F0B753F.htm",
+      "summary": "catch 语句将对一个表达式求值，并在表达式出现错误，但不会停止脚本时返回 true（如 catch 之外的错误）。 这允许您测试 if 语句中的指定或命令的执行，并在 catch 返回 true 时运行错误处理代码。…",
+      "title": "使用 catch 和 catchQuiet 处理错误",
+      "updated_at": "2026-10-10T11:15:25Z"
+    },
+    "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/MEL 调试功能/在出错时显示调用堆栈.md": {
+      "content_hash": "sha256:3df8cda2fb7a6d62c4907140f699a69d22660bfa0fbbf8c164e4a2243ab16bc3",
+      "keywords": [
+        "MEL 和表达式",
+        "MEL 调试功能",
+        "在出错时显示调用堆栈",
+        "调试、优化和疑难解答"
+      ],
+      "local_path": "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/MEL 调试功能/在出错时显示调用堆栈.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-A54886EF-E285-431C-A6FA-53480C77B042.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-A54886EF-E285-431C-A6FA-53480C77B042.htm",
+      "summary": "在开始创建复杂的可重用脚本时，您经常会遇到各种脚本中定义的各种过程相互调用的情况。 出现错误时，了解调用堆栈通常非常有用：哪个过程调用哪个过程，后者又调用哪个过程，直到引发该错误的过程的顺序。这可帮助识别引起错误的情况。…",
+      "title": "在出错时显示调用堆栈",
+      "updated_at": "2026-10-10T11:15:28Z"
+    },
+    "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/MEL 调试功能/显示错误行号.md": {
+      "content_hash": "sha256:5c8f194b0ed49a29935ea7cabf2390ab328f4e8222415b81b7b3a7c277d50e70",
+      "keywords": [
+        "MEL 和表达式",
+        "MEL 调试功能",
+        "显示错误行号",
+        "调试、优化和疑难解答"
+      ],
+      "local_path": "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/MEL 调试功能/显示错误行号.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-1D52B6D8-4258-472D-838E-77FB66DB29B1.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-1D52B6D8-4258-472D-838E-77FB66DB29B1.htm",
+      "summary": "如果在执行长脚本时因出错而发生问题，可启用脚本行号，以便更轻松找到错误所在。 若要显示出错语句的行号，请从“脚本编辑器”(Script Editor)选择“命令 > 显示行号”(Command > Show Line N…",
+      "title": "显示错误行号",
+      "updated_at": "2026-10-10T11:14:22Z"
+    },
+    "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/MEL 调试功能/通过错误、警告和跟踪发出信号.md": {
+      "content_hash": "sha256:1826c92244e60489a296781071ad97e0dac5412b60a482c4535f94458b3ce5ab",
+      "keywords": [
+        "MEL 和表达式",
+        "MEL 调试功能",
+        "警告和跟踪发出信号",
+        "调试、优化和疑难解答",
+        "通过错误"
+      ],
+      "local_path": "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/MEL 调试功能/通过错误、警告和跟踪发出信号.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-7373CB68-7BF0-41BC-ACF4-5E751AAD39D8.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-7373CB68-7BF0-41BC-ACF4-5E751AAD39D8.htm",
+      "summary": "error 命令以标准 MEL 格式打印错误消息并停止脚本： $l = ls -lights; if (size($l) == 0) { error \"No lights in scene\"; } 该命令将生成以下输出并…",
+      "title": "通过错误、警告和跟踪发出信号",
+      "updated_at": "2026-10-10T11:15:30Z"
+    },
+    "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/优化脚本和表达式速度.md": {
+      "content_hash": "sha256:c822c78c9066149a66041e2712f1fc10d99f378990e3b3fce2da2a1788b99dff",
+      "keywords": [
+        "MEL 和表达式",
+        "优化脚本和表达式速度",
+        "调试、优化和疑难解答"
+      ],
+      "local_path": "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/优化脚本和表达式速度.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-64B0ADDF-7939-456B-9F64-D90C8402803E.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-64B0ADDF-7939-456B-9F64-D90C8402803E.htm",
+      "summary": "本节内容 - 优化脚本 - 优化表达式 - 减少冗余表达式执行 父主题： 调试、优化和疑难解答",
+      "title": "优化脚本和表达式速度",
+      "updated_at": "2026-10-10T11:15:32Z"
+    },
+    "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/优化脚本和表达式速度/优化脚本.md": {
+      "content_hash": "sha256:d50b2e199e3efe4dab2f2d60f93b98e42bee1abacdfeb2c3fca4e4099cbced26",
+      "keywords": [
+        "MEL 和表达式",
+        "优化脚本",
+        "优化脚本和表达式速度",
+        "调试、优化和疑难解答"
+      ],
+      "local_path": "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/优化脚本和表达式速度/优化脚本.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-44D46962-ED89-4C6D-A446-4CF3F0D0DE85.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-44D46962-ED89-4C6D-A446-4CF3F0D0DE85.htm",
+      "summary": "例如，使用 float $a[42]; 代替 float $a[];。可以根据需要扩大所有数组，因此，如果并不确切知道数组可存放的元素数量，但知道一个合理的最大值，则请使用该值。如果没有指定大小，MEL 将使用 16 个…",
+      "title": "优化脚本",
+      "updated_at": "2026-10-10T11:15:34Z"
+    },
+    "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/优化脚本和表达式速度/优化表达式.md": {
+      "content_hash": "sha256:0527884a8e764ad54747d343b6706c349c806f153f70e2223fec4b54851a1692",
+      "keywords": [
+        "MEL 和表达式",
+        "优化脚本和表达式速度",
+        "优化表达式",
+        "调试、优化和疑难解答"
+      ],
+      "local_path": "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/优化脚本和表达式速度/优化表达式.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-B23EE5CE-B8D8-46DF-8BE4-0C24EAB0E3A2.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-B23EE5CE-B8D8-46DF-8BE4-0C24EAB0E3A2.htm",
+      "summary": "Maya 以厘米、弧度和秒为单位进行内部计算。弧度是数学中常用的角度单位。它等于 180 度除以派（π），或大约为 57.3 度。 将某个数字指定给其值为度量单位的属性时，默认情况下，该表达式会将数字解释为您在“首选项”…",
+      "title": "优化表达式",
+      "updated_at": "2026-10-10T11:15:36Z"
+    },
+    "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/优化脚本和表达式速度/减少冗余表达式执行.md": {
+      "content_hash": "sha256:4f4b2eac56acf7cd25eb1fb6e1838ba4349863540d61e387dd5b94b593294bbf",
+      "keywords": [
+        "MEL 和表达式",
+        "优化脚本和表达式速度",
+        "减少冗余表达式执行",
+        "调试、优化和疑难解答"
+      ],
+      "local_path": "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/优化脚本和表达式速度/减少冗余表达式执行.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-78D1A475-5B34-4F4C-9CFD-3BF3C769DB39.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-78D1A475-5B34-4F4C-9CFD-3BF3C769DB39.htm",
+      "summary": "如果表达式包含冗余的语句计算，可以禁用“求值:始终”(Always Evaluate)以加快动画的拖动和播放速度。若要了解此功能适用的情况，必须了解表达式执行的细微细节。 表达式通常在每次动画时间改变时执行。每当表达式读…",
+      "title": "减少冗余表达式执行",
+      "updated_at": "2026-10-10T11:15:38Z"
+    },
+    "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/疑难解答.md": {
+      "content_hash": "sha256:ee12c2a2570f0cbe1c6ceb9f9b5cb690e72e3c223f6ade8e9da01e6b7cce9dfa",
+      "keywords": [
+        "MEL 和表达式",
+        "疑难解答",
+        "调试、优化和疑难解答"
+      ],
+      "local_path": "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-741CB4B0-9F19-4A84-9B7A-FB0D28FD80AC.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-741CB4B0-9F19-4A84-9B7A-FB0D28FD80AC.htm",
+      "summary": "本节内容 - 访问全局变量 - 初始化不同于指定 - 常见表达式错误 - 在表达式中执行 MEL 命令可能会有意外副作用 - 错误消息格式 - 常见错误消息 父主题： 调试、优化和疑难解答",
+      "title": "疑难解答",
+      "updated_at": "2026-10-10T11:15:40Z"
+    },
+    "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/疑难解答/初始化不同于指定.md": {
+      "content_hash": "sha256:dc7de268648360acf410261ef87ceb3cf168eea1fc20be04436d6dd482c2778d",
+      "keywords": [
+        "MEL 和表达式",
+        "初始化不同于指定",
+        "疑难解答",
+        "调试、优化和疑难解答"
+      ],
+      "local_path": "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/疑难解答/初始化不同于指定.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-761FFD7D-895D-420B-B17D-0541FC3C4ECD.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-761FFD7D-895D-420B-B17D-0541FC3C4ECD.htm",
+      "summary": "实际上，该差异仅对于全局数据而言比较重要。 对于非全局数据，初始化的运行方式与指定的运行方式完全相同，因为每次执行包含初始化的脚本或过程时都会执行初始化。 全局初始化仅发生一次并且是在执行所有操作之前发生的。因此，初始化…",
+      "title": "初始化不同于指定",
+      "updated_at": "2026-10-10T11:15:42Z"
+    },
+    "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/疑难解答/在表达式中执行 MEL 命令可能会有意外副作用.md": {
+      "content_hash": "sha256:821f8f2d4236591b673c899e179051620c8b30e9a7ecfaf0d3a12e1cef506417",
+      "keywords": [
+        "MEL",
+        "MEL 和表达式",
+        "命令可能会有意外副作用",
+        "在表达式中执行",
+        "疑难解答",
+        "调试、优化和疑难解答"
+      ],
+      "local_path": "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/疑难解答/在表达式中执行 MEL 命令可能会有意外副作用.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-14730E8F-07ED-484E-8675-6745F05A98C8.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-14730E8F-07ED-484E-8675-6745F05A98C8.htm",
+      "summary": "可以在表达式中执行 MEL 命令和程序。但是，如果进行连接或断开连接，或者添加或删除节点，则场景可能发生故障。 回放动画不会撤销在表达式中执行 MEL 命令。例如，如果表达式执行 MEL 命令来创建一对球体，则回放不会删…",
+      "title": "在表达式中执行 MEL 命令可能会有意外副作用",
+      "updated_at": "2026-10-10T11:14:25Z"
+    },
+    "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/疑难解答/常见表达式错误.md": {
+      "content_hash": "sha256:f2a3e1ac21e0847b956d3eb1293411dc0ab045b48e09c34382f1beb3fc056fb0",
+      "keywords": [
+        "MEL 和表达式",
+        "常见表达式错误",
+        "疑难解答",
+        "调试、优化和疑难解答"
+      ],
+      "local_path": "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/疑难解答/常见表达式错误.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-81329293-78BD-4BFA-B655-5E69FE4937D2.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-81329293-78BD-4BFA-B655-5E69FE4937D2.htm",
+      "summary": "编写表达式时可能会犯两种错误：语法错误和逻辑错误。语法错误包括拼写出错、属性名称不完整、分号忽略以及其他导致表达式无法编译和执行的疏忽。对于语法错误，Maya 将以消息方式向“脚本编辑器”(Script Editor)解…",
+      "title": "常见表达式错误",
+      "updated_at": "2026-10-10T11:15:44Z"
+    },
+    "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/疑难解答/常见错误消息.md": {
+      "content_hash": "sha256:a2b71bc51980d1496aa811d67f500b89a07a2aae6a570bba4d5fd50bbd544c0e",
+      "keywords": [
+        "MEL 和表达式",
+        "常见错误消息",
+        "疑难解答",
+        "调试、优化和疑难解答"
+      ],
+      "local_path": "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/疑难解答/常见错误消息.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-8133FB66-9A39-4D4B-A3CA-7B3FB18A1F79.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-8133FB66-9A39-4D4B-A3CA-7B3FB18A1F79.htm",
+      "summary": "下面是一些常见语法错误及其说明： 属性名称拼写错误，场景中不存在该属性，或忘记为变量名称添加前缀 $。 您在表达式中使用了粒子数组属性，但粒子形状节点不是“表达式编辑器”(Expression Editor)中的“选定对…",
+      "title": "常见错误消息",
+      "updated_at": "2026-10-10T11:15:46Z"
+    },
+    "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/疑难解答/访问全局变量.md": {
+      "content_hash": "sha256:22aa77b9c43ce6ef6ec581d320837a6607d268d2ffb91bf51ec745feb71f788d",
+      "keywords": [
+        "MEL 和表达式",
+        "疑难解答",
+        "访问全局变量",
+        "调试、优化和疑难解答"
+      ],
+      "local_path": "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/疑难解答/访问全局变量.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-29FD140E-70B7-4089-85C0-5A8F57A3AE2E.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-29FD140E-70B7-4089-85C0-5A8F57A3AE2E.htm",
+      "summary": "若要引用全局变量，必须在使用它的范围内显式声明它 这是必要的，因为 MEL 允许通过赋值隐式声明变量。例如， $flag = 42; 将 $flag 隐式声明为在当前范围内定义的一个整数。 MEL 无法分辨您要引用全局变…",
+      "title": "访问全局变量",
+      "updated_at": "2026-10-10T11:14:27Z"
+    },
+    "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/疑难解答/错误消息格式.md": {
+      "content_hash": "sha256:5837229ba96202ff7fe34e8104bf6b4b932e4289b9552e54d1842354fdab5cc9",
+      "keywords": [
+        "MEL 和表达式",
+        "疑难解答",
+        "调试、优化和疑难解答",
+        "错误消息格式"
+      ],
+      "local_path": "脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/疑难解答/错误消息格式.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-C2392D80-C25A-4E37-8F9C-2CBD47AAFB98.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-C2392D80-C25A-4E37-8F9C-2CBD47AAFB98.htm",
+      "summary": "语法错误将在“脚本编辑器”(Script Editor)中显示一个或多个消息。 您将需要经常滚动或增加“脚本编辑器”(Script Editor)的大小，以查看完整的消息。 当“脚本编辑器”(Script Editor)…",
+      "title": "错误消息格式",
+      "updated_at": "2026-10-10T11:15:49Z"
+    },
     "自定义 Maya/性能提高技巧/性能提高技巧.md": {
       "content_hash": "sha256:27fc5f6e5bbeb518402dfcb6252d18588a25868cae8f421e94a4ccd7c577d894",
       "keywords": [
@@ -60449,6 +60855,211 @@
       "title": "重置 Maya 首选项",
       "updated_at": "2026-10-09T09:53:57Z"
     },
+    "角色动画/HumanIK/HumanIK/HumanIK 角色设置疑难解答.md": {
+      "content_hash": "sha256:eb315a62587d2c472fd8f94ddcb9211af78eb9654802a41ab19573470ecd8a83",
+      "keywords": [
+        "HumanIK",
+        "角色设置疑难解答"
+      ],
+      "local_path": "角色动画/HumanIK/HumanIK/HumanIK 角色设置疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-CharacterAnimation/files/GUID-463A24CF-7CFE-490D-A6F4-E773426BFE04.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharacterAnimation/files/GUID-463A24CF-7CFE-490D-A6F4-E773426BFE04.htm",
+      "summary": "角色的某些关节或几何体的某些分段看起来与其父对象关节或其他几何体不成比例。如果已启用关节的“分段比例补偿”(Segment Scale Compensate)属性，则可能会出现这种情况。启用“分段比例补偿”(Segmen…",
+      "title": "HumanIK 角色设置疑难解答",
+      "updated_at": "2026-10-10T11:12:32Z"
+    },
+    "角色动画/使用骨架/使用骨架/设置骨架姿势/IKFK 融合/使用 IK 解算器异常关节翻转的疑难解答.md": {
+      "content_hash": "sha256:a1e121bde664afc1de69c924af8e2335f3524f0c5484604bd8f1dbf62ccfaad3",
+      "keywords": [
+        "IK",
+        "IKFK 融合",
+        "使用",
+        "使用骨架",
+        "解算器异常关节翻转的疑难解答",
+        "设置骨架姿势"
+      ],
+      "local_path": "角色动画/使用骨架/使用骨架/设置骨架姿势/IKFK 融合/使用 IK 解算器异常关节翻转的疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-CharacterAnimation/files/GUID-AD60045C-67FE-4367-8AB7-C5F26485740B.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharacterAnimation/files/GUID-AD60045C-67FE-4367-8AB7-C5F26485740B.htm",
+      "summary": "FK 动画完成后，关节链可能会在启用 IK 解算器（“关键帧 > IK/FK 关键帧 > 启用 IK 解算器”(Key > IK/FK Keys > Enable IK Solver)）时翻转到异常位置。 关节翻转是样条…",
+      "title": "使用 IK 解算器异常关节翻转的疑难解答",
+      "updated_at": "2026-10-10T11:14:29Z"
+    },
+    "角色动画/对角色进行蒙皮/对角色进行蒙皮/绑定姿势/达到绑定姿势疑难解答.md": {
+      "content_hash": "sha256:1c82e321636992d49f8779afe8a74b981b2db8befc352ffce83b86ea79c0593d",
+      "keywords": [
+        "对角色进行蒙皮",
+        "绑定姿势",
+        "达到绑定姿势疑难解答"
+      ],
+      "local_path": "角色动画/对角色进行蒙皮/对角色进行蒙皮/绑定姿势/达到绑定姿势疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-CharacterAnimation/files/GUID-D47C31C7-428F-4A54-B104-49C51F3856E5.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharacterAnimation/files/GUID-D47C31C7-428F-4A54-B104-49C51F3856E5.htm",
+      "summary": "如果锁定骨架的任意关节属性，则它将无法立即转到绑定姿势。通常，关节属性可以由约束、表达式、IK 样条线控制柄，或具有关键帧集的任何 IK 控制柄锁定。这些功能可以驱动某些关节属性的值，从而锁定它们以便独占使用。通过它们锁…",
+      "title": "达到绑定姿势疑难解答",
+      "updated_at": "2026-10-10T11:14:31Z"
+    },
+    "角色动画/约束/约束/方向约束/编辑方向约束/方向约束错误消息疑难解答.md": {
+      "content_hash": "sha256:3cceb7c8f5286574e3dc612182a036b54bcfe13ec323bf40c70b21f6d397fa57",
+      "keywords": [
+        "方向约束",
+        "方向约束错误消息疑难解答",
+        "约束",
+        "编辑方向约束"
+      ],
+      "local_path": "角色动画/约束/约束/方向约束/编辑方向约束/方向约束错误消息疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-CharacterAnimation/files/GUID-4CFEA7FF-AF63-489F-9DE1-72206F3594E4.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharacterAnimation/files/GUID-4CFEA7FF-AF63-489F-9DE1-72206F3594E4.htm",
+      "summary": "您尝试将方向约束的插值类型更改为“翻转模式”(Flip Mode)，但并非所有受约束对象的旋转通道都由该约束驱动。 方向约束在四元数中使用，因此其解决方案涉及全部三个旋转轴。因此，当方向约束仅驱动一个或两个受约束对象的旋…",
+      "title": "方向约束错误消息疑难解答",
+      "updated_at": "2026-10-10T11:14:33Z"
+    },
+    "角色效果和环境构建/XGen 几何体实例化器/XGen 几何体实例化器/XGen 疑难解答和常见问题解答.md": {
+      "content_hash": "sha256:dbb1b7bdf7fb4a9758aee1eaee2464eb0c5c9afdbc0e3e2187fc85d894bda269",
+      "keywords": [
+        "XGen",
+        "XGen 几何体实例化器",
+        "疑难解答和常见问题解答"
+      ],
+      "local_path": "角色效果和环境构建/XGen 几何体实例化器/XGen 几何体实例化器/XGen 疑难解答和常见问题解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-463D1930-F3FC-4C65-8C16-5A2927EDE8A7.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-463D1930-F3FC-4C65-8C16-5A2927EDE8A7.htm",
+      "summary": "本节内容 - 关于 XGen 的常见问题解答 - XGen 用户提示 - 解决 XGen 错误 父主题： XGen 几何体实例化器",
+      "title": "XGen 疑难解答和常见问题解答",
+      "updated_at": "2026-10-10T11:12:34Z"
+    },
+    "角色效果和环境构建/XGen 几何体实例化器/XGen 几何体实例化器/XGen 疑难解答和常见问题解答/XGen 用户提示.md": {
+      "content_hash": "sha256:7b6e147d0ca3570b38eab2b6e98ae6abaddef9d48d93c126c9e39ecc0dff9152",
+      "keywords": [
+        "XGen",
+        "XGen 几何体实例化器",
+        "XGen 疑难解答和常见问题解答",
+        "用户提示"
+      ],
+      "local_path": "角色效果和环境构建/XGen 几何体实例化器/XGen 几何体实例化器/XGen 疑难解答和常见问题解答/XGen 用户提示.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-6E167483-334A-4C9F-AFC4-11F9FAAC1663.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-6E167483-334A-4C9F-AFC4-11F9FAAC1663.htm",
+      "summary": "以下部分包含您可以在 XGen 工作流中使用的提示。 当您使用属性补偿时，模型中的面有时会不能正确对齐。例如，可以设置“倾斜 V = 1”(Tilt V = 1)（在表达式中使用时 OffU），所有基本体将不会指向同一方…",
+      "title": "XGen 用户提示",
+      "updated_at": "2026-10-10T11:12:36Z"
+    },
+    "角色效果和环境构建/XGen 几何体实例化器/XGen 几何体实例化器/XGen 疑难解答和常见问题解答/关于 XGen 的常见问题解答.md": {
+      "content_hash": "sha256:fc68d53afd7095367eab1172ceb6584cb6097b1e389f1d1f8f31650342d53a4d",
+      "keywords": [
+        "XGen",
+        "XGen 几何体实例化器",
+        "XGen 疑难解答和常见问题解答",
+        "关于",
+        "的常见问题解答"
+      ],
+      "local_path": "角色效果和环境构建/XGen 几何体实例化器/XGen 几何体实例化器/XGen 疑难解答和常见问题解答/关于 XGen 的常见问题解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-4E71E00B-ACCC-470D-A615-A65DEF98BF36.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-4E71E00B-ACCC-470D-A615-A65DEF98BF36.htm",
+      "summary": "基本体在参数化面片空间而非 Euclidean (XYZ) 空间中生成。因此，基本体的分布采用方形面片以与方形参数空间相匹配。法线补偿会尝试补偿非方形面片分布。 为了补偿非方形分布，XGen 会查找 U 和 V 等参线的…",
+      "title": "关于 XGen 的常见问题解答",
+      "updated_at": "2026-10-10T11:12:38Z"
+    },
+    "角色效果和环境构建/XGen 几何体实例化器/XGen 几何体实例化器/XGen 疑难解答和常见问题解答/解决 XGen 错误.md": {
+      "content_hash": "sha256:06f929cb50dfeaddb53dffffb37fded7741a3fd4df254079c386fabbbe80d991",
+      "keywords": [
+        "XGen",
+        "XGen 几何体实例化器",
+        "XGen 疑难解答和常见问题解答",
+        "解决",
+        "错误"
+      ],
+      "local_path": "角色效果和环境构建/XGen 几何体实例化器/XGen 几何体实例化器/XGen 疑难解答和常见问题解答/解决 XGen 错误.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-305B2A61-50FA-4B5E-B7B4-BB1CCC743E94.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-305B2A61-50FA-4B5E-B7B4-BB1CCC743E94.htm",
+      "summary": "此页面将帮助您解析 XGen 生成的常见错误代码。 此消息会在 XGen 在该消息中列出的 XGen 数据路径指定的任何目录中都找不到文件时显示。在以下两种情况下会出现该文件丢失消息： - 文件已丢失。 - 文件已存在，…",
+      "title": "解决 XGen 错误",
+      "updated_at": "2026-10-10T11:12:41Z"
+    },
+    "角色效果和环境构建/nCloth/nCloth/nCloth 提示和疑难解答.md": {
+      "content_hash": "sha256:41902bb48dccfd9d37454487f3e39b9978d205afb30c99b9bdb44a2d1db9efb7",
+      "keywords": [
+        "nCloth",
+        "提示和疑难解答"
+      ],
+      "local_path": "角色效果和环境构建/nCloth/nCloth/nCloth 提示和疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-5FD537E0-CEB4-4933-A6E2-0CF100F5CF74.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-5FD537E0-CEB4-4933-A6E2-0CF100F5CF74.htm",
+      "summary": "本节内容 - 提示 - 疑难解答 - 优化 nCloth 父主题： nCloth",
+      "title": "nCloth 提示和疑难解答",
+      "updated_at": "2026-10-10T11:12:43Z"
+    },
+    "角色效果和环境构建/nCloth/nCloth/nCloth 提示和疑难解答/优化 nCloth.md": {
+      "content_hash": "sha256:a7f043bdc570ea9dbce9a42804e1723addc423643edaebada56899296446619e",
+      "keywords": [
+        "nCloth",
+        "nCloth 提示和疑难解答",
+        "优化"
+      ],
+      "local_path": "角色效果和环境构建/nCloth/nCloth/nCloth 提示和疑难解答/优化 nCloth.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-AFB680AE-60E3-4F22-A646-C32E1FAF1E26.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-AFB680AE-60E3-4F22-A646-C32E1FAF1E26.htm",
+      "summary": "本部分详细介绍提高 nCloth 模拟播放速度的方法。",
+      "title": "优化 nCloth",
+      "updated_at": "2026-10-10T11:12:45Z"
+    },
+    "角色效果和环境构建/nCloth/nCloth/nCloth 提示和疑难解答/提示.md": {
+      "content_hash": "sha256:7d1273d1c1de22fc294b2198a51c75354cc58345aa8d3a08713f1178c13748bd",
+      "keywords": [
+        "nCloth",
+        "nCloth 提示和疑难解答",
+        "提示"
+      ],
+      "local_path": "角色效果和环境构建/nCloth/nCloth/nCloth 提示和疑难解答/提示.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-B25CF37F-9A91-4380-833C-10EC53E54BCE.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-B25CF37F-9A91-4380-833C-10EC53E54BCE.htm",
+      "summary": "本节提供提示，帮助工作中能更好地使用 nCloth。 下列是有助于使用 Maya Nucleus 解算器和 nCloth 的常规指示器列表。 - “动力学”(Dynamics)始终以米来计算。如果想在场景中使用厘米，应将…",
+      "title": "提示",
+      "updated_at": "2026-10-10T11:12:47Z"
+    },
+    "角色效果和环境构建/nCloth/nCloth/nCloth 提示和疑难解答/疑难解答.md": {
+      "content_hash": "sha256:4489688df482d9eecf0f6ebd9b7c360babdea7254a4774e242ce650802dceb7c",
+      "keywords": [
+        "nCloth",
+        "nCloth 提示和疑难解答",
+        "疑难解答"
+      ],
+      "local_path": "角色效果和环境构建/nCloth/nCloth/nCloth 提示和疑难解答/疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-B80D5B14-B296-43DD-9E15-971BC68E06C1.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-B80D5B14-B296-43DD-9E15-971BC68E06C1.htm",
+      "summary": "本节概述了您使用 nCloth 时可能会遇到的问题并提供了解决方法。 在将具有着色器指定的多边形对象转化为 nCloth 时，您可能会发现着色器指定丢失。 解决方法：在将多边形对象转化为 nCloth 后指定着色器。. …",
+      "title": "疑难解答",
+      "updated_at": "2026-10-10T11:12:49Z"
+    },
+    "角色效果和环境构建/nHair/nHair/nHair 采样和方法/采样动力学曲线场景/nHair 疑难解答.md": {
+      "content_hash": "sha256:da1e99d59654cb962b5ce572d68695ee675c6f7534fca1d56d5b720144995576",
+      "keywords": [
+        "nHair",
+        "nHair 采样和方法",
+        "疑难解答",
+        "采样动力学曲线场景"
+      ],
+      "local_path": "角色效果和环境构建/nHair/nHair/nHair 采样和方法/采样动力学曲线场景/nHair 疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-2ACCE1A4-AC13-4153-B74D-CB2A03C9ABC1.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-2ACCE1A4-AC13-4153-B74D-CB2A03C9ABC1.htm",
+      "summary": "以下是对您在使用头发时可能会遇到的问题的解决方法。 如果您在创建头发时将“输出”(Output)设定为“NURBS 曲线”(NURBS Curves)并创建了大量的头发，模拟进行初始化的速度可能较慢。解决方法是将“输出”…",
+      "title": "nHair 疑难解答",
+      "updated_at": "2026-10-10T11:12:52Z"
+    },
+    "角色效果和环境构建/在 Maya 中绘制/在 Maya 中绘制/Maya Paint Effects/“Paint Effects”疑难解答.md": {
+      "content_hash": "sha256:a5551f806e73c674706c6cb9f8e67d9a3b67b497a03fb89e1194f523f08813b9",
+      "keywords": [
+        "Effects”疑难解答",
+        "Maya Paint Effects",
+        "“Paint",
+        "在 Maya 中绘制"
+      ],
+      "local_path": "角色效果和环境构建/在 Maya 中绘制/在 Maya 中绘制/Maya Paint Effects/“Paint Effects”疑难解答.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-A26EDCB8-9F6E-4752-B292-CED92A43B3D2.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-A26EDCB8-9F6E-4752-B292-CED92A43B3D2.htm",
+      "summary": "以下是使用“Paint Effects”时可能遇到的问题的解决方法。这些问题包括： 如果笔刷非常厚重，且在笔刷笔划中分段或多边形面的数量超过 1000000，则会显示一条消息，并且不会绘制笔刷笔划。这样可避免显示被锁定，…",
+      "title": "“Paint Effects”疑难解答",
+      "updated_at": "2026-10-10T11:12:54Z"
+    },
     "运动图形/MASH 程序效果/MASH 程序效果.md": {
       "content_hash": "sha256:c1a2787dea3254f9071f45d33dbed333bc80f82ac82637c7fbe79052daaf3036",
       "keywords": [
@@ -61357,6 +61968,58 @@
       "title": "运动图形工作区",
       "updated_at": "2026-10-09T12:54:17Z"
     },
+    "适用于 Maya 的 Bifröst 流体/Bifröst 流体/Bifröst 流体/使用 Bifröst 模拟流体/处理 Bifröst 用户缓存/自动从最后缓存帧重新启动缓存（仅限 Bifröst 液体）.md": {
+      "content_hash": "sha256:0c5183b8539c1702cbd3cbfb2e0c6fe0625c2d7718ef503907227ac9c5aba341",
+      "keywords": [
+        "Bifröst",
+        "Bifröst 流体",
+        "仅限",
+        "使用 Bifröst 模拟流体",
+        "处理 Bifröst 用户缓存",
+        "液体",
+        "自动从最后缓存帧重新启动缓存"
+      ],
+      "local_path": "适用于 Maya 的 Bifröst 流体/Bifröst 流体/Bifröst 流体/使用 Bifröst 模拟流体/处理 Bifröst 用户缓存/自动从最后缓存帧重新启动缓存（仅限 Bifröst 液体）.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-Bifrost/files/GUID-8163083A-232B-4F37-874C-125B6917DA86.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Bifrost/files/GUID-8163083A-232B-4F37-874C-125B6917DA86.htm",
+      "summary": "您可以自动从使用相同设置缓存的最后一帧重新开始缓存 Bifröst 液体模拟。如果在此期间尚未更改任何模拟设置，则可以使用该过程附加到现有缓存。您还可以使用该过程重新启动因任何原因而失败的缓存，而无需手动确定成功缓存的最…",
+      "title": "自动从最后缓存帧重新启动缓存（仅限 Bifröst 液体）",
+      "updated_at": "2026-10-10T11:12:57Z"
+    },
+    "适用于 Maya 的 Bifröst 流体/Bifröst 流体/Bifröst 流体/使用 Bifröst 模拟流体/预览 Bifröst 模拟/显示 Bifröst 诊断信息.md": {
+      "content_hash": "sha256:3675fc20f9515185e6ae9952abdba1944049bdee120577e905cdbd0d394e2359",
+      "keywords": [
+        "Bifröst",
+        "Bifröst 流体",
+        "使用 Bifröst 模拟流体",
+        "显示",
+        "诊断信息",
+        "预览 Bifröst 模拟"
+      ],
+      "local_path": "适用于 Maya 的 Bifröst 流体/Bifröst 流体/Bifröst 流体/使用 Bifröst 模拟流体/预览 Bifröst 模拟/显示 Bifröst 诊断信息.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-Bifrost/files/GUID-57A350CE-8A49-42A7-B72D-386B17A5A67C.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Bifrost/files/GUID-57A350CE-8A49-42A7-B72D-386B17A5A67C.htm",
+      "summary": "可以在视口中将属性通道的值显示为颜色渐变、数值或向量。这样，您就可以分析或诊断自己的模拟。 可显示的属性取决于模拟类型。例如，可以对液体中的“漩涡”(Vorticity)或“翻腾”(Churn)和 Aero 模拟中的“烟…",
+      "title": "显示 Bifröst 诊断信息",
+      "updated_at": "2026-10-10T11:12:59Z"
+    },
+    "适用于 Maya 的 Bifröst 流体/Bifröst 流体/Bifröst 流体/使用 Bifröst 液体/显示 Bifröst 液体中的诊断颜色：工作流示例.md": {
+      "content_hash": "sha256:0710d25c31dc310668e846e0bf0de3b68247fc1ce7330efbcbdd558f0523a245",
+      "keywords": [
+        "Bifröst",
+        "Bifröst 流体",
+        "使用 Bifröst 液体",
+        "工作流示例",
+        "显示",
+        "液体中的诊断颜色"
+      ],
+      "local_path": "适用于 Maya 的 Bifröst 流体/Bifröst 流体/Bifröst 流体/使用 Bifröst 液体/显示 Bifröst 液体中的诊断颜色：工作流示例.md",
+      "source_path": "/cloudhelp/2022/CHS/Maya-Bifrost/files/GUID-742ABDDE-574E-4E11-AC36-221BDA9C8653.htm",
+      "source_url": "https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Bifrost/files/GUID-742ABDDE-574E-4E11-AC36-221BDA9C8653.htm",
+      "summary": "您可以将特定通道显示为视口中的颜色渐变，用于诊断或其他用途。此示例说明了如何使用粒子速度值设置“颜色通道重映射”(Color Channel Remap)渐变。 1. 通过增加曲面上的粒子密度，确保液体中有足够的细节。若…",
+      "title": "显示 Bifröst 液体中的诊断颜色：工作流示例",
+      "updated_at": "2026-10-10T11:13:01Z"
+    },
     "键盘快捷方式/Mac OS X 版 Maya 中的热键/Mac OS X 版 Maya 中的热键.md": {
       "content_hash": "sha256:d4c64b940393221353e6ee95ba1129181b314a672aef4eec9c35a7fa397e46b1",
       "keywords": [
@@ -61682,7 +62345,7 @@
       "updated_at": "2026-10-09T09:53:57Z"
     }
   },
-  "last_sync_at": "2026-10-09T12:54:17Z",
+  "last_sync_at": "2026-10-10T11:15:50Z",
   "schema_version": 1,
   "wiki": {
     "language": "简体中文 / Maya 2022",

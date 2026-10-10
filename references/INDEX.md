@@ -3,26 +3,46 @@
 本文件由 `scripts/sync_wiki_docs.py` 生成。日常问答优先运行 `scripts/search_docs.py`，需要浏览主题结构时再读取本索引。
 
 - 来源：<https://help.autodesk.com/view/MAYAUL/2022/CHS>
-- 文档数：2724
+- 文档数：2791
 
 ## 顶层目录
 
+- `Maya 2022 新特性`：1 篇
+- `Maya 安装补充`：3 篇
 - `动画`：563 篇
+- `在 Bifrost Extension 中工作`：6 篇
 - `基础功能`：454 篇
+- `安装管理员手册`：1 篇
 - `建模`：574 篇
 - `快速入门`：23 篇
 - `数据交换`：42 篇
+- `模拟和效果`：5 篇
 - `渲染`：426 篇
-- `照明和着色`：168 篇
+- `照明和着色`：183 篇
 - `管理场景、文件和项目`：242 篇
+- `脚本`：19 篇
 - `自定义 Maya`：145 篇
+- `角色动画`：4 篇
+- `角色效果和环境构建`：10 篇
 - `运动图形`：63 篇
+- `适用于 Maya 的 Bifröst 流体`：3 篇
 - `键盘快捷方式`：24 篇
 
 ## 目录树
 
 ```text
 docs/
+├── Maya 2022 新特性
+│   └── Maya 2022 新特性
+│       └── Maya 2022 新特性
+│           └── 启动体验改进.md
+├── Maya 安装补充
+│   ├── Maya 安装和许可
+│   │   └── Maya 安装和许可.md
+│   ├── 借用许可
+│   │   └── 借用许可.md
+│   └── 失去与许可服务器的连接
+│       └── 失去与许可服务器的连接.md
 ├── 动画
 │   ├── Maya 中的非线性动画
 │   │   ├── Maya 中的非线性动画
@@ -711,6 +731,22 @@ docs/
 │       │   ├── 运动捕捉设备.md
 │       │   └── 运动捕捉过程.md
 │       └── 运动捕捉动画.md
+├── 在 Bifrost Extension 中工作
+│   ├── Bifrost 图表疑难解答
+│   │   ├── Bifrost 图表疑难解答
+│   │   │   ├── 模拟结果不显示.md
+│   │   │   └── 消息：“检测到 TDR。”.md
+│   │   └── Bifrost 图表疑难解答.md
+│   ├── Bifrost 节点参考
+│   │   └── Bifrost 节点参考
+│   │       └── bif
+│   │           └── dump_object 节点.md
+│   ├── 构建和修改图表
+│   │   └── 构建和修改图表
+│   │       └── 诊断和调试图表.md
+│   └── 模拟动力学效果
+│       └── 模拟动力学效果
+│           └── 从缓存文件恢复模拟.md
 ├── 基础功能
 │   ├── 三维坐标
 │   │   └── 三维坐标.md
@@ -1258,6 +1294,9 @@ docs/
 │       │   ├── 选择节点.md
 │       │   └── 通过绘制选择组件.md
 │       └── 选择.md
+├── 安装管理员手册
+│   └── 为网络规划和安装软件许可
+│       └── 为网络规划和安装软件许可.md
 ├── 建模
 │   ├── UV
 │   │   ├── UV
@@ -2024,6 +2063,23 @@ docs/
 │   │   └── 将控制装备发送到 MotionBuilder.md
 │   └── 数据交换
 │       └── 数据交换.md
+├── 模拟和效果
+│   ├── nParticle
+│   │   └── nParticle
+│   │       └── nParticle 工作流
+│   │           ├── 使用弹簧控制 nParticle
+│   │           │   └── nParticle 弹簧疑难解答.md
+│   │           └── nParticle 疑难解答.md
+│   ├── “效果”(Effects)和“效果资产”(Effects Assets)
+│   │   └── “效果”(Effects)和“效果资产”(Effects Assets)
+│   │       └── Maya“效果”(Effects)
+│   │           └── 效果疑难解答.md
+│   └── 流体效果
+│       └── 流体效果
+│           └── 开阔水面效果
+│               ├── 开阔水面效果疑难解答
+│               │   └── 海洋沿地平线抖动.md
+│               └── 开阔水面效果疑难解答.md
 ├── 渲染
 │   ├── Maya 渲染设置
 │   │   ├── Maya 渲染设置
@@ -2671,22 +2727,32 @@ docs/
 │       └── 着色
 │           ├── 关于 ShaderFX
 │           │   ├── 创建 ShaderFX 着色器
-│           │   │   └── ShaderFX 纹理和 Gamma 校正.md
+│           │   │   ├── ShaderFX 纹理和 Gamma 校正.md
+│           │   │   └── 导出 ShaderFX 材质疑难解答.md
 │           │   └── 创建基于物理的 Stingray 着色器
 │           │       └── 示例工作流程：使用基于物理的 Stingray 着色器融合两个纹理.md
 │           ├── 关于着色和纹理曲面
 │           │   ├── 与 Maya 材质和纹理有关的疑难解答
+│           │   │   ├── DirectX 11 着色器不显示顶点颜色的疑难解答.md
 │           │   │   ├── Hypershade 中不显示材质和纹理样例的疑难解答.md
 │           │   │   ├── 变形曲面上的游移纹理疑难解答.md
+│           │   │   ├── 在 Hypershade 中不显示节点的疑难解答.md
 │           │   │   ├── 当我移动参照对象时纹理游移的疑难解答.md
-│           │   │   └── 扭曲纹理疑难解答.md
+│           │   │   ├── 影片文件加载速度慢的疑难解答.md
+│           │   │   ├── 扭曲纹理疑难解答.md
+│           │   │   ├── 无法在图像平面上播放影片疑难解答.md
+│           │   │   ├── 无法看到 place2DTexture 样例疑难解答.md
+│           │   │   ├── 更改多边形拓扑可能会影响着色器指定的疑难解答.md
+│           │   │   └── 法线贴图疑难解答.md
 │           │   ├── 使用 Hypershade 的外观开发
 │           │   │   └── 暂停材质和纹理的样例生成以提高 Hypershade 性能.md
 │           │   ├── 创建和渲染硬件着色器
 │           │   │   ├── 创建 CgFX 着色器
+│           │   │   │   ├── CgFX 着色器疑难解答.md
 │           │   │   │   └── CgFX 着色器的纹理坐标系的方向.md
-│           │   │   └── 创建和可视化 GLSL 着色器
-│           │   │       └── 编写自定义 GLSL 着色器：纹理、透明度、照明和硬件选择示例.md
+│           │   │   ├── 创建和可视化 GLSL 着色器
+│           │   │   │   └── 编写自定义 GLSL 着色器：纹理、透明度、照明和硬件选择示例.md
+│           │   │   └── HLSL 着色器疑难解答.md
 │           │   ├── 纹理
 │           │   │   ├── 3D 绘制工具
 │           │   │   │   ├── 使绘制的纹理分层.md
@@ -2734,6 +2800,11 @@ docs/
 │           │   │   └── 预览 Ptex 纹理.md
 │           │   ├── 与 Maya 材质和纹理有关的疑难解答.md
 │           │   └── 纹理.md
+│           ├── 反射和环境
+│           │   ├── 有关立方体贴图交换前后图像的疑难解答.md
+│           │   └── 环境反射贴图疑难解答.md
+│           ├── 大气
+│           │   └── “环境雾”(Environment Fog)问题的疑难解答.md
 │           ├── 着色引用
 │           │   ├── 着色窗口和编辑器
 │           │   │   └── Hypershade 窗口
@@ -2757,7 +2828,11 @@ docs/
 │           │       │   ├── 分层纹理(Layered texture).md
 │           │       │   └── 环境纹理.md
 │           │       └── 纹理节点概述.md
+│           ├── 背景和图像平面
+│           │   └── 图像平面
+│           │       └── 粒状或锯齿状背景图像平面疑难解答.md
 │           ├── 表面起伏
+│           │   ├── 凹凸贴图疑难解答.md
 │           │   ├── 模糊的文件纹理看起来清楚而不模糊的疑难解答.md
 │           │   ├── 置换纹理“弹出”疑难解答.md
 │           │   └── 连接纹理作为置换贴图.md
@@ -3054,6 +3129,36 @@ docs/
 │       ├── 管理场景、文件和项目
 │       │   └── 检查 Maya 版本.md
 │       └── 管理场景、文件和项目.md
+├── 脚本
+│   └── MEL 和表达式
+│       └── MEL 和表达式
+│           ├── MEL 窗口和编辑器
+│           │   └── MEL 分析器
+│           │       └── 启动 MEL 分析器.md
+│           ├── 有关 MEL 的常见问题解答
+│           │   └── 任务
+│           │       └── 删除窗口后模型面板继续存在的疑难解答.md
+│           ├── 调试、优化和疑难解答
+│           │   ├── MEL 调试功能
+│           │   │   ├── 使用 catch 和 catchQuiet 处理错误.md
+│           │   │   ├── 在出错时显示调用堆栈.md
+│           │   │   ├── 显示错误行号.md
+│           │   │   └── 通过错误、警告和跟踪发出信号.md
+│           │   ├── 优化脚本和表达式速度
+│           │   │   ├── 优化脚本.md
+│           │   │   ├── 优化表达式.md
+│           │   │   └── 减少冗余表达式执行.md
+│           │   ├── 疑难解答
+│           │   │   ├── 初始化不同于指定.md
+│           │   │   ├── 在表达式中执行 MEL 命令可能会有意外副作用.md
+│           │   │   ├── 常见表达式错误.md
+│           │   │   ├── 常见错误消息.md
+│           │   │   ├── 访问全局变量.md
+│           │   │   └── 错误消息格式.md
+│           │   ├── MEL 调试功能.md
+│           │   ├── 优化脚本和表达式速度.md
+│           │   └── 疑难解答.md
+│           └── 调试、优化和疑难解答.md
 ├── 自定义 Maya
 │   ├── 性能提高技巧
 │   │   ├── 性能提高技巧
@@ -3228,6 +3333,48 @@ docs/
 │       │   ├── 保存首选项.md
 │       │   └── 重置 Maya 首选项.md
 │       └── 首选项.md
+├── 角色动画
+│   ├── HumanIK
+│   │   └── HumanIK
+│   │       └── HumanIK 角色设置疑难解答.md
+│   ├── 使用骨架
+│   │   └── 使用骨架
+│   │       └── 设置骨架姿势
+│   │           └── IKFK 融合
+│   │               └── 使用 IK 解算器异常关节翻转的疑难解答.md
+│   ├── 对角色进行蒙皮
+│   │   └── 对角色进行蒙皮
+│   │       └── 绑定姿势
+│   │           └── 达到绑定姿势疑难解答.md
+│   └── 约束
+│       └── 约束
+│           └── 方向约束
+│               └── 编辑方向约束
+│                   └── 方向约束错误消息疑难解答.md
+├── 角色效果和环境构建
+│   ├── nCloth
+│   │   └── nCloth
+│   │       ├── nCloth 提示和疑难解答
+│   │       │   ├── 优化 nCloth.md
+│   │       │   ├── 提示.md
+│   │       │   └── 疑难解答.md
+│   │       └── nCloth 提示和疑难解答.md
+│   ├── nHair
+│   │   └── nHair
+│   │       └── nHair 采样和方法
+│   │           └── 采样动力学曲线场景
+│   │               └── nHair 疑难解答.md
+│   ├── XGen 几何体实例化器
+│   │   └── XGen 几何体实例化器
+│   │       ├── XGen 疑难解答和常见问题解答
+│   │       │   ├── XGen 用户提示.md
+│   │       │   ├── 关于 XGen 的常见问题解答.md
+│   │       │   └── 解决 XGen 错误.md
+│   │       └── XGen 疑难解答和常见问题解答.md
+│   └── 在 Maya 中绘制
+│       └── 在 Maya 中绘制
+│           └── Maya Paint Effects
+│               └── “Paint Effects”疑难解答.md
 ├── 运动图形
 │   ├── MASH 程序效果
 │   │   ├── MASH 程序效果
@@ -3306,6 +3453,16 @@ docs/
 │   │   └── 运动图形.md
 │   └── 运动图形工作区
 │       └── 运动图形工作区.md
+├── 适用于 Maya 的 Bifröst 流体
+│   └── Bifröst 流体
+│       └── Bifröst 流体
+│           ├── 使用 Bifröst 模拟流体
+│           │   ├── 处理 Bifröst 用户缓存
+│           │   │   └── 自动从最后缓存帧重新启动缓存（仅限 Bifröst 液体）.md
+│           │   └── 预览 Bifröst 模拟
+│           │       └── 显示 Bifröst 诊断信息.md
+│           └── 使用 Bifröst 液体
+│               └── 显示 Bifröst 液体中的诊断颜色：工作流示例.md
 └── 键盘快捷方式
     ├── Mac OS X 版 Maya 中的热键
     │   └── Mac OS X 版 Maya 中的热键.md
@@ -3361,6 +3518,10 @@ docs/
 
 | 路径 | 标题 | 摘要 / 关键词 | 来源 |
 |---|---|---|---|
+| `Maya 2022 新特性/Maya 2022 新特性/Maya 2022 新特性/启动体验改进.md` | 启动体验改进 | Maya 的启动体验已进行了多项改进，包括： - 更快的启动和退出速度 - 启动时不再强行获得焦点 - 记住“输出窗口”(Output Window)的状态 - 能够从以前的安装复制特定首选项 - 信息更丰富的新初始屏幕…；Maya 2022 新特性, 启动体验改进 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-WhatsNewPR/files/GUID-57F72C64-401A-4273-9B16-23FF57C46605.htm>) |
+| `Maya 安装补充/Maya 安装和许可/Maya 安装和许可.md` | Maya 安装和许可 | 可以在单个主机或网络服务器上安装 Maya。无需先卸载先前版本即可安装新版本。可以同时安装多个版本的 Maya。 如果在安装新版本之前卸载先前版本的 Maya，这两个版本的许可类型和产品激活方法可能有所不同，并且可能需要…；Maya, Maya 安装和许可, 安装和许可 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Installation-Maya/files/GUID-F342CAB1-6319-4D0C-85B8-C0AF9B05B705.htm>) |
+| `Maya 安装补充/借用许可/借用许可.md` | 借用许可 | 借用许可会从许可服务器中移除许可，以便在脱机计算机上使用。 借用许可后，将在启动时自动使用借用的许可。您可以随时暂停此过程，而无需将许可返还给服务器。许可将按您最初借用许可时指定的日期自动返还给服务器。您也可以选择提前手…；借用许可 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Installation-Maya/files/GUID-F16A8C2A-5A9D-49FC-9DF5-D25F06DCC6C4.htm>) |
+| `Maya 安装补充/失去与许可服务器的连接/失去与许可服务器的连接.md` | 失去与许可服务器的连接 | 如果失去与网络服务器的连接，Maya 将在 120 分钟内尝试重新连接到服务器。 如果 120 分钟后尚未重新建立连接，您将有十分钟的宽限期来保存工作。 宽限期结束后，系统将提示您保存工作，而后 Maya 将退出。；失去与许可服务器的连接 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Installation-Maya/files/GUID-730962C7-3BED-49AE-8E03-07F9E2C54FB7.htm>) |
 | `动画/Maya 中的非线性动画/Maya 中的非线性动画.md` | Maya 中的非线性动画 | 按照可重新排列和编辑的序列（如非线性编辑器中的电影片段）集合动画。 用关键帧或运动捕捉为角色或对象设置动画后，您可以将其动画数据排列成单个可编辑序列。此动画序列称为动画片段。尽管您可以考虑到特定情节，按特定属性创建动画片…；Maya, Maya 中的非线性动画, 中的非线性动画, 动画 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Animation/files/GUID-B90726CA-6C86-4E9B-80F3-1F65745C3B3F.htm>) |
 | `动画/Maya 中的非线性动画/Maya 中的非线性动画/Trax 编辑器.md` | Trax 编辑器 | 打开 Trax 编辑器： - 从主菜单栏中：“窗口 > 动画编辑器 > Trax 编辑器”(Windows > Animation Editors > Trax Editor) - 在场景视图中：“面板 > 面板 > T…；Maya 中的非线性动画, Trax, 动画, 编辑器 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Animation/files/GUID-33C829F4-635C-4DEB-956C-6A54BEE1EC89.htm>) |
 | `动画/Maya 中的非线性动画/Maya 中的非线性动画/Trax 编辑器/Trax 中的非线性动画组件.md` | Trax 中的非线性动画组件 | 在 Maya 中，以非线性方式对角色设置动画涉及处理许多不同的动画组件和动画层次级别。这些动画数据的块和层可以让您按需要自由混合、操纵、编辑和分隔角色动画为任何序列。用于管理角色非线性动画所有这些方面的工具是“Trax …；Maya 中的非线性动画, Trax, 中的非线性动画组件, 动画 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Animation/files/GUID-9353AAEF-D81A-4108-8FDA-8B20C7886494.htm>) |
@@ -3924,6 +4085,12 @@ docs/
 | `动画/运动捕捉动画/运动捕捉动画/运动捕捉过程/排演运动.md` | 排演运动 | 您可能希望执行者在您记录之前，排演您感兴趣的运动。如果场景非常简单，您可能能够实时查看运动。 附加到目标属性的所有动画曲线将不会受排演模式的影响。；动画, 排演运动, 运动捕捉动画 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Animation/files/GUID-D32A4C99-874C-442F-856A-2ED4DED46FEF.htm>) |
 | `动画/运动捕捉动画/运动捕捉动画/运动捕捉过程/记录运动.md` | 记录运动 | 大多数运动捕捉设备是数据服务器设备。若要使用数据服务器设备，会需要一个服务器。有关将服务器用于特定设备的详细信息，请参见设备供应商提供的文档。 在定义和不定义数据服务器和撤消队列之间存在一个重要的交互。 如果撤消 def…；动画, 记录运动, 运动捕捉动画 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Animation/files/GUID-E0509500-21AA-4FFF-ADD1-E59632653FE7.htm>) |
 | `动画/运动捕捉动画/运动捕捉动画/运动捕捉过程/过滤器和重采样器.md` | 过滤器和重采样器 | 可以使用过滤器和重采样器影响您的运动捕捉数据。通过使用过滤器和重采样器，可以实现诸如清理 Euler 角度或通过给定内核按照特定频率重新对数据进行采样等效果。 重采样器可能会更改数据的暂时值，而过滤器不会。；动画, 过滤器和重采样器, 运动捕捉动画 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Animation/files/GUID-26B7B5EC-96B4-4FC0-9E8F-B4F6062C5BEA.htm>) |
+| `在 Bifrost Extension 中工作/Bifrost 图表疑难解答/Bifrost 图表疑难解答.md` | Bifrost 图表疑难解答 | 以下是编辑和运行 Bifrost 图表时可能会遇到的一些问题的解决方案。 此部分中的页面 - 模拟结果不显示 - 消息：“检测到 TDR。”；Bifrost, Bifrost 图表疑难解答, 图表疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Bifrost-Common/files/Bifrost_Common_troubleshooting_html.html>) |
+| `在 Bifrost Extension 中工作/Bifrost 图表疑难解答/Bifrost 图表疑难解答/模拟结果不显示.md` | 模拟结果不显示 | 如果视口中不显示模拟结果，请检查一些事项。 - 确保图表未暂停。选择“编辑 > 恢复图表执行”(Edit > Resume Graph Execution)，转到模拟的第一帧，然后播放。 - 确保将主场景设置为在播放时播…；Bifrost 图表疑难解答, 模拟结果不显示 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Bifrost-Common/files/troubleshooting/Bifrost_Common_troubleshooting_simulation_does_not_display_html.html>) |
+| `在 Bifrost Extension 中工作/Bifrost 图表疑难解答/Bifrost 图表疑难解答/消息：“检测到 TDR。”.md` | 消息：“检测到 TDR。” | 在 Windows 中，您可能会收到以下消息： “检测到 TDR。应用程序必须关闭。” 当 Bifrost 图表的结果需要占用较长时间进行计算和绘制（例如，极高分辨率体积或大量复杂实例）时，会出现此情况。如果 Windo…；Bifrost 图表疑难解答, TDR, “检测到, 消息 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Bifrost-Common/files/troubleshooting/Bifrost_Common_troubleshooting_TDR_detected_html.html>) |
+| `在 Bifrost Extension 中工作/Bifrost 节点参考/Bifrost 节点参考/bif/dump_object 节点.md` | dump_object 节点 | 将 Amino::Object 的内容转储到文件中。 要转储的 Amino::Object。它按原样穿过。 转储文件的名称。 用于保存日志文件的可选文件夹。如果未指定，则文件将写入临时目录。 如果大于 0，则为每个组件转…；Bifrost 节点参考, bif, dump_object, 节点 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Bifrost-Common/files/reference/bif/Bifrost_Common_reference_bif_dump_object_html.html>) |
+| `在 Bifrost Extension 中工作/构建和修改图表/构建和修改图表/诊断和调试图表.md` | 诊断和调试图表 | 使用复杂图表时，您可能会遇到需要诊断和调试的问题。有一些基本工具可以帮助您完成此任务。 有问题的节点以不同颜色亮显。如果亮显的节点为复合，请进入以查看哪些内部节点有问题。 - 具有错误的节点以红色亮显。错误意味着无法编译…；构建和修改图表, 诊断和调试图表 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Bifrost-Common/files/build-a-graph/Bifrost_Common_build_a_graph_diagnose_and_debug_graphs_html.html>) |
+| `在 Bifrost Extension 中工作/模拟动力学效果/模拟动力学效果/从缓存文件恢复模拟.md` | 从缓存文件恢复模拟 | 通过从缓存文件恢复模拟，可以对多个帧运行一次模拟，然后使用缓存结果作为模拟的新起点。 注意： 这不适用于 MPM 布料。 将模拟的初始部分缓存到文件，例如，使用 file_cache 节点。 - 缓存必须包含模拟所需的所…；从缓存文件恢复模拟, 模拟动力学效果 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Bifrost-Common/files/simulate-dynamic-effects/Bifrost_Common_simulate_dynamic_effects_resume_from_cache_html.html>) |
 | `基础功能/三维坐标/三维坐标.md` | 三维坐标 | 最基本的可视图元为点。点没有大小，但是有位置。 为确定点的位置，首先应在空间中建立任意一点作为原点。 随后便可将某个点的位置表示为原点左侧（或右侧）若干单位、原点上方（或下方）若干单位，以及高于（或低于）原点若干单位。 …；三维坐标, 基础功能 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Basics/files/GUID-FDC58F4E-63B9-4012-B232-5F2FBAC5EAC9.htm>) |
 | `基础功能/创建和编辑对象/创建和编辑对象.md` | 创建和编辑对象 | 此部分介绍如何创建基本（基本体）对象，然后如何复制它们，对其执行基本操作，将其删除，以及使用不同的工具编辑其属性。；创建和编辑对象, 基础功能 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Basics/files/GUID-028D6945-CEBE-493B-9372-E9DF32BB0E78.htm>) |
 | `基础功能/创建和编辑对象/创建和编辑对象/“剪切”(Cut)、“复制”(Copy)和“粘贴”(Paste).md` | “剪切”(Cut)、“复制”(Copy)和“粘贴”(Paste) | Copy, Cut, Paste, “剪切”, “复制”, 创建和编辑对象, 和“粘贴”, 基础功能 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Basics/files/GUID-ADF45985-8DAC-4A80-A9EA-65904545C6BB.htm>) |
@@ -4378,6 +4545,7 @@ docs/
 | `基础功能/选择/选择/选择组件前亮显组件.md` | 选择组件前亮显组件 | 通过从标记菜单（在场景中按住 Ctrl + Shift 键并单击鼠标右键）中选择“选择 > 选择前亮显”(Select > Preselection Highlight)，可以切换“选择前亮显”(Preselection…；基础功能, 选择, 选择组件前亮显组件 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Basics/files/GUID-B6AB4EA9-47AC-402A-A8A8-47F62ADA72B1.htm>) |
 | `基础功能/选择/选择/选择节点.md` | 选择节点 | 若要选择节点，请执行下列任一操作： - 打开大纲视图，然后从列表中选择节点。 - 选择与节点关联的对象，在“属性编辑器”(Attribute Editor)中单击节点的选项卡，并在“属性编辑器”(Attribute Ed…；基础功能, 选择, 选择节点 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Basics/files/GUID-E11976C1-0680-4AE0-8E0C-11C087A0DE58.htm>) |
 | `基础功能/选择/选择/通过绘制选择组件.md` | 通过绘制选择组件 | 可通过使用图形触笔在所需组件上绘制来选择组件，例如顶点或面。 1. 选择要选择其上的组件的对象。 2. 双击工具箱 <!-- baize:img-hook downloaded=true reason="正文 244 字…；基础功能, 选择, 通过绘制选择组件 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Basics/files/GUID-7C52E640-FF95-4479-BD64-DBF49558461C.htm>) |
+| `安装管理员手册/为网络规划和安装软件许可/为网络规划和安装软件许可.md` | 为网络规划和安装软件许可 | 此工作流将引导网络管理员完成为 Autodesk 产品规划、安装和配置许可的步骤。；为网络规划和安装软件许可 | [原文](<https://help.autodesk.com/cloudhelp/CHS/Autodesk-Installation-Admin-ODIS/files/GUID-AD817657-43BD-4571-B887-5326B358C54C.htm>) |
 | `建模/UV/UV.md` | UV | UV（明确的 U-VEEZ）是二维纹理坐标，带有多边形和细分曲面网格的顶点组件信息。 UV 存在，用于定义二维纹理坐标系，称为“UV 纹理空间”。UV 纹理空间使用字母 U 和 V 来指示二维空间中的轴。UV 纹理空间有…；UV, 建模 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Modeling/files/GUID-FDCD0C68-2496-4405-A785-3AA93E9A3B25.htm>) |
 | `建模/UV/UV/UV 参考.md` | UV 参考 | UV, 参考, 建模 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Modeling/files/GUID-176DF2DC-1567-48FF-9067-5430406F75F1.htm>) |
 | `建模/UV/UV/UV 参考/UV 工具.md` | UV 工具 | 本节内容 - “移动 UV 壳”(Move UV Shell)工具 - 固定 UV 工具(Pin UV Tool) - 切割 UV 工具(Cut UV Tool) - 对称 UV 工具(Symmetrize UV Too…；UV, 工具, 建模 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Modeling/files/GUID-4FD5E786-85A0-4B84-992A-BF5304612A69.htm>) |
@@ -5017,6 +5185,11 @@ docs/
 | `数据交换/将控制装备发送到 MotionBuilder/将控制装备发送到 MotionBuilder/更新、添加或删除发送到 MotionBuilder 的对象.md` | 更新、添加或删除发送到 MotionBuilder 的对象 | 可更新和/或将新对象添加到其他应用程序中，方法是选择这些新对象并单击“更新”(Update)按钮或选择“更新当前场景”(Update Current Scene)。使用“更新”功能不会删除对象。如果不再需要使用场景中的对…；MotionBuilder, 将控制装备发送到 MotionBuilder, 数据交换, 更新, 添加或删除发送到, 的对象 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-DataExchange/files/GUID-87683D39-FC8A-4687-BEC2-5D29CDE2346D.htm>) |
 | `数据交换/将控制装备发送到 MotionBuilder/将控制装备发送到 MotionBuilder/选择 HumanIK 角色数据.md` | 选择 HumanIK 角色数据 | 将控制装备发送到 MotionBuilder 时，角色元素之间的依存关系将影响 Maya 为特定发送操作自动选择的对象。例如，Maya 会自动选择不同的角色元素，这取决于您是将对象作为新场景发送到 MotionBuild…；HumanIK, 将控制装备发送到 MotionBuilder, 数据交换, 角色数据, 选择 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-DataExchange/files/GUID-C7CD245E-78E8-41BB-B59B-C0915D432C1E.htm>) |
 | `数据交换/数据交换/数据交换.md` | 数据交换 | 本部分中的主题 - 将对象发送到其他应用程序 - 将对象发送到 3ds max - 将控制装备发送到 MotionBuilder - 将多边形发送到 Mudbox - 将场景导出到 Unity - 将场景导出到 Unre…；数据交换 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-DataExchange/files/GUID-0FC71966-8701-409F-854D-582FFACEC5DE.htm>) |
+| `模拟和效果/nParticle/nParticle/nParticle 工作流/nParticle 疑难解答.md` | nParticle 疑难解答 | 当渲染类型设定为“点”(Points)或“多点”(Multipoint)并且启用“线平滑”(Line Smoothing)时，点大小受系统上图形卡的限制。请参见图形卡的硬件规格。 不能使用 worldVelocity 属…；nParticle, nParticle 工作流, 疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-F61DA729-37C1-4C19-97D5-0BC82DE3DAF6.htm>) |
+| `模拟和效果/nParticle/nParticle/nParticle 工作流/使用弹簧控制 nParticle/nParticle 弹簧疑难解答.md` | nParticle 弹簧疑难解答 | 本节说明了使用弹簧时可能遇到的一些问题的解决方法。 通常可以通过增加动力学计算的过采样来解决弹簧展开或收缩过度的问题。增加过采样会减慢播放速度，但会提高弹簧的稳定性。 执行以下步骤以增加过采样： 1. 在“Fx”菜单集中…；nParticle, nParticle 工作流, 使用弹簧控制 nParticle, 弹簧疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-DF7AA107-674D-4A24-80A6-B2392B7B9426.htm>) |
+| `模拟和效果/“效果”(Effects)和“效果资产”(Effects Assets)/“效果”(Effects)和“效果资产”(Effects Assets)/Maya“效果”(Effects)/效果疑难解答.md` | 效果疑难解答 | 启用“透明水滴”(Transparent Blob)的着色器的“RtRefractColor”且禁用光线跟踪器时，“透明水滴”(Transparent Blob)不是透明的。 如果流动向上或向下移动周期性曲面，该曲面包裹…；Maya“效果”(Effects), “效果”(Effects)和“效果资产”(Effects Assets), 效果疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-0747BDFA-3939-4C48-8115-66283E5F0F4C.htm>) |
+| `模拟和效果/流体效果/流体效果/开阔水面效果/开阔水面效果疑难解答.md` | 开阔水面效果疑难解答 | 本节内容 - 海洋沿地平线抖动 父主题： 开阔水面效果；开阔水面效果, 开阔水面效果疑难解答, 流体效果 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-510541E6-25DE-4DA7-8DBC-8F2B6DA045F1.htm>) |
+| `模拟和效果/流体效果/流体效果/开阔水面效果/开阔水面效果疑难解答/海洋沿地平线抖动.md` | 海洋沿地平线抖动 | 海洋似乎沿其地平线发生抖动或振动。如果发生这种情况，可以沿海洋地平线平滑或过滤闪烁像素。 沿其地平线过滤海洋 1. 在场景视图中，选择似乎沿其地平线发生抖动的海洋。 2. 在“属性编辑器”(Attribute Edito…；开阔水面效果, 开阔水面效果疑难解答, 流体效果, 海洋沿地平线抖动 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-SimulationEffects/files/GUID-22744897-EBD6-4924-9584-C688FC7D36F9.htm>) |
 | `渲染/Maya 渲染设置/Maya 渲染设置.md` | Maya 渲染设置 | 若要设置渲染，可以执行以下操作之一： 创建渲染层。将场景拆分为若干层，然后使用集合填充它们。 创建集合，以便根据要在场景中覆盖的属性对节点进行分组；例如，创建背景对象的集合，以便将其蒙版出角色。 此外，创建集合以控制对象…；Maya, Maya 渲染设置, 渲染, 渲染设置 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Rendering/files/GUID-646154F9-E4D2-4A3E-A0D9-B2F062960A4E.htm>) |
 | `渲染/Maya 渲染设置/Maya 渲染设置/“渲染设定”(Render Setup)编辑器的“场景”(Scene)设置中的“渲染设置”(Render Settings)、“AOVs”(AOV)和“灯光”(Lights)选项卡.md` | “渲染设定”(Render Setup)编辑器的“场景”(Scene)设置中的“渲染设置”(Render Settings)、“AOVs”(AOV)和“灯光”(Lights)选项卡 | - 双击“渲染设置”(Render Settings)选项卡，以打开“渲染设置”(Render Settings)窗口。 - 双击“AOVs”(AOV)选项卡，以打开显示 AOV 设置的“渲染设置”(Render Set…；AOV, Lights, Maya 渲染设置, Render, Scene, Settings, Setup, “AOVs” | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Rendering/files/GUID-BADA7DD2-B302-4358-8656-0B19178051B4.htm>) |
 | `渲染/Maya 渲染设置/Maya 渲染设置/为渲染层创建渲染设置覆盖.md` | 为渲染层创建渲染设置覆盖 | 单击“渲染设定”(Render Setup)编辑器顶部的“场景”(Scene) <!-- baize:img-hook downloaded=false reason="正文 2303 字 ≥300，非承重" -->图标…；Maya 渲染设置, 为渲染层创建渲染设置覆盖, 渲染 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Rendering/files/GUID-B3690107-63E5-45C6-818D-5BDD158693A4.htm>) |
@@ -5547,14 +5720,24 @@ docs/
 | `照明和着色/照明/照明/调整照明/辉光、光晕和镜头光斑/创建辉光环境.md` | 创建辉光环境 | 第一次打开“Hypershade”时，默认情况下，“材质”(Materials)选项卡中将显示三个节点，即：lambert1、particleCloud1 和 shaderGlow1。 使用环境辉光的“着色器辉光”(Sh…；创建辉光环境, 照明, 照明和着色 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-841D3097-9447-439A-AFB0-4C716187D9FD.htm>) |
 | `照明和着色/照明/照明/调整照明/辉光、光晕和镜头光斑/调整辉光对象的大小.md` | 调整辉光对象的大小 | 有关灯光辉光的光学效果的详细信息，请参见辉光在动画中的工作方式。 更改辉光对象的大小 1. 对于点光源，renderSphere 具有一个半径属性，可用于增加辉光对象的大小。 还可以更改每个灯光的“半径”(Radius)…；照明, 照明和着色, 调整辉光对象的大小 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-31B85BEF-13DA-4B55-8999-C1B934645438.htm>) |
 | `照明和着色/着色/着色/关于 ShaderFX/创建 ShaderFX 着色器/ShaderFX 纹理和 Gamma 校正.md` | ShaderFX 纹理和 Gamma 校正 | 如果目标引擎为线性，则应当对 RGB 纹理进行 Gamma 校正。若要将纹理贴图转化为线性空间，请选择“纹理贴图”(Texture Map)节点，并启用“属性编辑器”(Attribute Editor)中的“Conver…；Gamma, ShaderFX, 校正, 照明和着色, 着色, 纹理和 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-4229261F-36AA-42B2-A497-27E73885DCE0.htm>) |
+| `照明和着色/着色/着色/关于 ShaderFX/创建 ShaderFX 着色器/导出 ShaderFX 材质疑难解答.md` | 导出 ShaderFX 材质疑难解答 | 当您按照将 ShaderFX 材质导出到 HLSL、CgFX 和 GLSL 中列出的步骤导出 ShaderFX 材质时，如果遇到问题，请尝试通过指定“硬件着色器/文件名”(HwShader/Filename)属性中的文件…；ShaderFX, 关于 ShaderFX, 创建 ShaderFX 着色器, 导出, 材质疑难解答, 着色 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-85FB1646-700E-46A5-A77D-2F26A1AAEE5D.htm>) |
 | `照明和着色/着色/着色/关于 ShaderFX/创建基于物理的 Stingray 着色器/示例工作流程：使用基于物理的 Stingray 着色器融合两个纹理.md` | 示例工作流程：使用基于物理的 Stingray 着色器融合两个纹理 | 此示例演示如何使用 Stingray PBS 节点和 ShaderFX 节点创建着色器网络，以便可以通过绘制顶点融合两个纹理。 此工作流与 ShaderFX 介绍性示例工作流主题中的“使用顶点颜色节点融合纹理”示例类似；…；Stingray, 使用基于物理的, 照明和着色, 着色, 着色器融合两个纹理, 示例工作流程 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-B3203ECE-79B5-4F03-991C-40D9946FD08C.htm>) |
 | `照明和着色/着色/着色/关于着色和纹理曲面.md` | 关于着色和纹理曲面 | 本节内容 - 将颜色和着色应用于对象 - 使用 Hypershade 的外观开发 - 创建分层着色器 - 创建双面着色曲面 - 创建反射或折射灯光的材质 - 使用标准曲面着色器对玻璃或金属建模 - 在视口中查看着色和灯光…；关于着色和纹理曲面, 照明和着色, 着色 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-D43C875E-DFF1-4AB6-877B-AE2D3E7632B9.htm>) |
 | `照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答.md` | 与 Maya 材质和纹理有关的疑难解答 | 本节内容 - 无法看到 place2DTexture 样例疑难解答 - 更改多边形拓扑可能会影响着色器指定的疑难解答 - Hypershade 中不显示材质和纹理样例的疑难解答 - 无法在图像平面上播放影片疑难解答 - …；Maya, 材质和纹理有关的疑难解答, 照明和着色, 着色 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-A1803564-B9B5-4CE1-99C7-9BD0424C14F3.htm>) |
+| `照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/DirectX 11 着色器不显示顶点颜色的疑难解答.md` | DirectX 11 着色器不显示顶点颜色的疑难解答 | 如果使用“绘制顶点颜色工具”(Paint Vertex Color Tool)在已应用 DirectX 11 着色器的对象上绘制顶点，且顶点颜色未按预期显示，则可能是因为 DirectX 11 着色器的“曲面数据”(Su…；11, DirectX, 与 Maya 材质和纹理有关的疑难解答, 关于着色和纹理曲面, 着色, 着色器不显示顶点颜色的疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-F3CD9685-7310-4A4A-BFCC-5AED5FC3C507.htm>) |
 | `照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/Hypershade 中不显示材质和纹理样例的疑难解答.md` | Hypershade 中不显示材质和纹理样例的疑难解答 | - 用于在启动时渲染样例的选项可能已禁用。 在“首选项”(Preferences)窗口（“窗口 > 设置/首选项 > 首选项”(Windows > Settings/Preferences > Preferences)）…；Hypershade, 中不显示材质和纹理样例的疑难解答, 照明和着色, 着色 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-59565264-1E0C-42EA-AEFC-24DA07D44ABA.htm>) |
 | `照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/变形曲面上的游移纹理疑难解答.md` | 变形曲面上的游移纹理疑难解答 | 如果程序纹理非常杂乱且看似在移动，请尝试增加“过滤器”(Filter)和/或“过滤器偏移”(Filter Offset)，以尽力获得稍微模糊的效果，并减少导致游移的锐度。也可以尝试增加着色采样作为最后的方法。 如果纹理不…；变形曲面上的游移纹理疑难解答, 照明和着色, 着色 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-624BBA79-5CCC-41D0-BC7F-7657FA9D200B.htm>) |
+| `照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/在 Hypershade 中不显示节点的疑难解答.md` | 在 Hypershade 中不显示节点的疑难解答 | 您可以从 Hypershade 工作区中的图表以及从 Hypershade 浏览器过滤出节点类型。未显示的节点可能已被过滤掉。 若要在工作区中检查过滤器设置，请单击鼠标右键，然后从标记菜单中选择“显示 > 对象”(Sho…；Hypershade, 与 Maya 材质和纹理有关的疑难解答, 中不显示节点的疑难解答, 关于着色和纹理曲面, 着色 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-30D908F0-618F-4893-8354-18FD31C9BA05.htm>) |
 | `照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/当我移动参照对象时纹理游移的疑难解答.md` | 当我移动参照对象时纹理游移的疑难解答 | 通过该工作流可以将被引用对象移到场景中的任何位置，而不会使纹理在原始对象上游动。 如果 3D 纹理节点在对象的层次内进行分组 1. 选择对象层次的顶级节点。 2. 创建被引用对象。请参见创建纹理引用对象。 3. 运行“优…；当我移动参照对象时纹理游移的疑难解答, 照明和着色, 着色 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-6DDD7918-1A8E-4BD0-BC0F-937ACEB92878.htm>) |
+| `照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/影片文件加载速度慢的疑难解答.md` | 影片文件加载速度慢的疑难解答 | 首次访问 MPEG 文件中的帧时，它的加载速度可能很慢。影片库必须扫描至 MPEG 文件的末尾以查看其中有多少帧，因为影片标头中不提供该信息。；与 Maya 材质和纹理有关的疑难解答, 关于着色和纹理曲面, 影片文件加载速度慢的疑难解答, 着色 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-54F46A81-A5D7-4EE4-BDCD-E09B070D1FD6.htm>) |
 | `照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/扭曲纹理疑难解答.md` | 扭曲纹理疑难解答 | 2D 纹理直接定位在 NURBS 曲面的 UV 空间中。如果第一次应用纹理时其显示为扭曲的，则可能需要编辑曲面方向、修复不均匀的 UV 值（修复纹理扭曲），甚至重建曲面。请参见纹理贴图。 注 如果曲面使用“修复纹理扭曲”…；扭曲纹理疑难解答, 照明和着色, 着色 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-B8F05A37-0222-40DF-8E1D-1153FA362F4E.htm>) |
+| `照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/无法在图像平面上播放影片疑难解答.md` | 无法在图像平面上播放影片疑难解答 | 在 Maya 的图像平面中，并非所有影片文件格式都是可读的。例如，在 Windows 上，仅接受 .avi 文件。 请改用图像序列来创建已设置动画的图像背景。请参见创建已设置动画的图像平面。；与 Maya 材质和纹理有关的疑难解答, 关于着色和纹理曲面, 无法在图像平面上播放影片疑难解答, 着色 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-549250FD-CEAD-400B-B72D-3755B1D4F773.htm>) |
+| `照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/无法看到 place2DTexture 样例疑难解答.md` | 无法看到 place2DTexture 样例疑难解答 | 如果无法看到 place2dTexture 样例，请执行以下操作之一： - 选择纹理样例，然后单击“Hypershade”工具栏上的“输入连接”(Input Connections)按钮。 - 如果不存在 place2D…；place2DTexture, 与 Maya 材质和纹理有关的疑难解答, 关于着色和纹理曲面, 无法看到, 样例疑难解答, 着色 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-850B68C1-8838-4893-B5E6-5BBAAE1E9237.htm>) |
+| `照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/更改多边形拓扑可能会影响着色器指定的疑难解答.md` | 更改多边形拓扑可能会影响着色器指定的疑难解答 | 通过修改连接到对象的历史节点上的属性值更改多边形对象上的拓扑（面数）会对着色器指定产生负面影响。如果在该修改拓扑操作之前指定着色器，或在组件（面）级指定着色器（例如，将着色器指定给对象的部分而不是整个对象），将会发生这种…；与 Maya 材质和纹理有关的疑难解答, 关于着色和纹理曲面, 着色 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-E9842403-1EBE-4C46-9657-E0A09F69BF29.htm>) |
+| `照明和着色/着色/着色/关于着色和纹理曲面/与 Maya 材质和纹理有关的疑难解答/法线贴图疑难解答.md` | 法线贴图疑难解答 | 将法线贴图添加到已管理颜色的场景时，必须手动将贴图的颜色空间设置为“Raw”。这是因为法线贴图包含标量数据而非颜色数据，因此应当未经过颜色管理。启用颜色管理后，图像文件最初使用由“颜色管理”(Color Manageme…；与 Maya 材质和纹理有关的疑难解答, 关于着色和纹理曲面, 法线贴图疑难解答, 着色 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-CEFA09DB-8D7A-4059-8434-551387A88E8C.htm>) |
 | `照明和着色/着色/着色/关于着色和纹理曲面/使用 Hypershade 的外观开发/暂停材质和纹理的样例生成以提高 Hypershade 性能.md` | 暂停材质和纹理的样例生成以提高 Hypershade 性能 | 如果场景中有许多材质和纹理，则通过启用和禁用样例生成，可以避免等待样例进行渲染。 可以在以下区域中启用 ( <!-- baize:img-hook downloaded=false reason="正文 888 字 ≥3…；Hypershade, 性能, 暂停材质和纹理的样例生成以提高, 照明和着色, 着色 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-9BFB8717-DED0-431F-8F2B-F3A57D59386E.htm>) |
+| `照明和着色/着色/着色/关于着色和纹理曲面/创建和渲染硬件着色器/HLSL 着色器疑难解答.md` | HLSL 着色器疑难解答 | 如果 HLSL 效果未在 Maya 中正确显示，请执行下列步骤： 1. 选择着色节点，然后在“属性编辑器”(Attribute Editor)中打开“诊断”(Diagnostics)区域。该文本框包含尝试将着色器加载到 …；HLSL, 关于着色和纹理曲面, 创建和渲染硬件着色器, 着色, 着色器疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-06252A3F-603B-49C0-950D-AEF2FCC50CAD.htm>) |
+| `照明和着色/着色/着色/关于着色和纹理曲面/创建和渲染硬件着色器/创建 CgFX 着色器/CgFX 着色器疑难解答.md` | CgFX 着色器疑难解答 | 默认渲染器、硬件渲染器和 Viewport 2.0 渲染器在 CgFX 状态指定行为方面存在差异。DepthMask 状态的默认值不同。该默认值是 CGFX 着色器未指定值时使用的值。对于不同的渲染器，默认值如下所示： …；CgFX, 关于着色和纹理曲面, 创建 CgFX 着色器, 创建和渲染硬件着色器, 着色, 着色器疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-95E982CC-F95F-47F9-9CAA-DCBFD9907A31.htm>) |
 | `照明和着色/着色/着色/关于着色和纹理曲面/创建和渲染硬件着色器/创建 CgFX 着色器/CgFX 着色器的纹理坐标系的方向.md` | CgFX 着色器的纹理坐标系的方向 | 在编译 CgFX 着色器时，CgFX 插件会将编译宏 MAYA_TEXCOORD_ORIENTATION_OPENGL 或 MAYA_TEXCOORD_ORIENTATION_DIRECTX 设置为 1，以指定用于纹理坐…；CgFX, 照明和着色, 着色, 着色器的纹理坐标系的方向 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-651CFFC4-80BC-4B20-933A-744F20021DA5.htm>) |
 | `照明和着色/着色/着色/关于着色和纹理曲面/创建和渲染硬件着色器/创建和可视化 GLSL 着色器/编写自定义 GLSL 着色器：纹理、透明度、照明和硬件选择示例.md` | 编写自定义 GLSL 着色器：纹理、透明度、照明和硬件选择示例 | GLSL 着色语言规范不包含描述，允许您将各种着色器碎片及其关联的 UI 连接到单个效果文件中，就像可能对 CgFX 或 HLSL 那样。 因此，提供了包裹器文件格式，允许您为各个着色阶段指定 GLSL 碎片：处理灯光和…；GLSL, 照明和着色, 照明和硬件选择示例, 着色, 着色器, 纹理, 编写自定义, 透明度 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-F81B34C5-30B8-4784-8351-F252006C42D8.htm>) |
 | `照明和着色/着色/着色/关于着色和纹理曲面/纹理.md` | 纹理 | 在视觉艺术中，纹理是任何种类的曲面细节，包括视觉和触觉。在 Maya 中，使用连接到作为纹理贴图的对象材质上的纹理，创建曲面细节。材质定义对象的基本物质，而纹理添加细节。 您可以将纹理连接到材质的几乎任何属性；最常见的属…；照明和着色, 着色, 纹理 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-1C24534D-8B91-45FF-971A-B3AD07E1067F.htm>) |
@@ -5594,6 +5777,9 @@ docs/
 | `照明和着色/着色/着色/关于着色和纹理曲面/纹理/获取场景中所有纹理的 GPU 内存使用信息.md` | 获取场景中所有纹理的 GPU 内存使用信息 | 若要获取场景中所有纹理的列表以及用于每个纹理的 GPU 内存，请使用带有 dt 标志和 gpu 标志的 ogs 命令。若要列出场景中的所有文件纹理，请将 dt 标志设置为值 full。若要仅列出已用纹理内存的总量，请将 …；GPU, 内存使用信息, 照明和着色, 着色, 获取场景中所有纹理的 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-40190BED-65F1-4590-A3B9-9EDE4A12603B.htm>) |
 | `照明和着色/着色/着色/关于着色和纹理曲面/纹理/释放未使用纹理的 GPU 内存.md` | 释放未使用纹理的 GPU 内存 | 您可以释放当前未使用纹理的 GPU 内存，以便使用 ogs 命令和 drt 标志进行渲染。例如，使用此命令可以在从纹理模式切换到着色模式之后、或者在模板化或隐藏对象之后释放纹理内存。 使用此命令后，必须刷新当前视图才能释…；GPU, 内存, 照明和着色, 着色, 释放未使用纹理的 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-74599EBE-1DC5-4ECE-86C0-A0216ABE0794.htm>) |
 | `照明和着色/着色/着色/关于着色和纹理曲面/纹理/预览 Ptex 纹理.md` | 预览 Ptex 纹理 | 可以预览“Viewport 2.0”中输入的指定给任何标准 Maya 着色网络纹理的 Ptex 纹理。 注 仅可以在 Viewport 2.0 和支持 Ptex 的第三方渲染器中预览 Ptex。将 Ptex 与 Maya…；Ptex, 照明和着色, 着色, 纹理, 预览 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-29784653-AD43-4DF6-8EE0-E66C0BFE6CC8.htm>) |
+| `照明和着色/着色/着色/反射和环境/有关立方体贴图交换前后图像的疑难解答.md` | 有关立方体贴图交换前后图像的疑难解答 | 硬件渲染的环境立方体贴图与带纹理的 3D 视图匹配，但与软件渲染的结果相比，前后图像将交换。 如果希望硬件渲染的结果匹配软件渲染的结果（但不会匹配硬件纹理场景视图），请打开立方体贴图的“属性编辑器”(Attribute …；反射和环境, 有关立方体贴图交换前后图像的疑难解答, 着色 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-C1548355-4FBC-40C7-85E6-AE0463C604AD.htm>) |
+| `照明和着色/着色/着色/反射和环境/环境反射贴图疑难解答.md` | 环境反射贴图疑难解答 | 环境反射贴图必须映射到反射的颜色通道 球体和立方体环境贴图仅支持反射颜色通道。将一个通道指定到另一个通道后，将产生未定义的结果。；反射和环境, 环境反射贴图疑难解答, 着色 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-B0308D54-58DE-40B3-A7B6-A1914FB527C8.htm>) |
+| `照明和着色/着色/着色/大气/“环境雾”(Environment Fog)问题的疑难解答.md` | “环境雾”(Environment Fog)问题的疑难解答 | 您可能会注意到，渲染图像的环境雾中存在以下问题： 请将环境雾灯光的“环境光明暗处理”(Ambient Shade)设定为 0。 执行下列操作之一： - 为环境雾形状启用“着色采样数覆盖”(Shading Samples …；Environment, Fog, “环境雾”, 大气, 着色, 问题的疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-D6A633D4-57F3-48A9-9214-9A76DD9A598E.htm>) |
 | `照明和着色/着色/着色/烘焙纹理和预照明.md` | 烘焙纹理和预照明 | 本节内容 - 烘焙照明和颜色 - 在“Hypershade”中创建“烘焙集”选项卡 父主题： 着色；烘焙纹理和预照明, 照明和着色, 着色 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-2985EE7C-617F-4660-9213-E6D44D7FF42C.htm>) |
 | `照明和着色/着色/着色/着色引用/着色窗口和编辑器/Hypershade 窗口/“Hypershade”菜单/Hypershade 的“编辑”(Edit)菜单/“转化为文件纹理(Maya 软件)(Convert to File Texture (Maya Software)”选项.md` | “转化为文件纹理(Maya 软件)(Convert to File Texture (Maya Software)”选项 | 在“Hypershade”菜单中选择“编辑 > 转化为文件纹理(Maya 软件)”(Edit > Convert to File Texture (Maya Software)) > <!-- baize:img-hoo…；Convert, File, Maya, Software, Texture, to, “转化为文件纹理, ”选项 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-AC5063A7-9E3B-417F-BD79-FA9D2B3CEC01.htm>) |
 | `照明和着色/着色/着色/着色引用/着色窗口和编辑器/Hypershade 窗口/“Hypershade”菜单/Hypershade 的“编辑”(Edit)菜单/渲染纹理范围选项.md` | 渲染纹理范围选项 | 在“Hypershade”菜单中选择“编辑 > 渲染纹理范围”(Edit > Render Texture Range) > <!-- baize:img-hook downloaded=false reason="正文…；渲染纹理范围选项, 照明和着色, 着色 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-0B4D4B95-32B9-417B-AF40-5716932D5FD2.htm>) |
@@ -5608,6 +5794,8 @@ docs/
 | `照明和着色/着色/着色/着色引用/着色节点/纹理节点概述/分层纹理(Layered texture).md` | 分层纹理(Layered texture) | 有关分层纹理的详细信息，请参见分层纹理。 在“创建”(Create)选项卡中找到此纹理。 指定在计算分层纹理的结果颜色和 Alpha 的过程中，是否应该考虑层。如果禁用，就好像层不存在一样。如果需要隔离特定层以查看它本身…；Layered, texture, 分层纹理, 照明和着色, 着色 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-770E22B9-E32A-4E14-A4DC-23656D885AEE.htm>) |
 | `照明和着色/着色/着色/着色引用/着色节点/纹理节点概述/环境纹理.md` | 环境纹理 | Maya 提供环境纹理用作场景的背景。“创建渲染节点”(Create Render Node)窗口中可用的环境纹理包括“环境球”(Env Ball)、“环境立方体”(Env Cube)、“环境球体”(Env Sphere…；照明和着色, 环境纹理, 着色 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-E4BE9CE4-1ED8-4B89-8148-9F1246B1D619.htm>) |
 | `照明和着色/着色/着色/着色引用/着色节点/纹理节点概述/环境纹理/公用环境纹理属性.md` | 公用环境纹理属性 | “颜色重映射”(Color Remap)将颜色贴图应用于纹理。它是唯一的公用“效果环境”(Effects Environment)纹理属性。“颜色重映射”(Color Remap)纹理的 U 值将映射到原始纹理的色调，且…；公用环境纹理属性, 照明和着色, 着色 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-14762BA2-A8F3-4FDE-BDD3-16B3C72CE1E5.htm>) |
+| `照明和着色/着色/着色/背景和图像平面/图像平面/粒状或锯齿状背景图像平面疑难解答.md` | 粒状或锯齿状背景图像平面疑难解答 | 请执行下列任一操作： - 为图像平面增大“着色采样数”(Shading Samples)和“最大着色采样数”(Max Shading Samples)（至产生可接受结果的最小值）。 - 解决方法：渲染不包含背景图像的场景…；图像平面, 着色, 粒状或锯齿状背景图像平面疑难解答, 背景和图像平面 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-0B75B850-4894-4FC4-A157-1C49AED71A40.htm>) |
+| `照明和着色/着色/着色/表面起伏/凹凸贴图疑难解答.md` | 凹凸贴图疑难解答 | 凹凸贴图的外观取决于贴图文件纹理的尺寸，或取决于“渲染设置”(Render Settings)中的凹凸分辨率和预设质量。如果更改分辨率，则也将更改凹凸外观。 调整凹凸深度，以还原为所需外观。；凹凸贴图疑难解答, 着色, 表面起伏 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-0471FC59-0E77-4EE0-8BD4-F60E2B4FD5AD.htm>) |
 | `照明和着色/着色/着色/表面起伏/模糊的文件纹理看起来清楚而不模糊的疑难解答.md` | 模糊的文件纹理看起来清楚而不模糊的疑难解答 | Maya 的文件纹理节点提供了用于对纹理进行模糊处理的控件（过滤器大小和过滤器偏移），但是，当纹理应用于颜色通道与置换贴图时，这些控件起不同的作用，从而可以捕获极其精细的详细信息。 因此，虽然可以将（例如）照片导入到 M…；照明和着色, 着色 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-78EB3F36-21CD-4BCA-AB85-25A76C12B65F.htm>) |
 | `照明和着色/着色/着色/表面起伏/置换纹理“弹出”疑难解答.md` | 置换纹理“弹出”疑难解答 | 若要防止置换纹理“弹出”，请确保在曲面的“属性编辑器”(Attribute Editor)的“次细分属性”(Secondary Tessellation Attributes)区域中禁用其“使用最小屏幕”(Use Min…；照明和着色, 着色, 置换纹理“弹出”疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-48A81F38-C6C8-415D-8595-34B0022DE5F0.htm>) |
 | `照明和着色/着色/着色/表面起伏/连接纹理作为置换贴图.md` | 连接纹理作为置换贴图 | 有关置换的详细信息，请参见置换贴图。 注 - 请不要使用“环境”(Environment)纹理作为置换贴图。环境贴图的基本特征排除了用于置换贴图时的精确计算。 - 在凹凸或置换贴图过程中，如果图像文件包含遮罩通道，则遮罩…；照明和着色, 着色, 连接纹理作为置换贴图 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-LightingShading/files/GUID-9E4B4E8F-F4B7-4005-B3F0-5441E65170CF.htm>) |
@@ -5853,6 +6041,25 @@ docs/
 | `管理场景、文件和项目/流水线资产管理/流水线资产管理/资产/资产编辑器(Asset Editor).md` | 资产编辑器(Asset Editor) | - 若要打开“资产编辑器”(Asset Editor)，请选择“窗口 > 常规编辑器 > 资产编辑器”(Windows > General Editors > Asset Editor)。 “资产编辑器”(Asset E…；Asset, Editor, 流水线资产管理, 管理场景、文件和项目, 资产编辑器 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-ManagingScenes/files/GUID-2BB770AC-6B1F-48E3-814C-DCCC72DD6EA5.htm>) |
 | `管理场景、文件和项目/管理场景、文件和项目/管理场景、文件和项目.md` | 管理场景、文件和项目 | 本部分中的主题 - 将文件组织到项目中 - 场景文件 - 文件浏览器 - 内容浏览器 - 支持的文件格式 - 导入和导出文件 - 名称空间 - 文件路径编辑器 - 流水线资产管理；文件和项目, 管理场景, 管理场景、文件和项目 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-ManagingScenes/files/GUID-D0D38081-C49D-4710-BD97-DB37AE32A92B.htm>) |
 | `管理场景、文件和项目/管理场景、文件和项目/管理场景、文件和项目/检查 Maya 版本.md` | 检查 Maya 版本 | 您可以检查安装了哪个版本的 Maya 版本以及是否安装了 Service Pack。 选择主“帮助”(Help)菜单选项中的“关于 Maya”(About Maya)时，将显示 Maya 版本。此时将显示“关于 Auto…；Maya, 检查, 版本, 管理场景、文件和项目 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-ManagingScenes/files/GUID-0E0EEE60-9E84-4D31-8DA8-436C0DC6B4FC.htm>) |
+| `脚本/MEL 和表达式/MEL 和表达式/MEL 窗口和编辑器/MEL 分析器/启动 MEL 分析器.md` | 启动 MEL 分析器 | 启动 MEL 分析器 1. 在 Maya 中，打开“插件管理器”(Plug-in Manager)（“窗口 > 设置/首选项 > 插件管理器”(Windows > Settings/Preferences > Plug-…；MEL, MEL 分析器, MEL 和表达式, MEL 窗口和编辑器, 分析器, 启动 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-91FC49A9-C2E4-4C89-9BDD-13A7C8704464.htm>) |
+| `脚本/MEL 和表达式/MEL 和表达式/有关 MEL 的常见问题解答/任务/删除窗口后模型面板继续存在的疑难解答.md` | 删除窗口后模型面板继续存在的疑难解答 | 删除窗口后，还必须使用 deleteUI 命令手动删除其关联的 modelPanel。删除窗口时，不会自动删除模型面板。 例如： // Create a window called myWindow window -wh…；MEL 和表达式, 任务, 删除窗口后模型面板继续存在的疑难解答, 有关 MEL 的常见问题解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-4D3EEFBA-B875-40D1-B09D-23A50C67D3F9.htm>) |
+| `脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答.md` | 调试、优化和疑难解答 | 本节内容 - MEL 调试功能 - 优化脚本和表达式速度 - 疑难解答 父主题： MEL 和表达式；MEL 和表达式, 优化和疑难解答, 调试 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-437ED0F8-DD27-4456-8107-EC82CED5230F.htm>) |
+| `脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/MEL 调试功能.md` | MEL 调试功能 | 本节内容 - 通过错误、警告和跟踪发出信号 - 使用 catch 和 catchQuiet 处理错误 - 显示错误行号 - 在出错时显示调用堆栈 父主题： 调试、优化和疑难解答；MEL, MEL 和表达式, 调试、优化和疑难解答, 调试功能 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-415B2E8F-0D70-45F9-B34A-B69DC6589681.htm>) |
+| `脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/MEL 调试功能/使用 catch 和 catchQuiet 处理错误.md` | 使用 catch 和 catchQuiet 处理错误 | catch 语句将对一个表达式求值，并在表达式出现错误，但不会停止脚本时返回 true（如 catch 之外的错误）。 这允许您测试 if 语句中的指定或命令的执行，并在 catch 返回 true 时运行错误处理代码。…；MEL 和表达式, MEL 调试功能, catch, catchQuiet, 使用, 处理错误, 调试、优化和疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-6B9DED33-05CD-4300-8845-B91F4F0B753F.htm>) |
+| `脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/MEL 调试功能/在出错时显示调用堆栈.md` | 在出错时显示调用堆栈 | 在开始创建复杂的可重用脚本时，您经常会遇到各种脚本中定义的各种过程相互调用的情况。 出现错误时，了解调用堆栈通常非常有用：哪个过程调用哪个过程，后者又调用哪个过程，直到引发该错误的过程的顺序。这可帮助识别引起错误的情况。…；MEL 和表达式, MEL 调试功能, 在出错时显示调用堆栈, 调试、优化和疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-A54886EF-E285-431C-A6FA-53480C77B042.htm>) |
+| `脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/MEL 调试功能/显示错误行号.md` | 显示错误行号 | 如果在执行长脚本时因出错而发生问题，可启用脚本行号，以便更轻松找到错误所在。 若要显示出错语句的行号，请从“脚本编辑器”(Script Editor)选择“命令 > 显示行号”(Command > Show Line N…；MEL 和表达式, MEL 调试功能, 显示错误行号, 调试、优化和疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-1D52B6D8-4258-472D-838E-77FB66DB29B1.htm>) |
+| `脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/MEL 调试功能/通过错误、警告和跟踪发出信号.md` | 通过错误、警告和跟踪发出信号 | error 命令以标准 MEL 格式打印错误消息并停止脚本： $l = ls -lights; if (size($l) == 0) { error "No lights in scene"; } 该命令将生成以下输出并…；MEL 和表达式, MEL 调试功能, 警告和跟踪发出信号, 调试、优化和疑难解答, 通过错误 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-7373CB68-7BF0-41BC-ACF4-5E751AAD39D8.htm>) |
+| `脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/优化脚本和表达式速度.md` | 优化脚本和表达式速度 | 本节内容 - 优化脚本 - 优化表达式 - 减少冗余表达式执行 父主题： 调试、优化和疑难解答；MEL 和表达式, 优化脚本和表达式速度, 调试、优化和疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-64B0ADDF-7939-456B-9F64-D90C8402803E.htm>) |
+| `脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/优化脚本和表达式速度/优化脚本.md` | 优化脚本 | 例如，使用 float $a[42]; 代替 float $a[];。可以根据需要扩大所有数组，因此，如果并不确切知道数组可存放的元素数量，但知道一个合理的最大值，则请使用该值。如果没有指定大小，MEL 将使用 16 个…；MEL 和表达式, 优化脚本, 优化脚本和表达式速度, 调试、优化和疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-44D46962-ED89-4C6D-A446-4CF3F0D0DE85.htm>) |
+| `脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/优化脚本和表达式速度/优化表达式.md` | 优化表达式 | Maya 以厘米、弧度和秒为单位进行内部计算。弧度是数学中常用的角度单位。它等于 180 度除以派（π），或大约为 57.3 度。 将某个数字指定给其值为度量单位的属性时，默认情况下，该表达式会将数字解释为您在“首选项”…；MEL 和表达式, 优化脚本和表达式速度, 优化表达式, 调试、优化和疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-B23EE5CE-B8D8-46DF-8BE4-0C24EAB0E3A2.htm>) |
+| `脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/优化脚本和表达式速度/减少冗余表达式执行.md` | 减少冗余表达式执行 | 如果表达式包含冗余的语句计算，可以禁用“求值:始终”(Always Evaluate)以加快动画的拖动和播放速度。若要了解此功能适用的情况，必须了解表达式执行的细微细节。 表达式通常在每次动画时间改变时执行。每当表达式读…；MEL 和表达式, 优化脚本和表达式速度, 减少冗余表达式执行, 调试、优化和疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-78D1A475-5B34-4F4C-9CFD-3BF3C769DB39.htm>) |
+| `脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/疑难解答.md` | 疑难解答 | 本节内容 - 访问全局变量 - 初始化不同于指定 - 常见表达式错误 - 在表达式中执行 MEL 命令可能会有意外副作用 - 错误消息格式 - 常见错误消息 父主题： 调试、优化和疑难解答；MEL 和表达式, 疑难解答, 调试、优化和疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-741CB4B0-9F19-4A84-9B7A-FB0D28FD80AC.htm>) |
+| `脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/疑难解答/初始化不同于指定.md` | 初始化不同于指定 | 实际上，该差异仅对于全局数据而言比较重要。 对于非全局数据，初始化的运行方式与指定的运行方式完全相同，因为每次执行包含初始化的脚本或过程时都会执行初始化。 全局初始化仅发生一次并且是在执行所有操作之前发生的。因此，初始化…；MEL 和表达式, 初始化不同于指定, 疑难解答, 调试、优化和疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-761FFD7D-895D-420B-B17D-0541FC3C4ECD.htm>) |
+| `脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/疑难解答/在表达式中执行 MEL 命令可能会有意外副作用.md` | 在表达式中执行 MEL 命令可能会有意外副作用 | 可以在表达式中执行 MEL 命令和程序。但是，如果进行连接或断开连接，或者添加或删除节点，则场景可能发生故障。 回放动画不会撤销在表达式中执行 MEL 命令。例如，如果表达式执行 MEL 命令来创建一对球体，则回放不会删…；MEL, MEL 和表达式, 命令可能会有意外副作用, 在表达式中执行, 疑难解答, 调试、优化和疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-14730E8F-07ED-484E-8675-6745F05A98C8.htm>) |
+| `脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/疑难解答/常见表达式错误.md` | 常见表达式错误 | 编写表达式时可能会犯两种错误：语法错误和逻辑错误。语法错误包括拼写出错、属性名称不完整、分号忽略以及其他导致表达式无法编译和执行的疏忽。对于语法错误，Maya 将以消息方式向“脚本编辑器”(Script Editor)解…；MEL 和表达式, 常见表达式错误, 疑难解答, 调试、优化和疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-81329293-78BD-4BFA-B655-5E69FE4937D2.htm>) |
+| `脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/疑难解答/常见错误消息.md` | 常见错误消息 | 下面是一些常见语法错误及其说明： 属性名称拼写错误，场景中不存在该属性，或忘记为变量名称添加前缀 $。 您在表达式中使用了粒子数组属性，但粒子形状节点不是“表达式编辑器”(Expression Editor)中的“选定对…；MEL 和表达式, 常见错误消息, 疑难解答, 调试、优化和疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-8133FB66-9A39-4D4B-A3CA-7B3FB18A1F79.htm>) |
+| `脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/疑难解答/访问全局变量.md` | 访问全局变量 | 若要引用全局变量，必须在使用它的范围内显式声明它 这是必要的，因为 MEL 允许通过赋值隐式声明变量。例如， $flag = 42; 将 $flag 隐式声明为在当前范围内定义的一个整数。 MEL 无法分辨您要引用全局变…；MEL 和表达式, 疑难解答, 访问全局变量, 调试、优化和疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-29FD140E-70B7-4089-85C0-5A8F57A3AE2E.htm>) |
+| `脚本/MEL 和表达式/MEL 和表达式/调试、优化和疑难解答/疑难解答/错误消息格式.md` | 错误消息格式 | 语法错误将在“脚本编辑器”(Script Editor)中显示一个或多个消息。 您将需要经常滚动或增加“脚本编辑器”(Script Editor)的大小，以查看完整的消息。 当“脚本编辑器”(Script Editor)…；MEL 和表达式, 疑难解答, 调试、优化和疑难解答, 错误消息格式 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Scripting/files/GUID-C2392D80-C25A-4E37-8F9C-2CBD47AAFB98.htm>) |
 | `自定义 Maya/性能提高技巧/性能提高技巧.md` | 性能提高技巧 | 此部分介绍了如何提高 Maya 的性能，以便您可以更快地移动对象、播放动画、渲染和工作。 - 更高效地使用 Maya 从不同方面介绍了诸多提示和最佳实践，有助于改善性能。 - 使用求值管理器提高性能介绍了一款高级工具，使…；性能提高技巧, 自定义 Maya | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Customizing/files/GUID-235ED36C-EAE1-41BB-91B8-D79EE7659E66.htm>) |
 | `自定义 Maya/性能提高技巧/性能提高技巧/使用节点类型过滤以提高“属性编辑器”(Attribute Editor)的性能.md` | 使用节点类型过滤以提高“属性编辑器”(Attribute Editor)的性能 | 选择某个对象时，会自动将其属性加载到“属性编辑器”(Attribute Editor)中，可以在属性编辑器中查看和编辑这些属性。选定对象的节点及其所有相关依存关系节点作为选项卡显示在窗口顶部。显示对象的相关节点可能会导致…；Attribute, Editor, 使用节点类型过滤以提高“属性编辑器”, 性能提高技巧, 的性能, 自定义 Maya | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Customizing/files/GUID-1C51E11A-2C07-412C-8A26-6741D42FE538.htm>) |
 | `自定义 Maya/性能提高技巧/性能提高技巧/使用解算管理器提高性能.md` | 使用解算管理器提高性能 | - 在“首选项”(Preferences)窗口（“编辑器 > 设置/首选项 > 首选项 > 动画”(Editors > Settings/Preferences > Preferences > Animation) > …；使用解算管理器提高性能, 性能提高技巧, 自定义 Maya | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Customizing/files/GUID-190D97E7-9AC0-4D67-8A07-1AF3A9DBAF15.htm>) |
@@ -5998,6 +6205,20 @@ docs/
 | `自定义 Maya/首选项/首选项/保存首选项.md` | 保存首选项 | 启动 Maya 时，它将在默认位置中查找其 prefs 文件夹，除非已将 MAYA_APP_DIR 环境变量设置为其他路径。请参见文件路径变量。 如果首选项不存在（例如，首次运行该应用程序时），则 Maya 将使用默认设…；保存首选项, 自定义 Maya, 首选项 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Customizing/files/GUID-A11EDD96-3362-4186-BE82-A245B46A0165.htm>) |
 | `自定义 Maya/首选项/首选项/保存首选项/已保存的首选项类型.md` | 已保存的首选项类型 | 已保存的首选项包括： - 工具架 - 存储在 shelves 子目录中 - 图标 - 存储在 icons 子目录中 - 标记菜单 - 存储在 markingMenus 子目录中 - 颜色设置 - 保存在 .mel 文件中…；已保存的首选项类型, 自定义 Maya, 首选项 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Customizing/files/GUID-280FE025-66DF-4DF8-AD44-417DC202A889.htm>) |
 | `自定义 Maya/首选项/首选项/重置 Maya 首选项.md` | 重置 Maya 首选项 | 重置 Maya 首选项可能是有效解决许多已发生问题的第一步，如缺少菜单、无法启动或在顶点模式下移动对象时性能降低。 通过重命名或删除目录移除首选项后，Maya 会在下次运行应用程序时创建新的首选项。这会将工具和选项刷新为…；Maya, 自定义 Maya, 重置, 首选项 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Customizing/files/GUID-393D1ECA-9B6E-4625-B5B1-3F28E62AFB1C.htm>) |
+| `角色动画/HumanIK/HumanIK/HumanIK 角色设置疑难解答.md` | HumanIK 角色设置疑难解答 | 角色的某些关节或几何体的某些分段看起来与其父对象关节或其他几何体不成比例。如果已启用关节的“分段比例补偿”(Segment Scale Compensate)属性，则可能会出现这种情况。启用“分段比例补偿”(Segmen…；HumanIK, 角色设置疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharacterAnimation/files/GUID-463A24CF-7CFE-490D-A6F4-E773426BFE04.htm>) |
+| `角色动画/使用骨架/使用骨架/设置骨架姿势/IKFK 融合/使用 IK 解算器异常关节翻转的疑难解答.md` | 使用 IK 解算器异常关节翻转的疑难解答 | FK 动画完成后，关节链可能会在启用 IK 解算器（“关键帧 > IK/FK 关键帧 > 启用 IK 解算器”(Key > IK/FK Keys > Enable IK Solver)）时翻转到异常位置。 关节翻转是样条…；IK, IKFK 融合, 使用, 使用骨架, 解算器异常关节翻转的疑难解答, 设置骨架姿势 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharacterAnimation/files/GUID-AD60045C-67FE-4367-8AB7-C5F26485740B.htm>) |
+| `角色动画/对角色进行蒙皮/对角色进行蒙皮/绑定姿势/达到绑定姿势疑难解答.md` | 达到绑定姿势疑难解答 | 如果锁定骨架的任意关节属性，则它将无法立即转到绑定姿势。通常，关节属性可以由约束、表达式、IK 样条线控制柄，或具有关键帧集的任何 IK 控制柄锁定。这些功能可以驱动某些关节属性的值，从而锁定它们以便独占使用。通过它们锁…；对角色进行蒙皮, 绑定姿势, 达到绑定姿势疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharacterAnimation/files/GUID-D47C31C7-428F-4A54-B104-49C51F3856E5.htm>) |
+| `角色动画/约束/约束/方向约束/编辑方向约束/方向约束错误消息疑难解答.md` | 方向约束错误消息疑难解答 | 您尝试将方向约束的插值类型更改为“翻转模式”(Flip Mode)，但并非所有受约束对象的旋转通道都由该约束驱动。 方向约束在四元数中使用，因此其解决方案涉及全部三个旋转轴。因此，当方向约束仅驱动一个或两个受约束对象的旋…；方向约束, 方向约束错误消息疑难解答, 约束, 编辑方向约束 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharacterAnimation/files/GUID-4CFEA7FF-AF63-489F-9DE1-72206F3594E4.htm>) |
+| `角色效果和环境构建/XGen 几何体实例化器/XGen 几何体实例化器/XGen 疑难解答和常见问题解答.md` | XGen 疑难解答和常见问题解答 | 本节内容 - 关于 XGen 的常见问题解答 - XGen 用户提示 - 解决 XGen 错误 父主题： XGen 几何体实例化器；XGen, XGen 几何体实例化器, 疑难解答和常见问题解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-463D1930-F3FC-4C65-8C16-5A2927EDE8A7.htm>) |
+| `角色效果和环境构建/XGen 几何体实例化器/XGen 几何体实例化器/XGen 疑难解答和常见问题解答/XGen 用户提示.md` | XGen 用户提示 | 以下部分包含您可以在 XGen 工作流中使用的提示。 当您使用属性补偿时，模型中的面有时会不能正确对齐。例如，可以设置“倾斜 V = 1”(Tilt V = 1)（在表达式中使用时 OffU），所有基本体将不会指向同一方…；XGen, XGen 几何体实例化器, XGen 疑难解答和常见问题解答, 用户提示 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-6E167483-334A-4C9F-AFC4-11F9FAAC1663.htm>) |
+| `角色效果和环境构建/XGen 几何体实例化器/XGen 几何体实例化器/XGen 疑难解答和常见问题解答/关于 XGen 的常见问题解答.md` | 关于 XGen 的常见问题解答 | 基本体在参数化面片空间而非 Euclidean (XYZ) 空间中生成。因此，基本体的分布采用方形面片以与方形参数空间相匹配。法线补偿会尝试补偿非方形面片分布。 为了补偿非方形分布，XGen 会查找 U 和 V 等参线的…；XGen, XGen 几何体实例化器, XGen 疑难解答和常见问题解答, 关于, 的常见问题解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-4E71E00B-ACCC-470D-A615-A65DEF98BF36.htm>) |
+| `角色效果和环境构建/XGen 几何体实例化器/XGen 几何体实例化器/XGen 疑难解答和常见问题解答/解决 XGen 错误.md` | 解决 XGen 错误 | 此页面将帮助您解析 XGen 生成的常见错误代码。 此消息会在 XGen 在该消息中列出的 XGen 数据路径指定的任何目录中都找不到文件时显示。在以下两种情况下会出现该文件丢失消息： - 文件已丢失。 - 文件已存在，…；XGen, XGen 几何体实例化器, XGen 疑难解答和常见问题解答, 解决, 错误 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-305B2A61-50FA-4B5E-B7B4-BB1CCC743E94.htm>) |
+| `角色效果和环境构建/nCloth/nCloth/nCloth 提示和疑难解答.md` | nCloth 提示和疑难解答 | 本节内容 - 提示 - 疑难解答 - 优化 nCloth 父主题： nCloth；nCloth, 提示和疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-5FD537E0-CEB4-4933-A6E2-0CF100F5CF74.htm>) |
+| `角色效果和环境构建/nCloth/nCloth/nCloth 提示和疑难解答/优化 nCloth.md` | 优化 nCloth | 本部分详细介绍提高 nCloth 模拟播放速度的方法。；nCloth, nCloth 提示和疑难解答, 优化 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-AFB680AE-60E3-4F22-A646-C32E1FAF1E26.htm>) |
+| `角色效果和环境构建/nCloth/nCloth/nCloth 提示和疑难解答/提示.md` | 提示 | 本节提供提示，帮助工作中能更好地使用 nCloth。 下列是有助于使用 Maya Nucleus 解算器和 nCloth 的常规指示器列表。 - “动力学”(Dynamics)始终以米来计算。如果想在场景中使用厘米，应将…；nCloth, nCloth 提示和疑难解答, 提示 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-B25CF37F-9A91-4380-833C-10EC53E54BCE.htm>) |
+| `角色效果和环境构建/nCloth/nCloth/nCloth 提示和疑难解答/疑难解答.md` | 疑难解答 | 本节概述了您使用 nCloth 时可能会遇到的问题并提供了解决方法。 在将具有着色器指定的多边形对象转化为 nCloth 时，您可能会发现着色器指定丢失。 解决方法：在将多边形对象转化为 nCloth 后指定着色器。. …；nCloth, nCloth 提示和疑难解答, 疑难解答 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-B80D5B14-B296-43DD-9E15-971BC68E06C1.htm>) |
+| `角色效果和环境构建/nHair/nHair/nHair 采样和方法/采样动力学曲线场景/nHair 疑难解答.md` | nHair 疑难解答 | 以下是对您在使用头发时可能会遇到的问题的解决方法。 如果您在创建头发时将“输出”(Output)设定为“NURBS 曲线”(NURBS Curves)并创建了大量的头发，模拟进行初始化的速度可能较慢。解决方法是将“输出”…；nHair, nHair 采样和方法, 疑难解答, 采样动力学曲线场景 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-2ACCE1A4-AC13-4153-B74D-CB2A03C9ABC1.htm>) |
+| `角色效果和环境构建/在 Maya 中绘制/在 Maya 中绘制/Maya Paint Effects/“Paint Effects”疑难解答.md` | “Paint Effects”疑难解答 | 以下是使用“Paint Effects”时可能遇到的问题的解决方法。这些问题包括： 如果笔刷非常厚重，且在笔刷笔划中分段或多边形面的数量超过 1000000，则会显示一条消息，并且不会绘制笔刷笔划。这样可避免显示被锁定，…；Effects”疑难解答, Maya Paint Effects, “Paint, 在 Maya 中绘制 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharEffEnvBuild/files/GUID-A26EDCB8-9F6E-4752-B292-CED92A43B3D2.htm>) |
 | `运动图形/MASH 程序效果/MASH 程序效果.md` | MASH 程序效果 | 使用 MASH 可以创建包含程序节点网络的多用途运动设计动画。从属性编辑器和节点编辑器中自定义所有效果，并将效果链接在一起实现更大的变化。 您可以从场景中的一个或多个对象创建 MASH 网络，必要时，您可以通过“实例化器…；MASH, MASH 程序效果, 程序效果, 运动图形 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-MotionGraphics/files/GUID-5F45C398-D87D-424E-9F00-51D9FAB5A40B.htm>) |
 | `运动图形/MASH 程序效果/MASH 程序效果/MASH 参考.md` | MASH 参考 | 此部分概述了与 MASH 相关的所有节点、菜单和编辑器。；MASH, MASH 程序效果, 参考, 运动图形 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-MotionGraphics/files/GUID-52154221-F099-46A1-8B53-048110471B76.htm>) |
 | `运动图形/MASH 程序效果/MASH 程序效果/MASH 参考/MASH 工作区.md` | MASH 工作区 | MASH 工作区可排列界面，使您能够快速访问相关程度最高的工具和适用于 MASH 工作流的编辑器。有关详细信息，请参见工作区。 若要切换到 MASH 工作区，请转到“窗口 > 工作区 > MASH”(Windows > …；MASH, MASH 程序效果, 工作区, 运动图形 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-MotionGraphics/files/GUID-F292A726-D4E7-444B-8797-26257241E868.htm>) |
@@ -6061,6 +6282,9 @@ docs/
 | `运动图形/智能预设/智能预设.md` | 智能预设 | 智能预设是一系列预制的脚本，用于执行常见的运动图形任务。您可以在内容浏览器(Content Browser)中找到智能预设。 使用智能预设 1. 打开内容浏览器(Content Browser)。 2. 转到“智能预设”…；智能预设, 运动图形 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-MotionGraphics/files/GUID-0AEED5A8-0CA4-40DC-9BF2-B88212FC498D.htm>) |
 | `运动图形/运动图形/运动图形.md` | 运动图形 | 运动图形是可视化设计的一个分支，其中通常涉及重新排列抽象形状并将其变换为有趣的动画。下面列出了有助于呈现这类效果的功能。 本部分中的主题 - 创建多边形文本 - 从 SVG 对象创建多边形网格 - MASH 程序效果 -…；运动图形 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-MotionGraphics/files/GUID-77ECB6D5-9E6A-42AF-B6E7-71D674B68C9A.htm>) |
 | `运动图形/运动图形工作区/运动图形工作区.md` | 运动图形工作区 | “运动图形”(Motion Graphics)工作区可排列界面，使您能够快速访问相关程度最高的工具，用于创建和编辑运动图形。有关详细信息，请参见工作区。 若要切换到“运动图形”(Motion Graphics)工作区，请…；运动图形, 运动图形工作区 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-MotionGraphics/files/GUID-9FDCF094-328A-4155-8B1D-A507AE9F8C8A.htm>) |
+| `适用于 Maya 的 Bifröst 流体/Bifröst 流体/Bifröst 流体/使用 Bifröst 模拟流体/处理 Bifröst 用户缓存/自动从最后缓存帧重新启动缓存（仅限 Bifröst 液体）.md` | 自动从最后缓存帧重新启动缓存（仅限 Bifröst 液体） | 您可以自动从使用相同设置缓存的最后一帧重新开始缓存 Bifröst 液体模拟。如果在此期间尚未更改任何模拟设置，则可以使用该过程附加到现有缓存。您还可以使用该过程重新启动因任何原因而失败的缓存，而无需手动确定成功缓存的最…；Bifröst, Bifröst 流体, 仅限, 使用 Bifröst 模拟流体, 处理 Bifröst 用户缓存, 液体, 自动从最后缓存帧重新启动缓存 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Bifrost/files/GUID-8163083A-232B-4F37-874C-125B6917DA86.htm>) |
+| `适用于 Maya 的 Bifröst 流体/Bifröst 流体/Bifröst 流体/使用 Bifröst 模拟流体/预览 Bifröst 模拟/显示 Bifröst 诊断信息.md` | 显示 Bifröst 诊断信息 | 可以在视口中将属性通道的值显示为颜色渐变、数值或向量。这样，您就可以分析或诊断自己的模拟。 可显示的属性取决于模拟类型。例如，可以对液体中的“漩涡”(Vorticity)或“翻腾”(Churn)和 Aero 模拟中的“烟…；Bifröst, Bifröst 流体, 使用 Bifröst 模拟流体, 显示, 诊断信息, 预览 Bifröst 模拟 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Bifrost/files/GUID-57A350CE-8A49-42A7-B72D-386B17A5A67C.htm>) |
+| `适用于 Maya 的 Bifröst 流体/Bifröst 流体/Bifröst 流体/使用 Bifröst 液体/显示 Bifröst 液体中的诊断颜色：工作流示例.md` | 显示 Bifröst 液体中的诊断颜色：工作流示例 | 您可以将特定通道显示为视口中的颜色渐变，用于诊断或其他用途。此示例说明了如何使用粒子速度值设置“颜色通道重映射”(Color Channel Remap)渐变。 1. 通过增加曲面上的粒子密度，确保液体中有足够的细节。若…；Bifröst, Bifröst 流体, 使用 Bifröst 液体, 工作流示例, 显示, 液体中的诊断颜色 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Bifrost/files/GUID-742ABDDE-574E-4E11-AC36-221BDA9C8653.htm>) |
 | `键盘快捷方式/Mac OS X 版 Maya 中的热键/Mac OS X 版 Maya 中的热键.md` | Mac OS X 版 Maya 中的热键 | 本部分说明在 Mac OS X 版 Maya 中使用热键时可能会遇到的不同之处。 Exposé 热键（F9、F10、F11、F12）可能会与 Maya 预设热键冲突。如果遇到该问题，可以更改 Maya 热键，或者可以在运…；Mac, Mac OS X 版 Maya 中的热键, Maya, OS, 中的热键, 键盘快捷方式 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-KeyboardShortcuts/files/GUID-4670578A-61B8-4A02-A003-9DBA6E53003B.htm>) |
 | `键盘快捷方式/UV 编辑器热键/UV 编辑器热键.md` | UV 编辑器热键 | 注 除非另有指定，否则请使用 Mac OS X 上的以下特殊键，而不是其 Windows 等效键。 - Alt = Option - Ctrl = Control - Windows 键 = Command - UV 编…；UV, UV 编辑器热键, 编辑器热键, 键盘快捷方式 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-KeyboardShortcuts/files/GUID-0AFB7E06-7F51-4D4D-A3DD-E0221CDF73AB.htm>) |
 | `键盘快捷方式/“建模工具包”(Modeling Toolkit)热键/“建模工具包”(Modeling Toolkit)热键.md` | “建模工具包”(Modeling Toolkit)热键 | 注 除非另有指定，否则请使用 Mac OS X 上的以下特殊键，而不是其 Windows 等效键。 - Alt = Option - Ctrl = Control - Windows 键 = Command 注 提示： …；Modeling, Toolkit, “建模工具包”, “建模工具包”(Modeling Toolkit)热键, 热键, 键盘快捷方式 | [原文](<https://help.autodesk.com/cloudhelp/2022/CHS/Maya-KeyboardShortcuts/files/GUID-DAD42E62-3E23-4A00-93E9-4F4A193F3057.htm>) |
