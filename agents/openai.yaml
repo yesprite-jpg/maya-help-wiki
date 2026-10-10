@@ -1,0 +1,4 @@
+interface:
+  display_name: "Maya 2022 帮助手册（Layout／动画核心层） Wiki"
+  short_description: "Maya 2022 帮助手册（Layout／动画核心层） 离线 Wiki 检索与有依据问答"
+  default_prompt: "Use $maya-help-wiki to answer my question with documentation-backed guidance."

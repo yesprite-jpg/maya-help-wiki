@@ -1,0 +1,91 @@
+# 晶格选项(Lattice Options)
+
+- 在“动画”(Animation)、“建模”(Modeling)和“绑定”(Rigging)菜单集中：“变形 > (创建)晶格”(Deform > (Create) Lattice) > ![图：在“动画”(Animation)、“建模”(Modeling)和“绑定”(Rigging)菜单集中：“变形 (创建)晶格…](https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Modeling/images/GUID-23B160F6-E1FB-4E29-94B2-7323BFE33726.png) <!-- baize:img-hook downloaded=false reason="正文 2390 字 ≥300，非承重" -->
+
+### “基本”(Basic)选项卡
+
+#### 分段(Divisions)
+
+指定晶格的局部 STU 空间中的晶格结构。STU 空间提供了指定晶格结构的特殊坐标系。
+
+可以按 S 分段数、T 分段数、和 U 分段数指定晶格的结构。当指定分段时，还可以间接指定晶格中的晶格点数量，因为这些晶格点位于分段与晶格外部会合的地方。分区数越大，晶格点分辨率越大。
+
+尽管您对变形的控制将随着晶格点数量的增加而增加，但是性能可能会受到影响。
+
+默认设置为：S 具有 2 个分段，T 具有 5 个分段，U 具有 2 个分段，这提供了 20 个晶格点。
+
+#### 使用局部模式(Use Local Mode)
+
+指定每个晶格点是否可以只影响附近（局部）的可变形对象的点，或可以影响所有可变形对象的点。选中启用或禁用（默认为启用）。如果启用，则可以指定“局部分段”(Local Divisions)。
+
+#### 局部分段(Local Divisions)
+
+仅在“局部模式”(Local Mode)处于启用状态时可用。指定每个晶格点在晶格的局部 STU 空间方面的局部影响范围。默认设置为：S 具有 2 个分段，T 具有 2 个分段，同时 U 具有 2 个分段。使用默认设置，每个晶格点只能影响离晶格点最多两个分段（在 S、T、或 U 中）的可变形对象的点。
+
+#### 绕当前选择居中(Center around selection)
+
+指定晶格是以选定可变形对象为中心，还是放置在工作区原点。
+
+通常，您会希望在对象周围居中晶格，以便可以在创建好变形器后立即创建变形效果。但是，您可能希望该对象最初不受晶格的影响，仅在它移动到基础晶格空间中时变形。例如，可能开发一个可以挤过锁眼形状影响晶格的重影（可变形对象），然后在另一侧弹出，恢复其原始形状。
+
+启用“绕当前选择居中”(Center around selection)可使晶格居中，禁用“绕当前选择居中”(Center around selection)可将晶格放在工作区原点。默认设置为启用。
+
+#### 将基础与晶格分组(Group base and lattice)
+
+指定是否将影响晶格和基础晶格编组在一起。对影响晶格和基础晶格分组允许您同时变换（移动、旋转或缩放）两者。默认设置为禁用。默认情况下，不对影响晶格和基础晶格分组。
+
+#### 自动将当前选择设置为父对象(Auto parent to selection)
+
+指定是否在创建变形器时将晶格设置为选定可变形对象的子对象。为它们建立父子关系允许您同时变换（移动、旋转或缩放）两者。默认设置为禁用。
+
+#### 冻结几何体(Freeze geometry)
+
+指定是否冻结晶格变形映射。如果冻结（选中启用），则在影响晶格内变形的对象组件将固定在晶格内，并仅受影响晶格的影响，即使变换（移动、旋转或缩放）对象或基础晶格也是如此。有关详细信息，请参见[冻结晶格变形映射](https://beehive.autodesk.com/community/service/rest/cloudhelp/resource/cloudhelpchannel/guidcrossbook/jsonp?v=2022&p=MAYAUL&l=CHS&accessmode=live&guid=GUID-79A66FE5-56CA-42A5-AB86-01FCE2017D6E#WS17956D7ADBC6E736-4E28D478117AE30EE3B-7FF5)。默认设置为禁用。
+
+#### 绑定原始几何体(Bind original geometry)
+
+将原始几何体用于绑定。有关原始几何体属性的说明，请参见[原始几何体](https://beehive.autodesk.com/community/service/rest/cloudhelp/resource/cloudhelpchannel/guidcrossbook/jsonp?v=2022&p=MAYAUL&l=CHS&accessmode=live&guid=GUID-EEF323A6-8692-4D74-8EAA-5481BF437D42)。
+
+外部晶格(Outside lattice)
+
+指定晶格变形器对其目标对象点的影响范围。允许您变换所有对象的点，即使该对象的一部分位于晶格以外。
+
+当希望保持随机弹出晶格之外对象的正常晶格变形时，变换晶格之外的对象点非常有用。例如，在链接晶格在一起时保持晶格变形。
+
+#### 仅在晶格内部时变换(Transform Only If Inside Lattice)
+
+仅在基础晶格内的点变形。默认情况下，“仅在晶格内部时变换”(Transform Only If Inside Lattice)处于启用状态。
+
+#### 变换所有点(Transform All Points)
+
+所有目标对象的点（晶格内部和外部）都由晶格变形。
+
+#### 在衰减范围内则变换(Transform If Within Falloff)
+
+基础晶格以及最多指定衰减距离内的点将被晶格变形。例如，如果将“衰减距离”(Falloff Distance)设置为 2.0，那么将变形基础晶格以及最多 2 个晶格宽度内的点。
+
+#### 衰减距离(Falloff Distance)
+
+指定从基础晶格到受晶格变形器影响点的距离。衰减距离单位以晶格宽度测量。例如，一个 3.0 的“衰减距离”(Falloff Distance)值将设置衰减距离为 3 个晶格宽度。
+
+从基础晶格边到指定衰减距离，衰减将线性降低。该选项仅在“在衰减范围内则变换”(Transform If Within Falloff)处于启用状态时可用。
+
+### “高级”(Advanced)选项卡
+
+请参见[“高级”(Advanced)变形器选项](https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Modeling/files/GUID-3D228DBA-C968-4870-9B1D-8C2C60DE6970.htm)。
+
+#### 变形顺序(Deformation order)
+
+指定变形器节点在可变形对象的历史中的位置。有关变形器放置的详细信息，请参见[变形顺序](https://beehive.autodesk.com/community/service/rest/cloudhelp/resource/cloudhelpchannel/guidcrossbook/jsonp?v=2022&p=MAYAUL&l=CHS&accessmode=live&guid=GUID-6EC1834B-213C-45F9-B723-0BB8039325FC#WS17956D7ADBC6E7361D3EA46F117AE30F9F3-7FFC)。
+
+#### 排除(Exclusive)
+
+指定变形器集是否位于某个划分中。划分中的集不能有重叠的成员。如果启用该选项，“要使用的划分”(Partition To Use)和“新划分名称”(New Partition Name)选项将变为可用。默认设置为禁用。
+
+#### 要使用的划分(Partition To Use)
+
+列出所有现有划分和默认选择“新建划分”(New Partition)。如果选择“创建新划分”(Create New Partition)，则可以编辑“划分名称”(Partition Name)字段，以指定新划分的名称。只有当“排除”(Exclusive)处于启用状态时才可以使用。
+
+#### 划分名称(Partition Name)
+
+指定将包括变形器集的新划分的名称。建议的划分名称为 deformPartition，如果尚不存在，则将创建该名称。通常，可能会将所有排除式变形器集置于名为 deformPartition 的划分中。但是，可以根据需要创建多个划分并为这些划分命名。只有当“排除”(Exclusive)处于启用状态时才可以使用。

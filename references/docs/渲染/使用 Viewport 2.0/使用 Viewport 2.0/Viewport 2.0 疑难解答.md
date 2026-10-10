@@ -1,0 +1,49 @@
+# Viewport 2.0 疑难解答
+
+![图：（图旁无可取正文，Maya 手册 img 无 alt）](https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Rendering/images/GUID-4AB6AA8F-094A-422B-981B-D2867DCC6E66.png) <!-- baize:img-hook downloaded=false reason="正文 4721 字 ≥300，非承重" -->
+
+如果在 Viewport 2.0 中无法获得预期结果，请参考下列内容找到可能的解决方案和解决方法。
+
+## 性能
+
+| 问题 | 可能的解决方案 |
+|---|---|
+| 视口停止运行或者无响应。 提示： 通过在[平视显示仪 (HUD) 选项](https://beehive.autodesk.com/community/service/rest/cloudhelp/resource/cloudhelpchannel/guidcrossbook/jsonp?v=2022&p=MAYAUL&l=CHS&accessmode=live&guid=GUID-0E9D9594-6664-4B69-B944-8B69E9551415)中启用“材质加载详细信息”(Material Loading Details)，可以显示材质和纹理加载进度。 | 请确保您拥有正确的显卡配置和显卡驱动程序版本。 如果图形驱动程序过期，应访问 Autodesk 知识网络上的 [Maya 经认证的硬件](https://knowledge.autodesk.com/zh-hans/support/maya/troubleshooting/caas/simplecontent/simplecontent/CHS/content/maya-certified-hardware.html)获取详细信息。 有关详细信息，另请参见[管理 Viewport 2.0 的 GPU 内存](管理%20Viewport%202.0%20的%20GPU%20内存.md)。 禁用“并行”(Parallel) “求值模式”(Evaluation mode)。 若要执行此操作，请在[动画（设置）首选项](https://beehive.autodesk.com/community/service/rest/cloudhelp/resource/cloudhelpchannel/guidcrossbook/jsonp?v=2022&p=MAYAUL&l=CHS&accessmode=live&guid=GUID-0817C74B-C95C-4E5F-BCFA-26DEE1D7747F)中，将“求值模式”(Evaluation mode)设置为 DG。 将“材质加载”(Material Loading)模式设置为“延缓”(Deferred)。 为此，请执行以下操作：在“首选项”(Preferences)窗口（“窗口 > 设置/首选项 > 首选项”(Window > Settings/Preferences > Preferences)）中，选择“显示”(Display)类别。 在“性能”(Performance)下，将“材质加载模式”(Material Loading Mode)设置为“延缓”(Deferred)。 通过单击状态行中的暂停图标 ![图：通过单击状态行中的暂停图标 以暂停 Viewport 2.0。 允许您在场景中进行更改，而不必等待视口更新。 处理复杂场…](https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Rendering/images/GUID-A856707B-0550-4DFA-AEB1-590B0FF7D219.png) <!-- baize:img-hook downloaded=false reason="正文 4721 字 ≥300，非承重" --> 以暂停 Viewport 2.0。 允许您在场景中进行更改，而不必等待视口更新。 处理复杂场景时，这会非常有用。 提示： 若要缩短复杂场景的加载时间，请在“首选项”(Preference)窗口的“显示”(Display)类别中启用“暂停 Viewport 2.0 (启动)”(Pause Viewport 2.0 (startup))选项。 |
+| 视口不更新场景的内容或者显示的材质或实例不正确。 例如，纹理、几何体或缓存的动画不显示。 | 强制 Viewport 2.0 重置场景。 若要执行此操作，请在 MEL 命令行中键入：ogs-reset; 在 [Viewport 2.0 选项(Viewport 2.0 Options)](https://beehive.autodesk.com/community/service/rest/cloudhelp/resource/cloudhelpchannel/guidcrossbook/jsonp?v=2022&p=MAYAUL&l=CHS&accessmode=live&guid=GUID-9BBB6035-2A02-41BB-AF2D-99D9BEE580F1)窗口中的“性能”(Performance)下，禁用“合并世界”(Consolidate World)。 在 [Viewport 2.0 选项(Viewport 2.0 Options)](https://beehive.autodesk.com/community/service/rest/cloudhelp/resource/cloudhelpchannel/guidcrossbook/jsonp?v=2022&p=MAYAUL&l=CHS&accessmode=live&guid=GUID-9BBB6035-2A02-41BB-AF2D-99D9BEE580F1)窗口中的“性能”(Performance)下，禁用“GPU 实例化”(GPU Instancing)。 默认情况下，此选项处于禁用状态。 |
+| GPU RAM 使用量已超出或非常接近显卡的 GPU RAM 限制。 此时将显示一条错误信息，指示已超出纹理 RAM 限制。 ![图：GPU RAM 使用量已超出或非常接近显卡的 GPU RAM 限制。 此时将显示一条错误信息，指示已超出纹理 RAM 限…](https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Rendering/images/GUID-4AB6AA8F-094A-422B-981B-D2867DCC6E66.png) <!-- baize:img-hook downloaded=false reason="正文 4721 字 ≥300，非承重" --> | 关闭使用 GPU RAM 的其他 Viewport 2.0 效果。 其中包括“屏幕空间环境光遮挡”(Screen-space Ambient Occlusion)和“多采样抗锯齿”(Multisample Anti-aliasing)，这些效果会占用大量 GPU RAM。 禁用[“Viewport 2.0 选项”(Viewport 2.0 Options)](https://beehive.autodesk.com/community/service/rest/cloudhelp/resource/cloudhelpchannel/guidcrossbook/jsonp?v=2022&p=MAYAUL&l=CHS&accessmode=live&guid=GUID-9BBB6035-2A02-41BB-AF2D-99D9BEE580F1)中的“浮点渲染目标”(Floating Point Render Target)。 启用“钳制纹理分辨率”(Clamp Texture Resolution)，以缩小纹理并占用较少的 GPU RAM。 若要执行此操作，请在 [Viewport 2.0 选项(Viewport 2.0 Options)](https://beehive.autodesk.com/community/service/rest/cloudhelp/resource/cloudhelpchannel/guidcrossbook/jsonp?v=2022&p=MAYAUL&l=CHS&accessmode=live&guid=GUID-9BBB6035-2A02-41BB-AF2D-99D9BEE580F1)中的“最大纹理分辨率钳制”(Maximum Texture Resolution Clamping)下，启用“钳制纹理分辨率”(Clamp Texture Resolution)，并将“最大纹理分辨率”(Max Texture Resolution)设置为“自动”(Automatic)。视口会自动降低所有纹理分辨率以提高性能。 或者，也可以将“最大纹理分辨率”(Max Texture Resolution)设置为“自定义”(Custom)，并将值设置为低于平均纹理分辨率的数字。使用 1024 通常可达到质量和内存使用率之间的较好折衷。 有关详细信息，另请参见[管理 Viewport 2.0 的 GPU 内存](管理%20Viewport%202.0%20的%20GPU%20内存.md)。 |
+| 在“UV 编辑器”(UV Editor)打开且“平行”(Parallel)设为“材质加载模式”(Material Loading Mode)的情况下加载场景时，将持续显示*“超出 GPU 纹理内存”(GPU texture ram exceeded)*错误消息。 | 取消选择场景中的所有对象以停止在“UV 编辑器”(UV Editor)中加载纹理。 还可通过选择较低的烘焙纹理分辨率（从“UV 编辑器”(UV Editor)中的“图像 > UV 纹理编辑器烘焙”(Image > UV Texture Editor Baking)菜单），避免超出 GPU 纹理内存。 |
+
+## 着色和照明
+
+| 问题 | 可能的解决方案 |
+|---|---|
+| 多边形对象上的材质在视口中仅显示为黑色。 使用“屏幕空间环境光遮挡”(Screen-space Ambient Occlusion)时也会发生这种情况。 | 多边形对象的面已反转法线。 更改法线的朝向。 请参见[反转多边形法线](https://beehive.autodesk.com/community/service/rest/cloudhelp/resource/cloudhelpchannel/guidcrossbook/jsonp?v=2022&p=MAYAUL&l=CHS&accessmode=live&guid=GUID-17593923-D94D-4A8D-AE09-FA4E98FEA197)。 如果无法反转法线，还可以执行下列操作之一： 使对象变成双面。 若要执行此操作，请在 polygonShape 节点属性的“渲染统计信息”(Render Stats)部分中，启用“双面”(Double Sided)。 在[照明(Lighting)](https://beehive.autodesk.com/community/service/rest/cloudhelp/resource/cloudhelpchannel/guidcrossbook/jsonp?v=2022&p=MAYAUL&l=CHS&accessmode=live&guid=GUID-1B8B8CF2-66F9-4262-B057-74EF1C08EDDB)面板菜单中，启用“双面照明”(Two Sided Lighting)。 |
+| 当我向场景中添加更多对象/引用时，纹理看起来越来越模糊。 ![图：当我向场景中添加更多对象/引用时，纹理看起来越来越模糊。](https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Rendering/images/GUID-57E9DA6F-DB97-48FB-859F-5FA7A7471DF8.png) <!-- baize:img-hook downloaded=false reason="正文 4721 字 ≥300，非承重" --> | 这表示“最大纹理分辨率钳制”(Maximum Texture Resolution Clamping)处于启用状态，并且可以防止超出可用的 GPU 内存。为了缓解这种情况，请尝试通过从场景中移除不必要的纹理或关闭可能占用 GPU 内存的其他应用程序，来释放 GPU 内存，然后转到 [Viewport 2.0 选项(Viewport 2.0 Options)](https://beehive.autodesk.com/community/service/rest/cloudhelp/resource/cloudhelpchannel/guidcrossbook/jsonp?v=2022&p=MAYAUL&l=CHS&accessmode=live&guid=GUID-9BBB6035-2A02-41BB-AF2D-99D9BEE580F1)的“最大纹理分辨率钳制”(Maximum Texture Resolution Clamping)下，并单击“重新加载所有纹理”(Reload All Textures)。 |
+| 场景中的灯光不会全部显示。 | 在[“Viewport 2.0 选项”(Viewport 2.0 Options)](https://beehive.autodesk.com/community/service/rest/cloudhelp/resource/cloudhelpchannel/guidcrossbook/jsonp?v=2022&p=MAYAUL&l=CHS&accessmode=live&guid=GUID-9BBB6035-2A02-41BB-AF2D-99D9BEE580F1)窗口的“性能”(Performance)下，增大“灯光限制”(Light Limit)。 默认为 8 个灯光，最大为 16 个灯光。 |
+| 场景视图中出现锯齿或闪烁瑕疵。 | 增加摄影机的“近剪裁平面”(Near Clip Plane)值。 若要执行此操作，请选择该摄影机，然后在[摄影机属性(Camera Attributes)](https://beehive.autodesk.com/community/service/rest/cloudhelp/resource/cloudhelpchannel/guidcrossbook/jsonp?v=2022&p=MAYAUL&l=CHS&accessmode=live&guid=GUID-C3EBB008-7DBE-4B9D-B9AC-1DA974CEFE15)中增加“近剪裁平面”(Near Clip Plane)值。 |
+| 凹凸贴图和置换贴图显示不正确。 | 文件纹理节点上的颜色空间设置被错误地设置为非“原始”(Raw)值。 请参见[为纹理和其他图像输入指定颜色空间](../../颜色管理/颜色管理/颜色管理任务/为纹理和其他图像输入指定颜色空间.md)。 提示： 不含可见颜色数据的任何纹理都应设为原始值。 |
+| 与使用 GLSL 着色器相比，使用 HLSL 着色器时，我看到不同的颜色渐变。 | 这是由于其不同的颜色插值实现所造成的。 要解决此问题，请增加应用着色器的对象细分数。 |
+| 使用 DX11 着色器时，置换曲面上的阴影会在操纵灯光时消失。 | 增加 dx11shader“属性编辑器”(Attribute Editor)下的“置换剪裁偏移”(Displacement Clipping Bias)。 |
+| 使用 Alpha 通道硬件渲染的自由图像平面将与黑色背景融合。 | Viewport 2.0 工作区与批渲染的默认渐变背景值不同，后者默认为黑色。 如果需要通过这两种渲染获得相同的结果，则必须将场景视图背景设置为黑色，以确保其背景色匹配。 使用 ![图：如果需要通过这两种渲染获得相同的结果，则必须将场景视图背景设置为黑色，以确保其背景色匹配。 使用 +B 在场景视图中循环…](https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Rendering/images/GUID-C48CB823-0167-41AE-B7CF-85871AC36213.png) <!-- baize:img-hook downloaded=false reason="正文 4721 字 ≥300，非承重" -->+B 在场景视图中循环回黑色。 |
+| 使用“绘制顶点颜色工具”(Paint Vertex Color Tool)进行绘制时，几何体的某些区域会错误地显示为透明。 | 笔刷形状衰减会拾取某些 Alpha。 若要解决此问题，请校正 Alpha 值或选择“深度剥离”(Depth Peeling) 透明度算法。 |
+| “显示模式”(Display Mode)设置为“RGBA”的透明图像平面会与其他纹理融合。 | 将图像平面的“显示模式”(Display Mode)改为 RGB。 |
+| 无法正确绘制重叠的或者具有逐面着色指定的透明对象。 | 确保“透明度算法”(Transparency Algorithm)设置为“Alpha 切割”(Alpha Cut)或“深度剥离”(Depth Peeling)（请参见 [Viewport 2.0 选项](https://beehive.autodesk.com/community/service/rest/cloudhelp/resource/cloudhelpchannel/guidcrossbook/jsonp?v=2022&p=MAYAUL&l=CHS&accessmode=live&guid=GUID-9BBB6035-2A02-41BB-AF2D-99D9BEE580F1)）。 |
+| 栅格在透明对象（例如使用 AutodeskUberShader 着色的对象）上方绘制。 | 确保“透明度算法”(Transparency Algorithm)设置为“Alpha 切割”(Alpha Cut)或“深度剥离”(Depth Peeling)（请参见 [Viewport 2.0 选项](https://beehive.autodesk.com/community/service/rest/cloudhelp/resource/cloudhelpchannel/guidcrossbook/jsonp?v=2022&p=MAYAUL&l=CHS&accessmode=live&guid=GUID-9BBB6035-2A02-41BB-AF2D-99D9BEE580F1)）。 |
+
+## 常规
+
+| 问题 | 可能的解决方案 |
+|---|---|
+| 第三方插件对象不显示在视口中。 | 将渲染引擎切换到“OpenGL - 旧版”(OpenGL - Legacy)模式。 为此，请执行以下操作：在“首选项”(Preferences)窗口（“窗口 > 设置/首选项 > 首选项”(Window > Settings/Preferences > Preferences)）中，选择“显示”(Display)类别。 在 Viewport 2.0 下，将“渲染引擎”(Rendering engine)设置为“OpenGL - 旧版”(OpenCL - Legacy)。 |
+| 帧速率指示器 (HUD) 对静态帧显示低 fps 值。 | 这种是预期行为。 Viewport 2.0 帧速率显示基于上一个交互或播放事件。 静态帧将显示此值，直到下次播放（例如，翻滚、平移或时间滑块播放）为止。 |
+| 我遇到斑驳问题（其中背面的 UI 元素和对象透印前面的对象）。 | 将摄影机上的“远剪裁平面”(Far Clip Plane)与“近剪裁平面”(Near Clip Plane)之比设置得尽可能低。 这意味着增加“近剪裁平面”(Near Clip Plane)和/或减少“远剪裁平面”(Far Clip Plane)。 通过增加“远剪裁平面”(Far Clip Plane)，您可以看到前一“远剪裁平面”(Far Clip Plane)距离后面会有更多对象，但会导致斑驳瑕疵更为明显。 |
+| 我从另一个内容创建应用程序导入了场景，但对象大小显示不正确。 或者，我看见抖动几何体随着时间的推移出现缺陷。 | 导入的对象距离场景原点太远。 减小已导入对象的比例。 按照上面的疑难解答解决方案中所述，调整“近剪裁平面”(Near Clip Plane)和“远剪裁平面”(Far Clip Plane)值。 Maya 的 4 视图正交视口可能无法正确显示您的对象，因为它们放置在您尝试查看的已导入对象内。 将摄影机从原点移开。 |
+| 当图像平面紧跟在移动的对象之后时，视口运动模糊不生效。 | 若要解决此问题，可将 MAYA_VP2_OFF_NON_PE_FRAGMENT 环境变量设置为 1。 可通过设置此环境变量，将图像平面包括在所有场景后期效果的计算中，如 SSAO、景深以及运动模糊。 |
+| 执行某些操作（例如选择并翻滚、取消选择后翻滚）后，会立即在视口中以不同的方式绘制对象。 | 禁用[“Viewport 2.0 选项”(Viewport 2.0 Options)](https://beehive.autodesk.com/community/service/rest/cloudhelp/resource/cloudhelpchannel/guidcrossbook/jsonp?v=2022&p=MAYAUL&l=CHS&accessmode=live&guid=GUID-9BBB6035-2A02-41BB-AF2D-99D9BEE580F1)中的“合并世界”(Consolidate World)。 |
+| 无法使用 Viewport 2.0 的原因未在此“疑难解答”部分中列出。 或者，您使用的第三方插件或自定义开发在 Viewport 2.0 中无效。 | 使用 MAYA_ENABLE_LEGACY_VIEWPORT 环境变量启用旧版视口。 请参见[渲染变量](https://beehive.autodesk.com/community/service/rest/cloudhelp/resource/cloudhelpchannel/guidcrossbook/jsonp?v=2022&p=MAYAUL&l=CHS&accessmode=live&guid=GUID-4928A912-DA6C-4734-863B-AB5959DA73C9)。 注： 如果启用旧版视口，对于具有平滑 OpenSubdiv 网格的场景，Viewport 2.0 内存使用量会增加。为了保持 Viewport 2.0 性能，应在不使用旧版视口时通过禁用该环境变量将其禁用。 |
+
+## 相关主题
+
+- [优化 Viewport 2.0](优化%20Viewport%202.0.md)
+
+- [Viewport 2.0 限制](Viewport%202.0%20限制.md)

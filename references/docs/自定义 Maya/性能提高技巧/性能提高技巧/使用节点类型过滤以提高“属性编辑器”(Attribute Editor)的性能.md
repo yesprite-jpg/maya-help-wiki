@@ -1,0 +1,55 @@
+# 使用节点类型过滤以提高“属性编辑器”(Attribute Editor)的性能
+
+选择某个对象时，会自动将其属性加载到“属性编辑器”(Attribute Editor)中，可以在属性编辑器中查看和编辑这些属性。选定对象的节点及其所有相关依存关系节点作为选项卡显示在窗口顶部。显示对象的相关节点可能会导致执行延迟（如果在“属性编辑器”(Attribute Editor)处于打开状态时尝试进行选择）。若要避免速度减慢，可以使用节点类型过滤，以自定义哪些相关的节点显示为选项卡。
+
+应用节点类型过滤
+
+1. 选择显示减速的对象，等待“属性编辑器”(Attribute Editor)刷新。
+
+2. 从“显示”(Show)菜单中，选择“为相关对象添加过滤器类型”(Add Filter Types for Related)。
+
+3. 在显示的对话框中单击“是”(Yes)。
+
+4. 选择“显示 > 按节点类型 > 禁用全部”(Show > By Node Type > Disable All)，并等待“属性编辑器”(Attribute Editor)刷新。
+
+  表示相关节点的所有选项卡消失，仅保留选定对象的节点。
+
+  **注**
+
+  相关列表中列出的节点类型（
+
+  “显示 > 按节点类型”(Show > By Node Type)
+
+  ）将显示为选项卡（如果选择此类型的节点），但不显示为相关选项卡。
+
+5. （可选）取消选择“显示 > 按节点类型 > 其他”(Show > By Node Type > Other)以重新启用其他类型的节点。
+
+6. 要将该设置保存在首选项中，请选择“显示 > 保存显示预设”(Show > Save Show Preset)，然后输入预设的名称。
+
+  **注**
+
+  提示：
+
+  将一组过滤器和设置保存到已命名预设中后，可以使用
+
+  “显示 > 加载显示预设”(Show > Load Show Preset)
+
+  菜单重新加载该预设。
+
+**注**
+
+提示：
+
+要重新启用特定节点类型以在相关选项卡中显示，请选择
+
+“显示 > 按节点类型”(Show > By Node Type)
+
+>
+
+<nodeType>
+
+。
+
+## 相关主题
+
+- [属性编辑器(Attribute Editor)](https://beehive.autodesk.com/community/service/rest/cloudhelp/resource/cloudhelpchannel/guidcrossbook/jsonp?v=2022&p=MAYAUL&l=CHS&accessmode=live&guid=GUID-67A58D31-4722-4769-B3E6-1A35B5B53BED)

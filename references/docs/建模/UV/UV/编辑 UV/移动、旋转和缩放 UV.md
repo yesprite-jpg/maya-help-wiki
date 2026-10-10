@@ -1,0 +1,17 @@
+# 移动、旋转和缩放 UV
+
+可以在 UV 编辑器中手动移动、缩放或旋转 UV 和 UV 壳。例如，可以移动单个 UV 或整个 UV 壳以改善其布局，或缩放 UV 壳以确保其充分使用 0 到 +1 纹理空间。
+
+| 目标 | 请执行以下操作： |
+|---|---|
+| 自由移动、旋转或缩放 UV 位置。 | 选择要重新定位的 UV。 在“工具箱”(Toolbox)中选择“移动”(Move)、“旋转”(Rotate)和“缩放”(Scale)工具。 使用操纵器变换 UV。 注： 在“UV 编辑器”(UV Editor)中同时缩放多个多边形对象的 UV 可能产生异常结果。一次处理一个对象的 UV。 注： 点捕捉和栅格捕捉与“UV 编辑器”(UV Editor)兼容。 |
+| 调整 UV（在不进行选择的情况下变换 UV) | 在“工具箱”(Toolbox)中选择“移动”(Move)、“旋转”(Rotate)和“缩放”(Scale)工具。 使用鼠标中键在 UV 上拖动。 或者，您可以使用[调整 UV 工具(Tweak UV Tool)](../UV%20参考/UV%20窗口和编辑器/“UV%20编辑器”%28UV%20Editor%29概述/UV%20编辑器菜单/“UV%20编辑器”%28UV%20Editor%29的“工具”%28Tool%29菜单/调整%20UV%20工具%28Tweak%20UV%20Tool%29.md)拖动 UV。 注： 使用“旋转”(Rotate)或“缩放”(Scale)工具调整单个 UV 不会产生任何效果。 |
+| 移动 UV 壳，使其不会与其他壳重叠。 | 从“UV 编辑器”(UV Editor)菜单中，选择“工具 > 移动 UV 壳”(Tools > Move UV Shell) > ![图：从“UV 编辑器”(UV Editor)菜单中，选择“工具 移动 UV 壳”(Tools Move UV Shell) …](https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Modeling/images/GUID-96432FB8-EBE9-4D1A-8DED-5173E032EBC0.png) <!-- baize:img-hook downloaded=false reason="正文 1920 字 ≥300，非承重" -->。（或单击 UV 编辑器工具栏上的“移动 UV 壳工具”(Move UV Shell Tool)。 启用“禁止重叠”(Prevent overlap)。 通过在 UV 编辑器中单击壳或拖动其周围的边界框来选择要移动的 UV 壳。 拖动操纵器来移动 UV 壳。 |
+|  | 使用变换工具之一（“移动”(Move)、“旋转”(Rotate)、“缩放”(Scale)）选择要变换的组件。 在“UV 工具包”(UV Toolkit)中，打开“变换”(Transform)区域。 使用“枢轴”(Pivot)栅格指定快速枢轴点，或者单击“编辑枢轴”(Edit Pivot)手动放置枢轴操纵器。再次单击“枢轴操纵器”(Edit Pivot)可返回到普通变换模式。 注： 您可以使用 Insert 键快速启用和禁用“编辑枢轴”(Edit Pivot)模式。 枢轴在选择期间一直持续。如果更改选择，新选择的枢轴将默认恢复到选择的中心。有关枢轴的详细信息，请参见[更改枢轴点](https://beehive.autodesk.com/community/service/rest/cloudhelp/resource/cloudhelpchannel/guidcrossbook/jsonp?v=2022&p=MAYAUL&l=CHS&accessmode=live&guid=GUID-150B390E-840B-4FE3-B8E9-8DEBCE7CEC97)。 |
+|  | 选择要变换的 UV。 在“UV 工具包”(UV Toolkit)中，打开“变换”(Transform)区域。 在相应的变换字段中，设置变换量。 如果移动 UV，请确保将中间按钮设置为“REL”（相对）模式。如果缩放对象，请确保启用相应的轴。 使用变换字段旁边的按钮变换 UV。 注： 还可以通过按箭头键移动与任何选定 UV 有关的 UV 壳。 |
+|  | 选择要移动的组件。 在“UV 工具包”(UV Toolkit)中，打开“变换”(Transform)区域。 在“移动”(Move)变换字段中，输入绝对位置值。 单击“REL”（相对）按钮将其更改为“ABS”（绝对）模式。 单击“U”、“V”或“UV”按钮将组件捕捉到相应轴中的指定位置。 注： 如果选择了多个组件，其中心将捕捉到该位置。 |
+|  | 选择要移动的组件。 在“UV 工具包”(UV Toolkit)中，打开“变换 > 工具”(Transform > Tools)区域。 单击“抓取”(Grab)、“收缩”(Pinch)或“涂抹”(Smear)按钮。 鼠标光标变为笔刷。 在 UV 上拖动笔刷。 其中每个工具以不同的方式影响笔刷内的 UV。有关详细信息，请参见 [使用笔刷修改 UV](使用笔刷修改%20UV.md)。 |
+|  | 选择要对齐的 UV。 在“UV 工具包”(UV Toolkit)中，打开“对齐和捕捉”(Align & Snap)区域。 单击其中一个“对齐”(Align)按钮，以在适当方向上相对于最远的 UV 对齐 UV。 有关其他拉直方法，请参见[拉直 UV](拉直%20UV.md)。 |
+|  | 选择要翻转纹理放置的面。 在“UV 工具包”(UV Toolkit)中，打开“变换”(Transform)区域。 在“翻转”(Flip)按钮旁边，选择一个方向（U 或 V）。 单击“反向”。 |
+|  | 选择要在 0 至 1 的范围内缩放 UV 的面。 在“UV 工具包”(UV Toolkit)中，打开“对齐和捕捉”(Align & Snap)区域。 在“归一化”(Normalize)按钮旁边，选择要缩放 UV 的方向。 单击“归一化”(Normalize)。 注： 通过转到“修改 > 归一化”(Modify > Normalize) > ![图：选择要在 0 至 1 的范围内缩放 UV 的面。 在“UV 工具包”(UV Toolkit)中，打开“对齐和捕捉”(Al…](https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Modeling/images/GUID-96432FB8-EBE9-4D1A-8DED-5173E032EBC0.png) <!-- baize:img-hook downloaded=false reason="正文 1920 字 ≥300，非承重" -->并启用“以最近的 Tile 为中心”(Center on closest tile)，可以更改此功能以适配附近的任何 UV 平铺。 |
+| 将 UV 移动到纹理空间中的 (0,0)、(1,1)、(1,0) 或 (0,1)。 | 选择要单位化 UV 的面。 选择“修改 > 单位化”(Modify > Unitize) > ![图：选择“修改 单位化”(Modify Unitize) 。请参见单位化 UV 选项(Unitize UVs options…](https://help.autodesk.com/cloudhelp/2022/CHS/Maya-Modeling/images/GUID-96432FB8-EBE9-4D1A-8DED-5173E032EBC0.png) <!-- baize:img-hook downloaded=false reason="正文 1920 字 ≥300，非承重" -->。请参见[单位化 UV 选项(Unitize UVs options)](../UV%20参考/UV%20窗口和编辑器/“UV%20编辑器”%28UV%20Editor%29概述/UV%20编辑器菜单/“UV%20编辑器”%28UV%20Editor%29%20的“修改”%28Modify%29菜单/单位化%20UV%20选项%28Unitize%20UVs%20options%29.md)。 根据需要调整设置，然后单击“应用并关闭”(Apply and Close)或“应用”(Apply)。 |
