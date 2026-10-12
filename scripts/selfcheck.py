@@ -4,7 +4,7 @@
 Read-only and stdlib-only. Run it after add_pages.py --apply, and before trusting any
 extension batch. A non-zero rc means do not use that batch.
 
-Checks (order fixed, each prints one line):
+Checks (order fixed; each prints one line, except check 10, which prints four readings):
   1 documents in wiki-manifest.json vs references/docs on disk, both directions
   2 per-document sha256 recomputed and compared with content_hash
   3 coverage identity: discovered == captured + failed, captured == len(documents)
@@ -14,11 +14,19 @@ Checks (order fixed, each prints one line):
   7 '* -text' present in the pack root's .gitattributes (ruling D33; ancestor reading also printed)
   8 references/missing_pages.json exists and its counts are self-consistent
   9 extension batches from .extension/CHANGELOG.local.md + baseline pages untouched
-  10 in-pack references/.extension/ stays small (<= 256 KiB); backups belong outside the pack
+  10 in-pack references/.extension/ footprint, split per rulings D37+D38 into independent caps:
+     10a1 report面: report-*.json in the .extension root <= 262144 B (the backup-creep gate)
+     10a2 changelog面: CHANGELOG.local.md in the .extension root <= 4194304 B (audit log growth
+         is a normal outcome of batch extension, D38; never tied to 10a1)
+     unknown gate: any root file that is neither report-*.json nor CHANGELOG.local.md and is not
+         under assets/ turns this red by name
+     10b asset面: references/.extension/assets/** <= 67108864 B (weighted-page images land
+         here by design, see EXTEND.md; counted by file, never by directory)
 """
 from __future__ import annotations
 
 import argparse
+import fnmatch
 import hashlib
 import json
 import os
@@ -44,6 +52,12 @@ CHANGELOG_PATH = REFERENCES / ".extension" / "CHANGELOG.local.md"
 EXTENSION_ROOT = REFERENCES / ".extension"
 
 LINK_RE = re.compile(r"\]\(([^)\s]+)\)")
+
+# Rulings D37+D38 (2026-10-12): the .extension cell carries independent caps, module-level so a
+# test can shrink one without touching the others. There is deliberately no CLI switch to relax them.
+EXT_REPORT_LIMIT = 262_144  # 10a1: report-*.json in the .extension root
+EXT_CHANGELOG_LIMIT = 4_194_304  # 10a2: CHANGELOG.local.md in the .extension root
+EXT_ASSET_LIMIT = 67_108_864  # 10b: references/.extension/assets/**
 
 
 class Report:
@@ -245,14 +259,48 @@ def check_batches(rep: Report, documents: dict, baseline_file: Path | None) -> N
 
 
 def check_extension_footprint(rep: Report) -> None:
-    """Gate for backups creeping back into the pack (they belong outside, see add_pages.py)."""
-    limit = 256 * 1024
+    """Rulings D37+D38: one cell, four independent readings (report / changelog / unknown / assets).
+
+    Backups belong outside the pack (see add_pages.py); only report-*.json is capped like a
+    backup (10a1). CHANGELOG.local.md is an append-only audit log that grows with every batch
+    by design (D38), so it gets its own cap (10a2) and is never tied to 10a1. Design-placed
+    page images live under references/.extension/assets/ (see EXTEND.md) under 10b. Any root
+    file that is neither report/changelog nor under assets/ is the real backup-creep signal
+    and turns the unknown gate red by name.
+    """
     files = [p for p in EXTENSION_ROOT.rglob("*") if p.is_file()] if EXTENSION_ROOT.is_dir() else []
-    total = sum(os.path.getsize(p) for p in files)
-    names = sorted(p.relative_to(EXTENSION_ROOT).as_posix() for p in files)
-    rep.line(total <= limit, "10 in-pack .extension footprint",
-             "files=%d bytes=%d limit=%d exceeded=%s names=%s"
-             % (len(files), total, limit, total > limit, names[:6]))
+    asset_files, report_files, changelog_files, unknown = [], [], [], []
+    for path in files:
+        rel = path.relative_to(EXTENSION_ROOT).as_posix()
+        if rel.startswith("assets/"):
+            asset_files.append(rel)
+        elif "/" not in rel and fnmatch.fnmatch(rel, "report-*.json"):
+            report_files.append(rel)
+        elif rel == "CHANGELOG.local.md" and "/" not in rel:
+            changelog_files.append(rel)
+        else:
+            unknown.append(rel)
+    report_bytes = sum(os.path.getsize(EXTENSION_ROOT / rel) for rel in report_files)
+    changelog_bytes = sum(os.path.getsize(EXTENSION_ROOT / rel) for rel in changelog_files)
+    asset_bytes = sum(os.path.getsize(EXTENSION_ROOT / rel) for rel in asset_files)
+    unknown.sort()
+    rep.line(report_bytes <= EXT_REPORT_LIMIT, "10a1 .extension report footprint",
+             "src=%s rule=root report-*.json | files=%d bytes=%d limit=%d exceeded=%s"
+             % (EXTENSION_ROOT.as_posix(), len(report_files), report_bytes,
+                EXT_REPORT_LIMIT, report_bytes > EXT_REPORT_LIMIT))
+    rep.line(changelog_bytes <= EXT_CHANGELOG_LIMIT, "10a2 .extension changelog footprint",
+             "src=%s rule=root CHANGELOG.local.md | files=%d bytes=%d limit=%d exceeded=%s"
+             % (EXTENSION_ROOT.as_posix(), len(changelog_files), changelog_bytes,
+                EXT_CHANGELOG_LIMIT, changelog_bytes > EXT_CHANGELOG_LIMIT))
+    rep.line(not unknown, "10a-unknown .extension root unknown files",
+             "src=%s rule=root files outside (report-*.json|CHANGELOG.local.md|assets/) | "
+             "unknown_files=%d%s"
+             % (EXTENSION_ROOT.as_posix(), len(unknown),
+                "" if not unknown else " names: " + ", ".join(unknown[:5])))
+    rep.line(asset_bytes <= EXT_ASSET_LIMIT, "10b .extension assets footprint",
+             "src=%s/assets rule=all files recursive | files=%d bytes=%d limit=%d exceeded=%s"
+             % (EXTENSION_ROOT.as_posix(), len(asset_files), asset_bytes,
+                EXT_ASSET_LIMIT, asset_bytes > EXT_ASSET_LIMIT))
 
 
 def main() -> int:

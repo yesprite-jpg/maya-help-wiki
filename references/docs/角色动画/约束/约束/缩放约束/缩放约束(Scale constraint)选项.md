@@ -1,0 +1,29 @@
+# 缩放约束(Scale constraint)选项
+
+- 在“动画”(Animation)或“装备”(Rigging)菜单集中：“约束 > 缩放”(Constrain > Scale > ![图：在“动画”(Animation)或“装备”(Rigging)菜单集中：“约束 缩放”(Constrain Scale](https://help.autodesk.com/cloudhelp/2022/CHS/Maya-CharacterAnimation/images/GUID-96432FB8-EBE9-4D1A-8DED-5173E032EBC0.png) <!-- baize:img-hook downloaded=false reason="正文 598 字 ≥300，非承重" -->
+
+#### 保持偏移(Maintain Offset)
+
+保留原点（约束之前的状态），相对缩放受约束对象。使用此选项可以保持受约束对象之间的比例关系。
+
+#### 偏移(Offset)
+
+为受约束对象指定相对于目标点的偏移位置（平移 X、Y 和 Z）。请注意，目标点是目标对象旋转枢轴的位置，或是多个目标对象旋转枢轴的平均位置。默认值均为 0。
+
+#### 动画层(Animation Layer)
+
+用于选择要在其上添加缩放约束的动画层。有关详细信息，请参见[创建缩放约束](创建缩放约束.md)。
+
+#### 将层设置为覆盖(Set Layer To Override)
+
+启用时，在“动画层”(Animation Layer)下拉列表中选择的层会在将约束添加到动画层时自动设定为“覆盖”(Override)模式。这是默认模式，也是建议使用的模式。禁用时，在添加约束时层模式会设定为“相加”(Additive)模式。详细信息请参见[为动画层添加约束](https://beehive.autodesk.com/community/service/rest/cloudhelp/resource/cloudhelpchannel/guidcrossbook/jsonp?v=2022&p=MAYAUL&l=CHS&accessmode=live&guid=GUID-B865F8D9-AE8E-47F7-AFB4-DFF9D6A17DB4)。
+
+请参见[动画层模式](https://beehive.autodesk.com/community/service/rest/cloudhelp/resource/cloudhelpchannel/guidcrossbook/jsonp?v=2022&p=MAYAUL&l=CHS&accessmode=live&guid=GUID-BBCA0BC3-7608-4E86-8E9F-B4099C316156)。
+
+#### 约束轴(Constraint Axes)
+
+确定是否将缩放约束限制到特定枢轴（“X”、“Y”、“Z”）或“全部”(All)枢轴。如果选中“全部”(All)，“X”、“Y”和“Z”框将变暗。
+
+#### 权重(Weight)
+
+指定受约束对象的缩放可以对目标对象产生的影响。使用滑块选择介于 0.0000 到 10.0000 之间的值。默认值为 1.0000。

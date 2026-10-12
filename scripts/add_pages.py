@@ -65,6 +65,20 @@ VOID = {"img", "br", "hr", "meta", "link", "input", "area", "base", "col", "sour
 SKIP = {"script", "style"}
 BLOCKISH = {"p", "div", "dl", "ol", "ul", "h1", "h2", "h3", "h4", "li", "table", "pre"}
 
+# Ruling D39 (2026-10-12): a page at references/docs/<d1>/.../<dn>/<file>.md sits n+0 dirs under
+# docs/, so its image link must climb (len of its relative path parts) levels to reach
+# references/.extension/assets/. The old fixed "../" was only right for one depth and left every
+# deeper page's images broken. This is the single place the depth口径 lives.
+ASSET_LINK_RE = re.compile(r"(\]\()((?:\.\./)+)(\.extension/assets/)")
+
+
+def asset_link_prefix(local_path: str) -> str:
+    return "../" * len(PurePosixPath(local_path).parts)
+
+
+def asset_link(target_rel: str, local_path: str) -> str:
+    return asset_link_prefix(local_path) + ".extension/assets/" + target_rel
+
 
 class Refuse(Exception):
     """A guarded input or safety rule blocked the run; nothing was written."""
@@ -619,7 +633,7 @@ def capture_one(row: dict, local_path: str, source_url: str, url_to_local: dict[
             data, _ = fetch_bytes(abs_url)
             dest.write_bytes(data)
             written_assets.append(dest)
-            asset_urls[abs_url] = "../.extension/assets/" + rel
+            asset_urls[abs_url] = asset_link(rel, local_path)
     renderer = Renderer(source_url, row["t"], local_path, body, url_to_local, asset_urls)
     md = swd.normalize_markdown(renderer.render())
     if not md.startswith("# "):
@@ -729,14 +743,21 @@ def apply_pages(rows: list[dict], manifest: dict, batch: str) -> int:
         print("FAILED: %s" % str(exc)[:400], file=sys.stderr)
         print("rolled back: %s" % ("; ".join(actions) or "nothing to undo"))
         write_report(batch, report)
-        return 2
+        info = {"batch": batch, "stamp": stamp, "backup": backup_dir.as_posix(),
+                "ok": False, "aborted": True, "added": 0, "skipped": len(report["skipped"]),
+                "failed": len(report["failed"]), "reason": str(exc)[:200]}
+        return 2, info
     write_report(batch, report)
     print("APPLIED batch=%s added=%d skipped=%d failed=%d documents=%d"
           % (batch, len(report["added"]), len(report["skipped"]), len(report["failed"]),
              report["documents_total"]))
     print("backup=%s stamp=%s" % (backup_dir.as_posix(), stamp))
     print("run scripts/selfcheck.py before you trust this batch")
-    return 0
+    info = {"batch": batch, "stamp": stamp, "backup": backup_dir.as_posix(),
+            "ok": True, "added": len(report["added"]), "skipped": len(report["skipped"]),
+            "failed": len(report["failed"]), "documents_total": report["documents_total"],
+            "added_bytes": sum(int(x.get("bytes", 0)) for x in report["added"])}
+    return 0, info
 
 
 def write_report(batch: str, report: dict) -> None:
@@ -782,15 +803,147 @@ def rollback(stamp: str) -> int:
     return 0
 
 
+def _patch_newest_report(infos: list[dict], stopped: bool) -> None:
+    """Fold the whole-run summary into the newest in-pack report (only one report stays in-pack
+    by design), so per-slice stamps/added/bytes survive even though the earlier reports get pruned."""
+    if not infos:
+        return
+    reports = sorted(EXT_ROOT.glob("report-*.json"))
+    if not reports:
+        return
+    newest = reports[-1]
+    try:
+        data = json.loads(newest.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001  an unreadable report must not crash the run summary
+        return
+    data["multi_slice"] = {
+        "batches": [{k: v for k, v in it.items() if k in
+                     ("batch", "stamp", "added", "skipped", "failed", "added_bytes",
+                      "documents_total", "ok")} for it in infos],
+        "total_batches": len(infos),
+        "total_added": sum(it.get("added", 0) for it in infos),
+        "total_failed": sum(it.get("failed", 0) for it in infos),
+        "stopped": stopped,
+        "not_run_after_stop": (len(infos) and stopped),
+    }
+    text = json.dumps(data, ensure_ascii=False, indent=2) + "\n"
+    newest.write_text(text, encoding="utf-8", newline="\n")
+    if json.loads(newest.read_text(encoding="utf-8")).get("stamp") != data.get("stamp"):
+        raise Refuse("multi-slice summary did not round-trip: " + newest.as_posix())
+
+
+def run_in_slices(rows: list[dict], batch: str, max_per_batch: int | None) -> int:
+    """Apply a whole selected list, auto-sharded into serial slices of <= MAX_APPLY_PAGES each.
+    Full-list safety review happens before the first request; any slice that returns non-zero
+    stops the remaining slices while leaving already-completed slices intact (no cross-slice undo)."""
+    size = MAX_APPLY_PAGES if max_per_batch is None else int(max_per_batch)
+    if size > MAX_APPLY_PAGES:
+        print("NOTE: batch size above %d was requested (%d); slicing by %d anyway"
+              % (MAX_APPLY_PAGES, size, MAX_APPLY_PAGES))
+        size = MAX_APPLY_PAGES
+    if size < 1:
+        size = 1
+    # 全量先审: host whitelist over the ENTIRE input, before any slice fetches.
+    # select() already rejected URLs not in missing_pages; check_hosts blocks off-whitelist hosts.
+    check_hosts(rows)
+    chunks = [rows[i:i + size] for i in range(0, len(rows), size)]
+    infos: list[dict] = []
+    total_added = total_failed = 0
+    for i, chunk in enumerate(chunks, 1):
+        label = batch if len(chunks) == 1 else "%s-%d" % (batch, i)
+        manifest = swd.read_json(MANIFEST_PATH)
+        rc, info = apply_pages(chunk, manifest, label)
+        infos.append(info)
+        total_added += info.get("added", 0)
+        total_failed += info.get("failed", 0)
+        if rc != 0:
+            remaining = len(chunks) - i
+            done = ", ".join(x["batch"] for x in infos[:-1]) or "none"
+            print("STOPPED at batch %d/%d (label=%s) rc=%d; completed batch(es) kept and NOT "
+                  "rolled back; %d batch(es) not run" % (i, len(chunks), label, rc, remaining))
+            print("completed batch labels: %s" % done)
+            print("per-slice evidence: references/.extension/CHANGELOG.local.md + "
+                  "references/.extension/report-*.json (newest holds the whole-run summary)")
+            print("TOTAL batches=%d added=%d failed=%d (stopped; %d of %d not run)"
+                  % (i, total_added, total_failed, remaining, len(chunks)))
+            _patch_newest_report(infos, stopped=True)
+            return rc
+    print("TOTAL batches=%d added=%d failed=%d" % (len(chunks), total_added, total_failed))
+    _patch_newest_report(infos, stopped=False)
+    return 0
+
+
+def repair_image_links() -> int:
+    """Ruling D39 local-only repair: fix the '../' depth of every image link in
+    references/docs/**.md so it matches each page's own depth, then recompute those
+    pages' content_hash through the tool's existing hashing口径. No network, no image
+    moves, no CHANGELOG/report writes; text bytes other than the link prefix are unchanged.
+
+    Idempotent: a second run finds every prefix already correct and writes nothing.
+    """
+    manifest = swd.read_json(MANIFEST_PATH)
+    documents = manifest.get("documents")
+    if not isinstance(documents, dict):
+        raise Refuse("manifest.documents must be an object")
+    scanned = pages_with_links = pages_changed = links_changed = already_correct = 0
+    samples: list[str] = []
+    for path in sorted(DOCS_ROOT.rglob("*.md")):
+        if not path.is_file():
+            continue
+        scanned += 1
+        rel = path.relative_to(DOCS_ROOT).as_posix()
+        old_text = path.read_text(encoding="utf-8")
+        want = asset_link_prefix(rel)
+        new_text, n = ASSET_LINK_RE.subn(lambda m: m.group(1) + want + m.group(3), old_text)
+        if n == 0:
+            continue
+        pages_with_links += 1
+        if new_text == old_text:
+            already_correct += 1
+            continue
+        new_bytes = new_text.encode("utf-8")
+        # safety: the only delta must be inside the link prefix; normalising must be a no-op
+        # (proves we added no whitespace/newline and drifted no other byte).
+        if swd.normalize_markdown(new_text).encode("utf-8") != new_bytes:
+            raise Refuse("repair would change bytes beyond the link prefix: " + rel)
+        swd.atomic_write(path, new_bytes)
+        entry = documents.get(rel)
+        if isinstance(entry, dict):
+            entry["content_hash"] = swd.sha256(new_bytes)
+        pages_changed += 1
+        links_changed += n
+        if len(samples) < 5:
+            samples.append("%s prefix=%s links=%d" % (rel, want, n))
+    if pages_changed:
+        swd.atomic_write(MANIFEST_PATH, (json.dumps(manifest, ensure_ascii=False, indent=2,
+                                                   sort_keys=True) + "\n").encode("utf-8"))
+    print("REPAIR-IMAGE-LINKS scanned=%d pages_with_asset_links=%d pages_changed=%d "
+          "links_changed=%d already_correct=%d manifest_updated=%s"
+          % (scanned, pages_with_links, pages_changed, links_changed, already_correct,
+             bool(pages_changed)))
+    for s in samples:
+        print("  - " + s)
+    return 0
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("--keywords", help="space separated terms matched against t and p")
     group.add_argument("--paths", type=Path, help="file of local_path values, one per line")
     group.add_argument("--url", type=Path, help="file of source_url values, one per line")
+    group.add_argument("--repair-image-links", action="store_true",
+                       help="local-only D39 fix: rewrite the '../' depth of image links in "
+                            "references/docs/**.md to each page's own depth and recompute those "
+                            "pages' content_hash; no network, no --apply, no CHANGELOG/report write")
     parser.add_argument("--apply", action="store_true",
                         help="fetch and write; without this flag the run is --suggest")
     parser.add_argument("--batch", default="", help="batch label for CHANGELOG.local.md")
+    parser.add_argument("--max-per-batch", type=int, default=None, metavar="N",
+                        help="pages per slice when --apply auto-shards the whole list "
+                             "(default %d = MAX_APPLY_PAGES; smaller allowed; values above %d "
+                             "are announced and still sliced at %d)"
+                             % (MAX_APPLY_PAGES, MAX_APPLY_PAGES, MAX_APPLY_PAGES))
     parser.add_argument("--backup-dir", type=Path,
                         help="override where pre-write backups go (default: %s)"
                              % BACKUP_ROOT.as_posix())
@@ -806,12 +959,14 @@ def main() -> int:
     try:
         if args.rollback:
             return rollback(args.rollback)
+        if args.repair_image_links:
+            return repair_image_links()
         rows = select(load_missing(), args.keywords, args.paths, args.url)
         manifest = swd.read_json(MANIFEST_PATH)
         if not args.apply:
             return suggest(rows, manifest)
         batch = args.batch or ("LOCAL-%s" % time.strftime("%Y%m%d"))
-        return apply_pages(rows, manifest, batch)
+        return run_in_slices(rows, batch, args.max_per_batch)
     except FileNotFoundError as exc:
         print("FAILED: input file not readable: %s" % exc, file=sys.stderr)
         print("nothing was fetched and nothing was written")

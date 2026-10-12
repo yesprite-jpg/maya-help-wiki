@@ -6,8 +6,9 @@
 「Maya 手册有此页、只是本包没装」时，才走本流程。手册命中不了本包的问题不是缺页，别抓。
 
 事实源是 `references/missing_pages.json`： Autodesk Maya 2022 帮助站带链接页面共 6,532 页
-（`_meta.roster_pages_total`），核心层 2,724 页已入库；2026-10-10 又从 excluded 名册补装 67 页疑难解答／许可类
-（包内正文 2,724＋67＝2,791 篇，核心层仍为 2,724，补装页不计入核心层），其余 3,741 页（`_meta.entries`）
+（`_meta.roster_pages_total`），核心层 2,724 页已入库；2026-10-10 补装 67 页疑难解答／许可类、
+2026-10-12 又整册补装 1,048 页（《角色动画》整本 694 ＋《照明和着色》剩余 354），
+包内正文 2,724＋67＋1,048＝3,839 篇，核心层仍为 2,724，补装页不计入核心层；其余 2,693 页（`_meta.entries`）
 列在这里，每条四个字段：`t` 标题 / `p` 入库后在 `references/docs` 下的落点 / `u` 原文 URL / `b` 书目 ID。
 
 ## 三步
@@ -24,7 +25,7 @@ python scripts/selfcheck.py                                 # 3 体检，末行�
 可用 `--backup-dir <目录>` 改到别处；最多留 3 份，超了删最旧的，删前把待删清单与逐件 sha16 写进
 本次 `references/.extension/report-<时刻>.json`），再把每页记进
 `references/.extension/CHANGELOG.local.md` 并写出最新那份报告。**包内只留日志**
-（`CHANGELOG.local.md` ＋最近一份 `report-*.json`，共约 1 KB）；备份不留在包里，因为它一份就 ≈7 MB。
+（`CHANGELOG.local.md` ＋最近一份 `report-*.json`；2026-10-12 整册补装 1,048 页后实测 10a2 审计日志 331,581 B ＋ 10a1 报告 20,521 B，两行各按 selfcheck 第 10 格独立上限看管）；备份不留在包里，因为它一份就 ≈7 MB。
 要撤销这一批：
 
 ```
@@ -37,18 +38,16 @@ python scripts/add_pages.py --keywords x --rollback <时刻>
 或输入文件读不到。自动化调用方**按退出码判成败**，别只看有没有打印提示。
 
 体检表可加 `--baseline <快照 json>`（形如 `{"docs": {"references/docs/...md": "<sha256 hex>"}}`），
-它会把快照里的每一篇与磁盘现算哈希对拍，用来证明老页没被改动。**发布或分享本包之前先看第 10 格**
-（包内 `references/.extension` 总体积 ≤256 KB）——那格是专门拦住"备份又偷偷长回包里"的闸；
-它判红就说明有人把备份写进了包内，先挪出去再发布。
+它会把快照里的每一篇与磁盘现算哈希对拍，用来证明老页没被改动。体检表第 10 格按裁决 D37+D38 拆成四行独立判据：**发布或分享本包之前先看这四行**——10a1 只统计 `.extension` 根下的 `report-*.json`（上限 262,144 B，这条才是拦“备份/报告偷偷长回包里”的闸）；10a2 只统计根下的 `CHANGELOG.local.md`（上限 4,194,304 B；审计日志随批次变长是整册补装的正常结果，与报告体积互不牵连）；未知文件闸看根下其余任何文件（直接判红并列名，备份回包从这条咬）；10b 看 `references/.extension/assets/**`（上限 67,108,864 B，设计内图片落点）。
 
 ## 红线
 
 - 只允许 `help.autodesk.com`，其他域名一律拒绝（页面 URL 和图片 URL 都查），拒绝时退出码 3。
 - 单次 `--apply` ≤ 30 页，超了直接拒（rc=3），请分批。
-- 备份只写包外目录，**不要**把它挪进 `references/`；包内 `.extension` 只放日志（selfcheck 第 10 格会管）。
-- 只增不删：已有正文（核心层 2,724 ＋ 补装 67 ＝ 包内 2,791 篇）、251 张图、`wiki-manifest.json` 里的老条目一律不动。
+- 备份只写包外目录，**不要**把它挪进 `references/`；包内 `.extension` 根下只留 `report-*.json` 与 `CHANGELOG.local.md`，图片只进 `.extension/assets/`（selfcheck 第 10 格按 10a1/10a2/未知闸/10b 四行分别看管）。
+- 只增不删：已有正文（核心层 2,724 ＋ 补装 67 ＋ 补装 1,048 ＝ 包内 3,839 篇）、251 张图、`wiki-manifest.json` 里的老条目一律不动。
 - 不要 `--prune`、不要删文件、不要装第三方包、不要建定时任务或常驻服务、不要花钱。
-- **补装过的包别再直接跑增量同步（`sync_wiki_docs.py`）**：它对 `wiki-manifest.json`（现含 2,791 篇）与「重采的核心层」（2,724 篇）做差集判 stale，差集正好是这 67 页补装件。
+- **补装过的包别再直接跑增量同步（`sync_wiki_docs.py`）**：它对 `wiki-manifest.json`（现含 3,839 篇）与「重采的核心层」（2,724 篇）做差集判 stale，差集正好是这 1,115 页补装件（67 ＋ 1,048）。
   1. 不给 `--prune` 时会抛 `StaleFilesError`（STALE_REQUIRES_APPROVAL，不会静默删）——**撞到它是保护、不是故障**，别当成抓取出错去重试。
   2. 给了 `--prune` 就会按核心层名册收口、**把这 67 页补装件全删掉**；绝不允许随手 `--prune`。
   3. 真要同步上游新版：先把包外备份留在手（`add_pages.py --rollback <stamp>` 与 `.maya-help-wiki-backup/<stamp>/`），并把这 67 页的 `CHANGELOG.local.md` 行交给人核对，再动同步。

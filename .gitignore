@@ -1,6 +1,7 @@
-# 本地迭代状态（add_pages.py 的 CHANGELOG 与最新 report）含本机绝对路径，不入库；
+# 本地迭代日志（add_pages.py 的 report 与 CHANGELOG）含本机绝对路径，不入库；
 # 别人 clone 后自己跑一次 --apply 就会重新生成。
-references/.extension/
+references/.extension/report-*.json
+references/.extension/CHANGELOG.local.md
 
 # 编译缓存
 __pycache__/
